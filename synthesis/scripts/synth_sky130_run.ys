@@ -1,0 +1,60 @@
+
+# ============================================
+# RISC-V CORE - SKY130 SYNTHESIS
+# Top Module: riscv_core
+# Technology: Sky130 HD
+# ============================================
+
+# STEP 1: Read RTL
+read_verilog rtl/riscv_core.v
+
+# STEP 2: RTL Elaboration and Hierarchy
+hierarchy -check -top riscv_core
+
+# STEP 3: Process Conversion
+proc
+
+# STEP 4: Basic Optimization
+opt
+
+# STEP 5: FSM Optimization
+fsm
+opt
+
+# STEP 6: Memory Optimization and Mapping
+memory
+opt
+
+# STEP 7: Technology Independent Logic Mapping
+techmap
+opt
+
+# Save generic synthesized netlist
+write_verilog -noattr synthesis/netlist/riscv_core_generic.v
+write_json synthesis/netlist/riscv_core_generic.json
+
+# Generic synthesis statistics
+tee -o synthesis/reports/generic_stat.txt stat
+
+# STEP 8: Sky130 Sequential Cell Mapping
+dfflibmap -liberty /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# STEP 9: Sky130 Combinational Cell Mapping
+abc -liberty /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# STEP 10: Remove Unused Cells
+clean
+
+# STEP 11: Final Design Check
+check
+
+# STEP 12: Generate Sky130 Netlist
+write_verilog -noattr synthesis/netlist/riscv_core_sky130.v
+
+# Generate JSON
+write_json synthesis/netlist/riscv_core_sky130.json
+
+# STEP 13: Final Cell Statistics
+tee -o synthesis/reports/sky130_stat.txt stat -liberty /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# End

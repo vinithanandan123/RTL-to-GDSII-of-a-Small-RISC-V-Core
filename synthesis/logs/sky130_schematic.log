@@ -1,0 +1,52 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+169 (git sha1 c09944d8e, GNU /usr/bin/c++ 15.2.0)
+
+-- Executing script file `synthesis/scripts/sky130_schematic.ys' --
+
+Syntax error in command `read_liberty -lib':
+
+    read_liberty [filename]
+
+Read cells from liberty file as modules into current design.
+
+    -lib
+        only create empty blackbox modules
+
+    -wb
+        mark imported cells as whiteboxes
+
+    -nooverwrite
+        ignore re-definitions of modules. (the default behavior is to
+        create an error message if the existing module is not a blackbox
+        module, and overwrite the existing module if it is  a blackbox module.)
+
+    -overwrite
+        overwrite existing modules with the same name
+
+    -ignore_miss_func
+        ignore cells with missing function specification of outputs
+
+    -ignore_miss_dir
+        ignore cells with a missing or invalid direction
+        specification on a pin
+
+    -ignore_miss_data_latch
+        ignore latches with missing data and/or enable pins
+
+    -ignore_buses
+        ignore cells with bus interfaces (wide ports)
+
+    -setattr <attribute_name>
+        set the specified attribute (to the value 1) on all loaded modules
+
+    -unit_delay
+        import combinational timing arcs under the unit delay model
+
+ERROR: Command syntax error: No filename given.
+> read_liberty -lib
+>                   ^

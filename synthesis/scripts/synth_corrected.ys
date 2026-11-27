@@ -1,0 +1,41 @@
+
+# ==========================================
+# RISC-V SKY130 SYNTHESIS
+# ==========================================
+
+# Read RTL
+read_verilog rtl/riscv_core.v
+
+# Hierarchy
+hierarchy -check -top riscv_core
+
+# Generic synthesis:
+# Includes process conversion,
+# memory mapping and logic optimization.
+synth -top riscv_core -noabc
+
+# Save generic netlist
+write_verilog -noattr synthesis/netlist/riscv_core_generic.v
+write_json synthesis/netlist/riscv_core_generic.json
+
+# Generic statistics
+tee -o synthesis/reports/generic_stat.txt stat
+
+# Map flip-flops to Sky130 cells
+dfflibmap -liberty LIBRARY_PATH
+
+# Map combinational logic using ABC
+abc -liberty LIBRARY_PATH
+
+# Cleanup
+clean
+
+# Structural check
+check
+
+# Generate final mapped netlist
+write_verilog -noattr synthesis/netlist/riscv_core_sky130.v
+write_json synthesis/netlist/riscv_core_sky130.json
+
+# Final statistics
+tee -o synthesis/reports/sky130_stat.txt stat -liberty LIBRARY_PATH

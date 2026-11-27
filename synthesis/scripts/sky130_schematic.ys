@@ -1,0 +1,37 @@
+
+# Load Sky130 standard-cell definitions
+read_liberty -lib 
+
+# Read custom RISC-V RTL
+read_verilog rtl/riscv_core.v
+
+# Check design hierarchy
+hierarchy -check -top riscv_core
+
+# Generic synthesis
+synth -top riscv_core -noabc
+
+# Map flip-flops to Sky130 cells
+dfflibmap -liberty 
+
+# Map combinational logic using ABC
+abc -liberty 
+
+# Remove unused logic
+clean
+
+# Check mapped design
+check
+
+# Generate Sky130 mapped Verilog
+write_verilog -noattr synthesis/netlist/riscv_core_sky130.v
+
+# Generate JSON netlist
+write_json synthesis/netlist/riscv_core_sky130.json
+
+# Generate cell statistics
+tee -o synthesis/reports/sky130_cell_statistics.txt stat -liberty 
+
+# Generate mapped schematic
+show -format svg -prefix synthesis/schematic/riscv_sky130_mapped
+
