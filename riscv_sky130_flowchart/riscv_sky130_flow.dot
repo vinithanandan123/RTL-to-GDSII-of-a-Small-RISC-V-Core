@@ -1,0 +1,220 @@
+
+digraph RISC_V_SKY130_FLOW {
+
+    // =====================================
+    // GRAPH SETTINGS
+    // =====================================
+
+    graph [
+        label="RISC-V PROCESSOR | RTL TO GDSII FLOW",
+        labelloc="t",
+        labeljust="c",
+        fontsize=25,
+        fontname="DejaVu Sans",
+        fontcolor="white",
+        bgcolor="#0B1220",
+        pad=0.4,
+        nodesep=0.35,
+        ranksep=0.55,
+        splines=ortho,
+        outputorder=edgesfirst
+    ];
+
+    node [
+        shape=box,
+        style="rounded,filled",
+        fontname="DejaVu Sans",
+        fontsize=11,
+        fontcolor="white",
+        color="#64748B",
+        penwidth=1.5,
+        margin="0.22,0.15"
+    ];
+
+    edge [
+        color="#CBD5E1",
+        penwidth=2,
+        arrowsize=0.8
+    ];
+
+    // =====================================
+    // FRONTEND DESIGN
+    // =====================================
+
+    rtl [
+        label="01 | RTL DESIGN\nriscv_core.v\nCustom RISC-V Processor",
+        fillcolor="#1D4ED8",
+        color="#60A5FA"
+    ];
+
+    tb [
+        label="02 | TESTBENCH\n tb_riscv_core.v\nInstruction-level verification",
+        fillcolor="#0369A1",
+        color="#38BDF8"
+    ];
+
+    sim [
+        label="03 | FUNCTIONAL SIMULATION\nIcarus Verilog\nVCD waveform + GTKWave",
+        fillcolor="#0E7490",
+        color="#22D3EE"
+    ];
+
+    // =====================================
+    // YOSYS SYNTHESIS
+    // =====================================
+
+    read [
+        label="04 | RTL ELABORATION\nread_verilog\nhierarchy -check",
+        fillcolor="#0F766E",
+        color="#2DD4BF"
+    ];
+
+    proc [
+        label="05 | PROCESS CONVERSION\nproc • opt\nConvert procedural RTL",
+        fillcolor="#15803D",
+        color="#4ADE80"
+    ];
+
+    generic [
+        label="06 | GENERIC SYNTHESIS\nsynth -noabc\nLogic optimization",
+        fillcolor="#166534",
+        color="#86EFAC"
+    ];
+
+    memory [
+        label="07 | MEMORY & LOGIC OPTIMIZATION\nmemory • opt • techmap\nTechnology-independent mapping",
+        fillcolor="#4D7C0F",
+        color="#A3E635"
+    ];
+
+    mapping [
+        label="08 | SKY130 TECHNOLOGY MAPPING\ndfflibmap • ABC\nSky130 HD Liberty",
+        fillcolor="#A16207",
+        color="#FACC15"
+    ];
+
+    netlist [
+        label="09 | SYNTHESIS OUTPUT\nGate-level Verilog + JSON\nCell statistics + synthesis reports",
+        fillcolor="#C2410C",
+        color="#FB923C"
+    ];
+
+    // =====================================
+    // PHYSICAL DESIGN
+    // =====================================
+
+    floorplan [
+        label="10 | FLOORPLANNING\nCore area • Die area\nI/O pin placement",
+        fillcolor="#7C3AED",
+        color="#C4B5FD"
+    ];
+
+    pdn [
+        label="11 | POWER PLANNING\nPower Distribution Network\nVDD / VSS",
+        fillcolor="#6D28D9",
+        color="#A78BFA"
+    ];
+
+    placement [
+        label="12 | PLACEMENT\nGlobal placement\nDetailed placement",
+        fillcolor="#4338CA",
+        color="#818CF8"
+    ];
+
+    cts [
+        label="13 | CLOCK TREE SYNTHESIS\nClock distribution\nClock skew optimization",
+        fillcolor="#1D4ED8",
+        color="#93C5FD"
+    ];
+
+    routing [
+        label="14 | ROUTING\nGlobal routing\nDetailed routing",
+        fillcolor="#0369A1",
+        color="#7DD3FC"
+    ];
+
+    // =====================================
+    // SIGNOFF
+    // =====================================
+
+    sta [
+        label="15 | STATIC TIMING ANALYSIS\nOpenSTA\nSetup / Hold • WNS / TNS",
+        fillcolor="#0F766E",
+        color="#5EEAD4"
+    ];
+
+    drc [
+        label="16 | PHYSICAL VERIFICATION\nMagic DRC • Netgen LVS\nAntenna checks (if configured)",
+        fillcolor="#9D174D",
+        color="#F9A8D4"
+    ];
+
+    gds [
+        label="17 | FINAL LAYOUT\nGDSII / OASIS\nKLayout visualization",
+        fillcolor="#BE185D",
+        color="#FBCFE8"
+    ];
+
+    // =====================================
+    // FLOW CONNECTIONS
+    // =====================================
+
+    rtl -> tb -> sim -> read;
+    read -> proc -> generic -> memory -> mapping -> netlist;
+    netlist -> floorplan -> pdn -> placement -> cts -> routing;
+    routing -> sta -> drc -> gds;
+
+    // =====================================
+    // TOOL AND TECHNOLOGY NOTES
+    // =====================================
+
+    tools [
+        shape=note,
+        label="EDA TOOLS\nYosys | OpenLane 2 | OpenROAD\nOpenSTA | Magic | Netgen | KLayout",
+        fillcolor="#172554",
+        color="#60A5FA",
+        fontcolor="white"
+    ];
+
+    pdk [
+        shape=note,
+        label="PROCESS TECHNOLOGY\nSkyWater SKY130A\nSky130 HD standard-cell library",
+        fillcolor="#164E63",
+        color="#22D3EE",
+        fontcolor="white"
+    ];
+
+    tools -> floorplan [
+        style=dashed,
+        arrowhead=none,
+        color="#60A5FA",
+        constraint=false
+    ];
+
+    pdk -> mapping [
+        style=dashed,
+        arrowhead=none,
+        color="#22D3EE",
+        constraint=false
+    ];
+
+    // =====================================
+    // LEGEND
+    // =====================================
+
+    legend [
+        shape=box,
+        style="rounded,filled",
+        label="FLOW: RTL DESIGN → SIMULATION → SYNTHESIS → PHYSICAL DESIGN → SIGNOFF → GDSII",
+        fillcolor="#1E293B",
+        color="#94A3B8",
+        fontcolor="white",
+        fontsize=12
+    ];
+
+    gds -> legend [
+        style=dashed,
+        arrowhead=none,
+        color="#94A3B8"
+    ];
+}
