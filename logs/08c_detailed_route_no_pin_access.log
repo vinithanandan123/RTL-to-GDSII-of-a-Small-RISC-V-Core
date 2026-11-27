@@ -1,0 +1,2605 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+========== LOAD SKY130 LEFS ==========
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+========== LOAD SKY130 LIBERTY ==========
+========== LOAD REPAIRED GLOBAL ROUTE DB ==========
+========== LOAD SDC ==========
+========== LOAD RC CONFIGURATION ==========
+========== LOAD REPAIRED GLOBAL ROUTE GUIDES ==========
+[WARNING GRT-0008] The read_guides command does not allow parasitics estimation from the guides file.
+========== START DETAILED ROUTING: ITERATION 1 ==========
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     441
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   riscv_core
+Die area:                 ( 0 0 ) ( 399105 399105 )
+Number of track patterns: 24
+Number of DEF vias:       0
+Number of components:     8649
+Number of terminals:      166
+Number of snets:          2
+Number of nets:           6588
+
+[INFO DRT-0167] List of default vias:
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 232.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete Fr_VIA.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] FR_VIA shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 212292.
+[INFO DRT-0033] mcon shape region query size = 114135.
+[INFO DRT-0033] met1 shape region query size = 33820.
+[INFO DRT-0033] via shape region query size = 10040.
+[INFO DRT-0033] met2 shape region query size = 6022.
+[INFO DRT-0033] via2 shape region query size = 8038.
+[INFO DRT-0033] met3 shape region query size = 6185.
+[INFO DRT-0033] via3 shape region query size = 8040.
+[INFO DRT-0033] met4 shape region query size = 2438.
+[INFO DRT-0033] via4 shape region query size = 404.
+[INFO DRT-0033] met5 shape region query size = 465.
+
+[INFO DRT-0157] Number of guides:     61337
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 57 STEP 6900 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 57 STEP 6900 ;
+[INFO DRT-0028]   Complete FR_MASTERSLICE.
+[INFO DRT-0028]   Complete Fr_VIA.
+[INFO DRT-0028]   Complete li1.
+[INFO DRT-0028]   Complete mcon.
+[INFO DRT-0028]   Complete met1.
+[INFO DRT-0028]   Complete via.
+[INFO DRT-0028]   Complete met2.
+[INFO DRT-0028]   Complete via2.
+[INFO DRT-0028]   Complete met3.
+[INFO DRT-0028]   Complete via3.
+[INFO DRT-0028]   Complete met4.
+[INFO DRT-0028]   Complete via4.
+[INFO DRT-0028]   Complete met5.
+[WARNING DRT-0215] Pin _09121_/X not covered by guide.
+[WARNING DRT-0215] Pin _09307_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05781_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _07253_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10542_/D not covered by guide.
+[WARNING DRT-0215] Pin _07809_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _08858_/A not covered by guide.
+[WARNING DRT-0215] Pin _06014_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09711_/D not covered by guide.
+[WARNING DRT-0215] Pin _05383_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07253_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10542_/D not covered by guide.
+[WARNING DRT-0215] Pin _07253_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10542_/D not covered by guide.
+[WARNING DRT-0215] Pin _06352_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07649_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09833_/Q not covered by guide.
+[WARNING DRT-0215] Pin _06014_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09711_/D not covered by guide.
+[WARNING DRT-0215] Pin _06014_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09711_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[25]
+[ERROR DRT-0218] Guide is not connected to design for net _00824_
+[WARNING DRT-0215] Pin _09310_/B not covered by guide.
+[WARNING DRT-0215] Pin _09307_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/B not covered by guide.
+[WARNING DRT-0215] Pin _09307_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01648_
+[WARNING DRT-0215] Pin _07650_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06507_/B not covered by guide.
+[WARNING DRT-0215] Pin _09308_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/C not covered by guide.
+[WARNING DRT-0215] Pin _09308_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/C not covered by guide.
+[WARNING DRT-0215] Pin _07649_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07650_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09308_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/C not covered by guide.
+[WARNING DRT-0215] Pin _07649_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07650_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04119_
+[WARNING DRT-0215] Pin _06352_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06507_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01649_
+[WARNING DRT-0215] Pin _06352_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06507_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03296_
+[WARNING DRT-0215] Pin hold327/A not covered by guide.
+[WARNING DRT-0215] Pin _07651_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07652_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06355_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06356_/B not covered by guide.
+[WARNING DRT-0215] Pin _06360_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07651_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06489_/B not covered by guide.
+[WARNING DRT-0215] Pin _07652_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06508_/A not covered by guide.
+[WARNING DRT-0215] Pin _09121_/X not covered by guide.
+[WARNING DRT-0215] Pin hold327/A not covered by guide.
+[WARNING DRT-0215] Pin _07651_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06355_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07652_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04120_
+[WARNING DRT-0215] Pin _06008_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09121_/X not covered by guide.
+[WARNING DRT-0215] Pin _09712_/D not covered by guide.
+[WARNING DRT-0215] Pin hold327/A not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00000_
+[WARNING DRT-0215] Pin _06008_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09712_/D not covered by guide.
+[WARNING DRT-0215] Pin _07251_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10543_/D not covered by guide.
+[WARNING DRT-0215] Pin _09116_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09719_/D not covered by guide.
+[WARNING DRT-0215] Pin _07251_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10543_/D not covered by guide.
+[WARNING DRT-0215] Pin _09116_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09719_/D not covered by guide.
+[WARNING DRT-0215] Pin _07251_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09116_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10543_/D not covered by guide.
+[WARNING DRT-0215] Pin _09719_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00001_
+[WARNING DRT-0215] Pin _06356_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00825_
+[WARNING DRT-0215] Pin _06360_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06489_/B not covered by guide.
+[WARNING DRT-0215] Pin _06508_/A not covered by guide.
+[WARNING DRT-0215] Pin _09114_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09720_/D not covered by guide.
+[WARNING DRT-0215] Pin _05385_/C not covered by guide.
+[WARNING DRT-0215] Pin _06008_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06355_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06356_/B not covered by guide.
+[WARNING DRT-0215] Pin _06360_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09114_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05383_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05385_/C not covered by guide.
+[WARNING DRT-0215] Pin _07654_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06489_/B not covered by guide.
+[WARNING DRT-0215] Pin _07655_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09720_/D not covered by guide.
+[WARNING DRT-0215] Pin _05781_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06508_/A not covered by guide.
+[WARNING DRT-0215] Pin _07809_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _08858_/A not covered by guide.
+[WARNING DRT-0215] Pin _07654_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09114_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05383_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09720_/D not covered by guide.
+[WARNING DRT-0215] Pin _05385_/C not covered by guide.
+[WARNING DRT-0215] Pin _09833_/Q not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02472_
+[WARNING DRT-0215] Pin _09712_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00002_
+[ERROR DRT-0218] Guide is not connected to design for net _03297_
+[WARNING DRT-0215] Pin _05384_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05781_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _09112_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09721_/D not covered by guide.
+[WARNING DRT-0215] Pin _07809_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _05385_/D not covered by guide.
+[WARNING DRT-0215] Pin _08858_/A not covered by guide.
+[WARNING DRT-0215] Pin _09833_/Q not covered by guide.
+[WARNING DRT-0215] Pin _09112_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09721_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[26]
+[WARNING DRT-0215] Pin _05384_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09112_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09721_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][18]
+[ERROR DRT-0218] Guide is not connected to design for net _00003_
+[WARNING DRT-0215] Pin _05385_/D not covered by guide.
+[WARNING DRT-0215] Pin _07655_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _05384_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05385_/D not covered by guide.
+[WARNING DRT-0215] Pin _07654_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07655_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02473_
+[ERROR DRT-0218] Guide is not connected to design for net _04121_
+[WARNING DRT-0215] Pin _06000_/X not covered by guide.
+[WARNING DRT-0215] Pin _09713_/D not covered by guide.
+[WARNING DRT-0215] Pin _05385_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/A not covered by guide.
+[WARNING DRT-0215] Pin _05385_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/A not covered by guide.
+[WARNING DRT-0215] Pin _09110_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06000_/X not covered by guide.
+[WARNING DRT-0215] Pin _09722_/D not covered by guide.
+[WARNING DRT-0215] Pin _05385_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/A not covered by guide.
+[WARNING DRT-0215] Pin _05406_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _07656_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07609_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _07657_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09713_/D not covered by guide.
+[WARNING DRT-0215] Pin _07249_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06000_/X not covered by guide.
+[WARNING DRT-0215] Pin _09713_/D not covered by guide.
+[WARNING DRT-0215] Pin _10544_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02474_
+[WARNING DRT-0215] Pin _06356_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07249_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10544_/D not covered by guide.
+[WARNING DRT-0215] Pin _06495_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _07249_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07656_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06356_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09110_/Y not covered by guide.
+[WARNING DRT-0215] Pin _08856_/A not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[27]
+[WARNING DRT-0215] Pin _09722_/D not covered by guide.
+[WARNING DRT-0215] Pin _05386_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09110_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09834_/Q not covered by guide.
+[WARNING DRT-0215] Pin _10544_/D not covered by guide.
+[WARNING DRT-0215] Pin _05390_/B not covered by guide.
+[WARNING DRT-0215] Pin _09722_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00826_
+[WARNING DRT-0215] Pin _05386_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/B not covered by guide.
+[WARNING DRT-0215] Pin _05994_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06495_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _09714_/D not covered by guide.
+[WARNING DRT-0215] Pin _07657_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06356_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05994_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00004_
+[WARNING DRT-0215] Pin _09714_/D not covered by guide.
+[WARNING DRT-0215] Pin _07656_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07247_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05406_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _05386_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/B not covered by guide.
+[WARNING DRT-0215] Pin _09107_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09723_/D not covered by guide.
+[WARNING DRT-0215] Pin _09107_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09723_/D not covered by guide.
+[WARNING DRT-0215] Pin _05994_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09107_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09723_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00005_
+[WARNING DRT-0215] Pin _09714_/D not covered by guide.
+[WARNING DRT-0215] Pin _06495_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _10545_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02475_
+[WARNING DRT-0215] Pin _07609_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _07657_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _08856_/A not covered by guide.
+[WARNING DRT-0215] Pin _09834_/Q not covered by guide.
+[WARNING DRT-0215] Pin _05388_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/C not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04122_
+[WARNING DRT-0215] Pin _09105_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05406_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _07609_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _09724_/D not covered by guide.
+[WARNING DRT-0215] Pin _07247_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07658_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10545_/D not covered by guide.
+[WARNING DRT-0215] Pin _09105_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07247_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10545_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00827_
+[WARNING DRT-0215] Pin _09724_/D not covered by guide.
+[WARNING DRT-0215] Pin _05388_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/C not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03298_
+[WARNING DRT-0215] Pin _07245_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10546_/D not covered by guide.
+[WARNING DRT-0215] Pin _07245_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09105_/Y not covered by guide.
+[WARNING DRT-0215] Pin _08856_/A not covered by guide.
+[WARNING DRT-0215] Pin _09724_/D not covered by guide.
+[WARNING DRT-0215] Pin _05388_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/C not covered by guide.
+[WARNING DRT-0215] Pin _07659_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09834_/Q not covered by guide.
+[WARNING DRT-0215] Pin _06357_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07658_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[28]
+[ERROR DRT-0218] Guide is not connected to design for net _02476_
+[ERROR DRT-0218] Guide is not connected to design for net _00006_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][19]
+[WARNING DRT-0215] Pin _05978_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05389_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09715_/D not covered by guide.
+[WARNING DRT-0215] Pin _05708_/A not covered by guide.
+[WARNING DRT-0215] Pin _05390_/D not covered by guide.
+[WARNING DRT-0215] Pin _05978_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09103_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05389_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07659_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06358_/B not covered by guide.
+[WARNING DRT-0215] Pin _05390_/D not covered by guide.
+[WARNING DRT-0215] Pin _09715_/D not covered by guide.
+[WARNING DRT-0215] Pin _08894_/A not covered by guide.
+[WARNING DRT-0215] Pin _07658_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07659_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04123_
+[WARNING DRT-0215] Pin _09448_/A not covered by guide.
+[WARNING DRT-0215] Pin _09816_/Q not covered by guide.
+[WARNING DRT-0215] Pin _10546_/D not covered by guide.
+[WARNING DRT-0215] Pin _07660_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07661_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _05978_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09715_/D not covered by guide.
+[WARNING DRT-0215] Pin _07660_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07661_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09725_/D not covered by guide.
+[WARNING DRT-0215] Pin _06489_/C not covered by guide.
+[WARNING DRT-0215] Pin _07660_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07661_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06357_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04124_
+[WARNING DRT-0215] Pin _06358_/B not covered by guide.
+[WARNING DRT-0215] Pin _06489_/C not covered by guide.
+[WARNING DRT-0215] Pin _09103_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06357_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06358_/B not covered by guide.
+[WARNING DRT-0215] Pin _09725_/D not covered by guide.
+[WARNING DRT-0215] Pin _06489_/C not covered by guide.
+[WARNING DRT-0215] Pin _07245_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09103_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03299_
+[WARNING DRT-0215] Pin _05389_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02477_
+[WARNING DRT-0215] Pin _07662_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05390_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/B not covered by guide.
+[WARNING DRT-0215] Pin _05390_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/B not covered by guide.
+[WARNING DRT-0215] Pin _07663_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[29]
+[WARNING DRT-0215] Pin _09725_/D not covered by guide.
+[WARNING DRT-0215] Pin _07662_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07663_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00007_
+[WARNING DRT-0215] Pin _07662_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06205_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07663_/B1 not covered by guide.
+[WARNING DRT-0215] Pin hold335/A not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04125_
+[WARNING DRT-0215] Pin _09101_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06205_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09726_/D not covered by guide.
+[WARNING DRT-0215] Pin _06358_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06359_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06495_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07665_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07666_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06358_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10546_/D not covered by guide.
+[WARNING DRT-0215] Pin _06359_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06495_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06358_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05708_/A not covered by guide.
+[WARNING DRT-0215] Pin _07665_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07666_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09101_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07665_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07666_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09726_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04126_
+[WARNING DRT-0215] Pin _09101_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06359_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _05390_/Y not covered by guide.
+[WARNING DRT-0215] Pin hold335/A not covered by guide.
+[WARNING DRT-0215] Pin _05395_/B not covered by guide.
+[WARNING DRT-0215] Pin _09726_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02478_
+[ERROR DRT-0218] Guide is not connected to design for net _00828_
+[WARNING DRT-0215] Pin _05391_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00008_
+[WARNING DRT-0215] Pin _09099_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09727_/D not covered by guide.
+[WARNING DRT-0215] Pin _09099_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09727_/D not covered by guide.
+[WARNING DRT-0215] Pin _09099_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09727_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00009_
+[WARNING DRT-0215] Pin _09096_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09728_/D not covered by guide.
+[WARNING DRT-0215] Pin _09096_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09728_/D not covered by guide.
+[WARNING DRT-0215] Pin _07241_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10547_/D not covered by guide.
+[WARNING DRT-0215] Pin _07241_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10547_/D not covered by guide.
+[WARNING DRT-0215] Pin _07667_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07668_/B not covered by guide.
+[WARNING DRT-0215] Pin _08894_/A not covered by guide.
+[WARNING DRT-0215] Pin _05391_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09448_/A not covered by guide.
+[WARNING DRT-0215] Pin _09816_/Q not covered by guide.
+[WARNING DRT-0215] Pin _05394_/B not covered by guide.
+[WARNING DRT-0215] Pin _06205_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05391_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05708_/A not covered by guide.
+[WARNING DRT-0215] Pin _08894_/A not covered by guide.
+[WARNING DRT-0215] Pin hold335/A not covered by guide.
+[WARNING DRT-0215] Pin _09448_/A not covered by guide.
+[WARNING DRT-0215] Pin _09816_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07241_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10547_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[2]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][1]
+[ERROR DRT-0218] Guide is not connected to design for net _00829_
+[WARNING DRT-0215] Pin _07239_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07669_/B not covered by guide.
+[WARNING DRT-0215] Pin _10548_/D not covered by guide.
+[WARNING DRT-0215] Pin _06495_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07239_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10548_/D not covered by guide.
+[WARNING DRT-0215] Pin _05855_/C1 not covered by guide.
+[WARNING DRT-0215] Pin _08318_/B not covered by guide.
+[WARNING DRT-0215] Pin _09096_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/B not covered by guide.
+[WARNING DRT-0215] Pin _09728_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00010_
+[ERROR DRT-0218] Guide is not connected to design for net _02479_
+[WARNING DRT-0215] Pin _05392_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/C not covered by guide.
+[WARNING DRT-0215] Pin _05392_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/C not covered by guide.
+[WARNING DRT-0215] Pin _07165_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _08854_/A not covered by guide.
+[WARNING DRT-0215] Pin _08360_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _05392_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09835_/Q not covered by guide.
+[WARNING DRT-0215] Pin _08361_/A3 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03300_
+[WARNING DRT-0215] Pin _05971_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07667_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07668_/B not covered by guide.
+[WARNING DRT-0215] Pin _07669_/B not covered by guide.
+[WARNING DRT-0215] Pin _08318_/B not covered by guide.
+[WARNING DRT-0215] Pin _09094_/Y not covered by guide.
+[WARNING DRT-0215] Pin _08360_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _08361_/A3 not covered by guide.
+[WARNING DRT-0215] Pin _06359_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07667_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07668_/B not covered by guide.
+[WARNING DRT-0215] Pin _07669_/B not covered by guide.
+[WARNING DRT-0215] Pin _06360_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09716_/D not covered by guide.
+[WARNING DRT-0215] Pin _08318_/B not covered by guide.
+[WARNING DRT-0215] Pin _08360_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _08361_/A3 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04127_
+[WARNING DRT-0215] Pin _05855_/C1 not covered by guide.
+[WARNING DRT-0215] Pin _07239_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07165_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _10548_/D not covered by guide.
+[WARNING DRT-0215] Pin _08854_/A not covered by guide.
+[WARNING DRT-0215] Pin _05971_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09835_/Q not covered by guide.
+[WARNING DRT-0215] Pin _09716_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00830_
+[WARNING DRT-0215] Pin _05971_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09729_/D not covered by guide.
+[WARNING DRT-0215] Pin _05855_/C1 not covered by guide.
+[WARNING DRT-0215] Pin _09716_/D not covered by guide.
+[WARNING DRT-0215] Pin _07165_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _08854_/A not covered by guide.
+[WARNING DRT-0215] Pin _09835_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07668_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/C not covered by guide.
+[WARNING DRT-0215] Pin _09094_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09729_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[30]
+[WARNING DRT-0215] Pin _07721_/B not covered by guide.
+[WARNING DRT-0215] Pin _07722_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02480_
+[WARNING DRT-0215] Pin _07237_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07723_/B not covered by guide.
+[WARNING DRT-0215] Pin _07724_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07729_/B not covered by guide.
+[WARNING DRT-0215] Pin _09094_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09729_/D not covered by guide.
+[WARNING DRT-0215] Pin _10549_/D not covered by guide.
+[WARNING DRT-0215] Pin _05393_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/D not covered by guide.
+[WARNING DRT-0215] Pin _07730_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _05963_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07732_/B not covered by guide.
+[WARNING DRT-0215] Pin _07237_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09717_/D not covered by guide.
+[WARNING DRT-0215] Pin _10549_/D not covered by guide.
+[WARNING DRT-0215] Pin _07733_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07734_/B not covered by guide.
+[WARNING DRT-0215] Pin _05963_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09717_/D not covered by guide.
+[WARNING DRT-0215] Pin _07735_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][20]
+[WARNING DRT-0215] Pin _05963_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09717_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[31]
+[WARNING DRT-0215] Pin _07237_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05393_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06359_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06199_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05394_/D not covered by guide.
+[WARNING DRT-0215] Pin _09689_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00011_
+[WARNING DRT-0215] Pin _10549_/D not covered by guide.
+[WARNING DRT-0215] Pin _06199_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05393_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00831_
+[WARNING DRT-0215] Pin _06360_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _05394_/D not covered by guide.
+[WARNING DRT-0215] Pin _09689_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02481_
+[WARNING DRT-0215] Pin _07235_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06359_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09092_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09730_/D not covered by guide.
+[WARNING DRT-0215] Pin _05394_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/C not covered by guide.
+[WARNING DRT-0215] Pin _10550_/D not covered by guide.
+[WARNING DRT-0215] Pin fanout402/A not covered by guide.
+[WARNING DRT-0215] Pin _06360_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _07235_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10550_/D not covered by guide.
+[WARNING DRT-0215] Pin _09092_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03301_
+[WARNING DRT-0215] Pin _09730_/D not covered by guide.
+[WARNING DRT-0215] Pin _07235_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10550_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00832_
+[WARNING DRT-0215] Pin _09092_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09730_/D not covered by guide.
+[WARNING DRT-0215] Pin _06199_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00012_
+[WARNING DRT-0215] Pin _07230_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09689_/D not covered by guide.
+[WARNING DRT-0215] Pin _09090_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06360_/X not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[3]
+[WARNING DRT-0215] Pin _09731_/D not covered by guide.
+[WARNING DRT-0215] Pin _09090_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09731_/D not covered by guide.
+[WARNING DRT-0215] Pin _05337_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _10551_/D not covered by guide.
+[WARNING DRT-0215] Pin _05394_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06193_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09690_/D not covered by guide.
+[WARNING DRT-0215] Pin _07309_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06361_/B not covered by guide.
+[WARNING DRT-0215] Pin _06193_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09690_/D not covered by guide.
+[WARNING DRT-0215] Pin _06471_/B not covered by guide.
+[WARNING DRT-0215] Pin _06193_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05395_/C not covered by guide.
+[WARNING DRT-0215] Pin _07230_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07668_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07721_/B not covered by guide.
+[WARNING DRT-0215] Pin _07722_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09690_/D not covered by guide.
+[WARNING DRT-0215] Pin _06360_/X not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[4]
+[WARNING DRT-0215] Pin _06361_/B not covered by guide.
+[WARNING DRT-0215] Pin _09090_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06183_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09691_/D not covered by guide.
+[WARNING DRT-0215] Pin _08851_/A not covered by guide.
+[WARNING DRT-0215] Pin _09731_/D not covered by guide.
+[WARNING DRT-0215] Pin _09836_/Q not covered by guide.
+[WARNING DRT-0215] Pin _05337_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _06471_/B not covered by guide.
+[WARNING DRT-0215] Pin _07309_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06183_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09691_/D not covered by guide.
+[WARNING DRT-0215] Pin _10551_/D not covered by guide.
+[WARNING DRT-0215] Pin _05394_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06183_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00013_
+[WARNING DRT-0215] Pin _07230_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10551_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00833_
+[WARNING DRT-0215] Pin _07228_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10552_/D not covered by guide.
+[WARNING DRT-0215] Pin _07228_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10552_/D not covered by guide.
+[WARNING DRT-0215] Pin _07228_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10552_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00834_
+[WARNING DRT-0215] Pin _07226_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10553_/D not covered by guide.
+[WARNING DRT-0215] Pin _07226_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10553_/D not covered by guide.
+[WARNING DRT-0215] Pin _07226_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10553_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00835_
+[WARNING DRT-0215] Pin _07224_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10554_/D not covered by guide.
+[WARNING DRT-0215] Pin _07224_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10554_/D not covered by guide.
+[WARNING DRT-0215] Pin _07224_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10554_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00836_
+[WARNING DRT-0215] Pin _06360_/X not covered by guide.
+[WARNING DRT-0215] Pin _06361_/B not covered by guide.
+[WARNING DRT-0215] Pin _06471_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03302_
+[WARNING DRT-0215] Pin _09309_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/D not covered by guide.
+[WARNING DRT-0215] Pin _09309_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/D not covered by guide.
+[WARNING DRT-0215] Pin _09691_/D not covered by guide.
+[WARNING DRT-0215] Pin _05395_/C not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02482_
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[5]
+[WARNING DRT-0215] Pin _05395_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05396_/B not covered by guide.
+[WARNING DRT-0215] Pin _05395_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05396_/B not covered by guide.
+[WARNING DRT-0215] Pin _06177_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09692_/D not covered by guide.
+[WARNING DRT-0215] Pin _06177_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09692_/D not covered by guide.
+[WARNING DRT-0215] Pin _05395_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05396_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02483_
+[WARNING DRT-0215] Pin _05396_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05397_/B not covered by guide.
+[WARNING DRT-0215] Pin _09088_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07723_/B not covered by guide.
+[WARNING DRT-0215] Pin _05396_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09732_/D not covered by guide.
+[WARNING DRT-0215] Pin _05397_/B not covered by guide.
+[WARNING DRT-0215] Pin _09309_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09088_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07724_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07729_/B not covered by guide.
+[WARNING DRT-0215] Pin _07730_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07732_/B not covered by guide.
+[WARNING DRT-0215] Pin _05396_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07733_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09732_/D not covered by guide.
+[WARNING DRT-0215] Pin _07734_/B not covered by guide.
+[WARNING DRT-0215] Pin _09310_/D not covered by guide.
+[WARNING DRT-0215] Pin _09088_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09732_/D not covered by guide.
+[WARNING DRT-0215] Pin _07222_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07735_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _08851_/A not covered by guide.
+[WARNING DRT-0215] Pin _09836_/Q not covered by guide.
+[WARNING DRT-0215] Pin fanout402/A not covered by guide.
+[WARNING DRT-0215] Pin _06361_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05337_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _07309_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _10555_/D not covered by guide.
+[WARNING DRT-0215] Pin _05397_/B not covered by guide.
+[WARNING DRT-0215] Pin _07222_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10555_/D not covered by guide.
+[WARNING DRT-0215] Pin _06177_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07222_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07668_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06362_/B not covered by guide.
+[WARNING DRT-0215] Pin _10555_/D not covered by guide.
+[WARNING DRT-0215] Pin _06456_/B not covered by guide.
+[WARNING DRT-0215] Pin _06472_/A not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00837_
+[WARNING DRT-0215] Pin _07721_/B not covered by guide.
+[WARNING DRT-0215] Pin _07722_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07723_/B not covered by guide.
+[WARNING DRT-0215] Pin _07724_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07729_/B not covered by guide.
+[WARNING DRT-0215] Pin _06361_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06362_/B not covered by guide.
+[WARNING DRT-0215] Pin _06456_/B not covered by guide.
+[WARNING DRT-0215] Pin _07219_/Y not covered by guide.
+[WARNING DRT-0215] Pin _08851_/A not covered by guide.
+[WARNING DRT-0215] Pin _07730_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09836_/Q not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01650_
+[ERROR DRT-0218] Guide is not connected to design for net _02484_
+[WARNING DRT-0215] Pin _09692_/D not covered by guide.
+[WARNING DRT-0215] Pin _05397_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09310_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07732_/B not covered by guide.
+[WARNING DRT-0215] Pin _07733_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07734_/B not covered by guide.
+[WARNING DRT-0215] Pin _09316_/B not covered by guide.
+[WARNING DRT-0215] Pin _07735_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[6]
+[WARNING DRT-0215] Pin fanout402/A not covered by guide.
+[WARNING DRT-0215] Pin _05399_/A not covered by guide.
+[WARNING DRT-0215] Pin _05401_/B not covered by guide.
+[WARNING DRT-0215] Pin _06357_/B not covered by guide.
+[WARNING DRT-0215] Pin _09310_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06488_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09316_/B not covered by guide.
+[WARNING DRT-0215] Pin _06170_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09693_/D not covered by guide.
+[WARNING DRT-0215] Pin _09310_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09316_/B not covered by guide.
+[WARNING DRT-0215] Pin _05397_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00014_
+[WARNING DRT-0215] Pin _05399_/A not covered by guide.
+[WARNING DRT-0215] Pin _05401_/B not covered by guide.
+[WARNING DRT-0215] Pin _06170_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09693_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04128_
+[WARNING DRT-0215] Pin _06170_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09693_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[7]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][21]
+[WARNING DRT-0215] Pin _09085_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09733_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01651_
+[WARNING DRT-0215] Pin _09085_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09312_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10556_/D not covered by guide.
+[WARNING DRT-0215] Pin _09315_/B not covered by guide.
+[WARNING DRT-0215] Pin _06159_/X not covered by guide.
+[WARNING DRT-0215] Pin _09312_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06472_/A not covered by guide.
+[WARNING DRT-0215] Pin _07219_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10556_/D not covered by guide.
+[WARNING DRT-0215] Pin _09694_/D not covered by guide.
+[WARNING DRT-0215] Pin _09315_/B not covered by guide.
+[WARNING DRT-0215] Pin _06361_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06159_/X not covered by guide.
+[WARNING DRT-0215] Pin _09694_/D not covered by guide.
+[WARNING DRT-0215] Pin _09312_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/B not covered by guide.
+[WARNING DRT-0215] Pin _06159_/X not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01652_
+[WARNING DRT-0215] Pin _09694_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[8]
+[WARNING DRT-0215] Pin _09733_/D not covered by guide.
+[WARNING DRT-0215] Pin _06149_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06362_/B not covered by guide.
+[WARNING DRT-0215] Pin _09695_/D not covered by guide.
+[WARNING DRT-0215] Pin _06456_/B not covered by guide.
+[WARNING DRT-0215] Pin _06149_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06472_/A not covered by guide.
+[WARNING DRT-0215] Pin _09085_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03303_
+[WARNING DRT-0215] Pin _09695_/D not covered by guide.
+[WARNING DRT-0215] Pin _09733_/D not covered by guide.
+[WARNING DRT-0215] Pin _06149_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06357_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00015_
+[WARNING DRT-0215] Pin _06362_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06368_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _09695_/D not covered by guide.
+[WARNING DRT-0215] Pin _06440_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net next_pc[9]
+[WARNING DRT-0215] Pin _09083_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09734_/D not covered by guide.
+[WARNING DRT-0215] Pin _06457_/D1 not covered by guide.
+[WARNING DRT-0215] Pin _09083_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09734_/D not covered by guide.
+[WARNING DRT-0215] Pin _09083_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09734_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00016_
+[WARNING DRT-0215] Pin _07669_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07676_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06488_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09313_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06362_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/C not covered by guide.
+[WARNING DRT-0215] Pin _06368_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06440_/B not covered by guide.
+[WARNING DRT-0215] Pin _09313_/Y not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[10] not covered by guide.
+[WARNING DRT-0215] Pin _04923_/B not covered by guide.
+[WARNING DRT-0215] Pin _09081_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05397_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07219_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05816_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _05399_/A not covered by guide.
+[WARNING DRT-0215] Pin _10556_/D not covered by guide.
+[WARNING DRT-0215] Pin _05401_/B not covered by guide.
+[WARNING DRT-0215] Pin _06457_/D1 not covered by guide.
+[WARNING DRT-0215] Pin _09315_/C not covered by guide.
+[WARNING DRT-0215] Pin _06357_/B not covered by guide.
+[WARNING DRT-0215] Pin _06362_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06368_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06440_/B not covered by guide.
+[WARNING DRT-0215] Pin _06457_/D1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00838_
+[WARNING DRT-0215] Pin _09313_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/C not covered by guide.
+[WARNING DRT-0215] Pin _07217_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10557_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01653_
+[WARNING DRT-0215] Pin _07217_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10557_/D not covered by guide.
+[WARNING DRT-0215] Pin _07217_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10557_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00839_
+[WARNING DRT-0215] Pin _09314_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/D not covered by guide.
+[WARNING DRT-0215] Pin _07215_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10558_/D not covered by guide.
+[WARNING DRT-0215] Pin _09314_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07215_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10558_/D not covered by guide.
+[WARNING DRT-0215] Pin _07215_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/D not covered by guide.
+[WARNING DRT-0215] Pin _10558_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00840_
+[WARNING DRT-0215] Pin _07213_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10559_/D not covered by guide.
+[WARNING DRT-0215] Pin _07213_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09314_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/D not covered by guide.
+[WARNING DRT-0215] Pin _07699_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09735_/D not covered by guide.
+[WARNING DRT-0215] Pin _07707_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01654_
+[WARNING DRT-0215] Pin _09081_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09735_/D not covered by guide.
+[WARNING DRT-0215] Pin _06488_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03304_
+[WARNING DRT-0215] Pin _07669_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07676_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09315_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09081_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07699_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07707_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09735_/D not covered by guide.
+[WARNING DRT-0215] Pin _06363_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06864_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06367_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _04924_/B not covered by guide.
+[WARNING DRT-0215] Pin _07669_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09316_/C not covered by guide.
+[WARNING DRT-0215] Pin _06363_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06367_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _08849_/A not covered by guide.
+[WARNING DRT-0215] Pin _09837_/Q not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00017_
+[WARNING DRT-0215] Pin _06363_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06367_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09315_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09316_/C not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03305_
+[WARNING DRT-0215] Pin _09079_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09315_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05816_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06864_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _08849_/A not covered by guide.
+[WARNING DRT-0215] Pin _09837_/Q not covered by guide.
+[WARNING DRT-0215] Pin _06364_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06366_/A not covered by guide.
+[WARNING DRT-0215] Pin _06367_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07676_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _05816_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _07699_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07707_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06864_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _08849_/A not covered by guide.
+[WARNING DRT-0215] Pin _09837_/Q not covered by guide.
+[WARNING DRT-0215] Pin _06456_/C not covered by guide.
+[WARNING DRT-0215] Pin _04956_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04129_
+[WARNING DRT-0215] Pin _05893_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][22]
+[WARNING DRT-0215] Pin _06130_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06364_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09316_/C not covered by guide.
+[WARNING DRT-0215] Pin _06137_/A not covered by guide.
+[WARNING DRT-0215] Pin _05314_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06698_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _07670_/Y not covered by guide.
+[WARNING DRT-0215] Pin _08847_/A not covered by guide.
+[WARNING DRT-0215] Pin _09838_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07671_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06366_/A not covered by guide.
+[WARNING DRT-0215] Pin _06367_/A2 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02485_
+[WARNING DRT-0215] Pin _06456_/C not covered by guide.
+[WARNING DRT-0215] Pin _07670_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07671_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _05314_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06698_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _08847_/A not covered by guide.
+[WARNING DRT-0215] Pin _09838_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07670_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05314_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06698_/A1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01655_
+[WARNING DRT-0215] Pin _06364_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07671_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _10559_/D not covered by guide.
+[WARNING DRT-0215] Pin _09316_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09317_/B not covered by guide.
+[WARNING DRT-0215] Pin _07213_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10559_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00841_
+[WARNING DRT-0215] Pin _05400_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09696_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07211_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10560_/D not covered by guide.
+[WARNING DRT-0215] Pin _07211_/Y not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[10] not covered by guide.
+[WARNING DRT-0215] Pin _04923_/B not covered by guide.
+[WARNING DRT-0215] Pin _04924_/B not covered by guide.
+[WARNING DRT-0215] Pin _04956_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _05893_/B not covered by guide.
+[WARNING DRT-0215] Pin _06130_/A1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04130_
+[WARNING DRT-0215] Pin _08847_/A not covered by guide.
+[WARNING DRT-0215] Pin _06137_/A not covered by guide.
+[WARNING DRT-0215] Pin _07672_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10560_/D not covered by guide.
+[WARNING DRT-0215] Pin _09696_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07673_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _07672_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07211_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09316_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06366_/A not covered by guide.
+[WARNING DRT-0215] Pin _06367_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09317_/B not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[10] not covered by guide.
+[WARNING DRT-0215] Pin _06456_/C not covered by guide.
+[WARNING DRT-0215] Pin _10560_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03306_
+[WARNING DRT-0215] Pin _09316_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09838_/Q not covered by guide.
+[WARNING DRT-0215] Pin _05402_/A not covered by guide.
+[WARNING DRT-0215] Pin _06355_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06505_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06366_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00842_
+[WARNING DRT-0215] Pin _04923_/B not covered by guide.
+[WARNING DRT-0215] Pin _04924_/B not covered by guide.
+[WARNING DRT-0215] Pin _07208_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09736_/D not covered by guide.
+[WARNING DRT-0215] Pin _10561_/D not covered by guide.
+[WARNING DRT-0215] Pin _09317_/B not covered by guide.
+[WARNING DRT-0215] Pin _07208_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07673_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09079_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09736_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01656_
+[WARNING DRT-0215] Pin _09079_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10561_/D not covered by guide.
+[WARNING DRT-0215] Pin _07208_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09317_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10561_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00843_
+[WARNING DRT-0215] Pin _07206_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05400_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][23]
+[WARNING DRT-0215] Pin _05402_/A not covered by guide.
+[WARNING DRT-0215] Pin _06355_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06505_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06457_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07672_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09736_/D not covered by guide.
+[WARNING DRT-0215] Pin _07673_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04131_
+[ERROR DRT-0218] Guide is not connected to design for net _00018_
+[WARNING DRT-0215] Pin _10562_/D not covered by guide.
+[WARNING DRT-0215] Pin _05384_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _09077_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06365_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _07674_/Y not covered by guide.
+[WARNING DRT-0215] Pin _04956_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _05893_/B not covered by guide.
+[WARNING DRT-0215] Pin _06130_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06137_/A not covered by guide.
+[WARNING DRT-0215] Pin _09696_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07206_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10562_/D not covered by guide.
+[WARNING DRT-0215] Pin _07676_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _07206_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10562_/D not covered by guide.
+[WARNING DRT-0215] Pin _07674_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00844_
+[WARNING DRT-0215] Pin _07676_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _07674_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07676_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net pc[10]
+[WARNING DRT-0215] Pin _07204_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05400_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09318_/B not covered by guide.
+[WARNING DRT-0215] Pin _10563_/D not covered by guide.
+[WARNING DRT-0215] Pin _06366_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09317_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07204_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09318_/B not covered by guide.
+[WARNING DRT-0215] Pin _08845_/A not covered by guide.
+[WARNING DRT-0215] Pin _06457_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09839_/Q not covered by guide.
+[WARNING DRT-0215] Pin _10563_/D not covered by guide.
+[WARNING DRT-0215] Pin _05402_/A not covered by guide.
+[WARNING DRT-0215] Pin _06355_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _07204_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06366_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10563_/D not covered by guide.
+[WARNING DRT-0215] Pin _09317_/Y not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[11] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04132_
+[WARNING DRT-0215] Pin _06505_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _04922_/B not covered by guide.
+[WARNING DRT-0215] Pin _04959_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _05893_/A not covered by guide.
+[WARNING DRT-0215] Pin _05917_/B not covered by guide.
+[WARNING DRT-0215] Pin _07677_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05934_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06457_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _07678_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06130_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00845_
+[WARNING DRT-0215] Pin _07677_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03307_
+[WARNING DRT-0215] Pin _07678_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09697_/Q not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02486_
+[WARNING DRT-0215] Pin _07677_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07678_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _07202_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04133_
+[WARNING DRT-0215] Pin _10564_/D not covered by guide.
+[WARNING DRT-0215] Pin _06367_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05401_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06368_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06440_/C not covered by guide.
+[WARNING DRT-0215] Pin _05402_/B not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[11] not covered by guide.
+[WARNING DRT-0215] Pin _06367_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06368_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06440_/C not covered by guide.
+[WARNING DRT-0215] Pin _05384_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06277_/B not covered by guide.
+[WARNING DRT-0215] Pin _04922_/B not covered by guide.
+[WARNING DRT-0215] Pin _06355_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06367_/Y not covered by guide.
+[WARNING DRT-0215] Pin _04959_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06504_/A not covered by guide.
+[WARNING DRT-0215] Pin _05893_/A not covered by guide.
+[WARNING DRT-0215] Pin _05917_/B not covered by guide.
+[WARNING DRT-0215] Pin _05934_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06130_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09318_/B not covered by guide.
+[WARNING DRT-0215] Pin _09737_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01657_
+[WARNING DRT-0215] Pin _06365_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _09077_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09737_/D not covered by guide.
+[WARNING DRT-0215] Pin _08845_/A not covered by guide.
+[WARNING DRT-0215] Pin _09839_/Q not covered by guide.
+[WARNING DRT-0215] Pin _05401_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05402_/B not covered by guide.
+[WARNING DRT-0215] Pin _06277_/B not covered by guide.
+[WARNING DRT-0215] Pin _07679_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09697_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07202_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07680_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _05384_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06365_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _07679_/Y not covered by guide.
+[WARNING DRT-0215] Pin _08845_/A not covered by guide.
+[WARNING DRT-0215] Pin _09839_/Q not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][24]
+[WARNING DRT-0215] Pin _07680_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06355_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06504_/A not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[11] not covered by guide.
+[WARNING DRT-0215] Pin _05060_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _04922_/B not covered by guide.
+[WARNING DRT-0215] Pin _06098_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _04959_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06368_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _08843_/A not covered by guide.
+[WARNING DRT-0215] Pin _05401_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06314_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _05402_/B not covered by guide.
+[WARNING DRT-0215] Pin _06315_/A not covered by guide.
+[WARNING DRT-0215] Pin _09840_/Q not covered by guide.
+[WARNING DRT-0215] Pin _09318_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06440_/C not covered by guide.
+[WARNING DRT-0215] Pin _09077_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07679_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09737_/D not covered by guide.
+[WARNING DRT-0215] Pin _07680_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04134_
+[WARNING DRT-0215] Pin _05060_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _09319_/A not covered by guide.
+[WARNING DRT-0215] Pin _07681_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00019_
+[WARNING DRT-0215] Pin _07682_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _07681_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06098_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _07682_/B1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03308_
+[WARNING DRT-0215] Pin _06277_/B not covered by guide.
+[WARNING DRT-0215] Pin _06355_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _09074_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06504_/A not covered by guide.
+[WARNING DRT-0215] Pin _09738_/D not covered by guide.
+[WARNING DRT-0215] Pin _07681_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07682_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _06314_/A1 not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04135_
+[WARNING DRT-0215] Pin _06315_/A not covered by guide.
+[WARNING DRT-0215] Pin _08843_/A not covered by guide.
+[WARNING DRT-0215] Pin _09318_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02487_
+[WARNING DRT-0215] Pin _09319_/A not covered by guide.
+[WARNING DRT-0215] Pin _10564_/D not covered by guide.
+[WARNING DRT-0215] Pin _09840_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07202_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10564_/D not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00846_
+[WARNING DRT-0215] Pin _05402_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05866_/B not covered by guide.
+[WARNING DRT-0215] Pin _06275_/B not covered by guide.
+[WARNING DRT-0215] Pin _06314_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06506_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _07200_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06507_/A not covered by guide.
+[WARNING DRT-0215] Pin _10565_/D not covered by guide.
+[WARNING DRT-0215] Pin _06511_/A not covered by guide.
+[WARNING DRT-0215] Pin _07200_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10565_/D not covered by guide.
+[WARNING DRT-0215] Pin _09074_/Y not covered by guide.
+[WARNING DRT-0215] Pin _06315_/A not covered by guide.
+[WARNING DRT-0215] Pin _07200_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05402_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10565_/D not covered by guide.
+[WARNING DRT-0215] Pin _05866_/B not covered by guide.
+[WARNING DRT-0215] Pin _09738_/D not covered by guide.
+[WARNING DRT-0215] Pin _06275_/B not covered by guide.
+[WARNING DRT-0215] Pin _05060_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _06098_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _05893_/A not covered by guide.
+[WARNING DRT-0215] Pin _05917_/B not covered by guide.
+[WARNING DRT-0215] Pin _05934_/A2 not covered by guide.
+[WARNING DRT-0215] Pin _06130_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09697_/Q not covered by guide.
+[WARNING DRT-0215] Pin _07683_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09074_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09738_/D not covered by guide.
+[WARNING DRT-0215] Pin _07684_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _08843_/A not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00020_
+[ERROR DRT-0218] Guide is not connected to design for net _00847_
+[WARNING DRT-0215] Pin _06506_/A1 not covered by guide.
+[WARNING DRT-0215] Pin _06507_/A not covered by guide.
+[WARNING DRT-0215] Pin _06511_/A not covered by guide.
+[WARNING DRT-0215] Pin _09840_/Q not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net pc[11]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][25]
+[WARNING DRT-0215] Pin _07197_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10566_/D not covered by guide.
+[WARNING DRT-0215] Pin _07683_/Y not covered by guide.
+[WARNING DRT-0215] Pin _07197_/Y not covered by guide.
+[WARNING DRT-0215] Pin _05402_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10566_/D not covered by guide.
+[WARNING DRT-0215] Pin _07197_/Y not covered by guide.
+[WARNING DRT-0215] Pin _10566_/D not covered by guide.
+[WARNING DRT-0215] Pin _09072_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09739_/D not covered by guide.
+[WARNING DRT-0215] Pin _05352_/C2 not covered by guide.
+[WARNING DRT-0215] Pin _07684_/B1 not covered by guide.
+[WARNING DRT-0215] Pin _09072_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09739_/D not covered by guide.
+[WARNING DRT-0215] Pin _05886_/B2 not covered by guide.
+[WARNING DRT-0215] Pin _09318_/Y not covered by guide.
+[WARNING DRT-0215] Pin _09319_/A not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00848_
+[ERROR DRT-0218] Guide is not connected to design for net _01658_
+[WARNING DRT-0215] Pin _06368_/Y not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][26]
+[WARNING DRT-0215] message limit (1000) reached. This message will no longer print.
+[ERROR DRT-0218] Guide is not connected to design for net _04136_
+[ERROR DRT-0218] Guide is not connected to design for net _00849_
+[ERROR DRT-0218] Guide is not connected to design for net _03309_
+[ERROR DRT-0218] Guide is not connected to design for net _04137_
+[ERROR DRT-0218] Guide is not connected to design for net _00850_
+[ERROR DRT-0218] Guide is not connected to design for net _01659_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][27]
+[ERROR DRT-0218] Guide is not connected to design for net _03310_
+[ERROR DRT-0218] Guide is not connected to design for net _00851_
+[ERROR DRT-0218] Guide is not connected to design for net _04138_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][28]
+[ERROR DRT-0218] Guide is not connected to design for net _03311_
+[ERROR DRT-0218] Guide is not connected to design for net _00852_
+[ERROR DRT-0218] Guide is not connected to design for net _04139_
+[ERROR DRT-0218] Guide is not connected to design for net _01660_
+[ERROR DRT-0218] Guide is not connected to design for net _03312_
+[ERROR DRT-0218] Guide is not connected to design for net _00853_
+[ERROR DRT-0218] Guide is not connected to design for net _04140_
+[ERROR DRT-0218] Guide is not connected to design for net _00854_
+[ERROR DRT-0218] Guide is not connected to design for net _01661_
+[ERROR DRT-0218] Guide is not connected to design for net _04141_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][29]
+[ERROR DRT-0218] Guide is not connected to design for net _03313_
+[ERROR DRT-0218] Guide is not connected to design for net _00855_
+[ERROR DRT-0218] Guide is not connected to design for net _00856_
+[ERROR DRT-0218] Guide is not connected to design for net _01662_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][2]
+[WARNING DRT-0215] Pin _05866_/B not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00857_
+[ERROR DRT-0218] Guide is not connected to design for net _02488_
+[ERROR DRT-0218] Guide is not connected to design for net _01663_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][30]
+[ERROR DRT-0218] Guide is not connected to design for net _00858_
+[ERROR DRT-0218] Guide is not connected to design for net _02489_
+[ERROR DRT-0218] Guide is not connected to design for net _00859_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][31]
+[ERROR DRT-0218] Guide is not connected to design for net _01664_
+[ERROR DRT-0218] Guide is not connected to design for net _00860_
+[ERROR DRT-0218] Guide is not connected to design for net _02490_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][3]
+[ERROR DRT-0218] Guide is not connected to design for net _00861_
+[ERROR DRT-0218] Guide is not connected to design for net _00021_
+[ERROR DRT-0218] Guide is not connected to design for net _02491_
+[ERROR DRT-0218] Guide is not connected to design for net _00862_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][4]
+[ERROR DRT-0218] Guide is not connected to design for net _00022_
+[ERROR DRT-0218] Guide is not connected to design for net _02492_
+[ERROR DRT-0218] Guide is not connected to design for net _00863_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][5]
+[ERROR DRT-0218] Guide is not connected to design for net _00023_
+[ERROR DRT-0218] Guide is not connected to design for net _02493_
+[ERROR DRT-0218] Guide is not connected to design for net _00864_
+[ERROR DRT-0218] Guide is not connected to design for net _00024_
+[ERROR DRT-0218] Guide is not connected to design for net _02494_
+[ERROR DRT-0218] Guide is not connected to design for net _00865_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][6]
+[ERROR DRT-0218] Guide is not connected to design for net _02495_
+[ERROR DRT-0218] Guide is not connected to design for net _00866_
+[ERROR DRT-0218] Guide is not connected to design for net _01665_
+[ERROR DRT-0218] Guide is not connected to design for net _00025_
+[ERROR DRT-0218] Guide is not connected to design for net _02496_
+[ERROR DRT-0218] Guide is not connected to design for net _01666_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][7]
+[ERROR DRT-0218] Guide is not connected to design for net _00026_
+[ERROR DRT-0218] Guide is not connected to design for net _02497_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][8]
+[ERROR DRT-0218] Guide is not connected to design for net _00867_
+[WARNING DRT-0216] Pin PIN/instr_addr[12] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02498_
+[ERROR DRT-0218] Guide is not connected to design for net _00868_
+[ERROR DRT-0218] Guide is not connected to design for net _00027_
+[WARNING DRT-0216] Pin PIN/instr_addr[12] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02499_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[3\][9]
+[ERROR DRT-0218] Guide is not connected to design for net _00028_
+[WARNING DRT-0216] Pin PIN/instr_addr[12] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03314_
+[ERROR DRT-0218] Guide is not connected to design for net pc[12]
+[ERROR DRT-0218] Guide is not connected to design for net _00029_
+[ERROR DRT-0218] Guide is not connected to design for net _00030_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][0]
+[ERROR DRT-0218] Guide is not connected to design for net _00869_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][10]
+[ERROR DRT-0218] Guide is not connected to design for net _02500_
+[ERROR DRT-0218] Guide is not connected to design for net _01667_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][11]
+[ERROR DRT-0218] Guide is not connected to design for net _00031_
+[ERROR DRT-0218] Guide is not connected to design for net _02501_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][12]
+[ERROR DRT-0218] Guide is not connected to design for net _01668_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][13]
+[ERROR DRT-0218] Guide is not connected to design for net _03315_
+[ERROR DRT-0218] Guide is not connected to design for net _00032_
+[ERROR DRT-0218] Guide is not connected to design for net _02502_
+[ERROR DRT-0218] Guide is not connected to design for net _01669_
+[ERROR DRT-0218] Guide is not connected to design for net _00033_
+[ERROR DRT-0218] Guide is not connected to design for net _03316_
+[ERROR DRT-0218] Guide is not connected to design for net _02503_
+[ERROR DRT-0218] Guide is not connected to design for net _01670_
+[ERROR DRT-0218] Guide is not connected to design for net _00034_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][14]
+[ERROR DRT-0218] Guide is not connected to design for net _03317_
+[ERROR DRT-0218] Guide is not connected to design for net _02504_
+[ERROR DRT-0218] Guide is not connected to design for net _00035_
+[ERROR DRT-0218] Guide is not connected to design for net _01671_
+[ERROR DRT-0218] Guide is not connected to design for net _02505_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][15]
+[ERROR DRT-0218] Guide is not connected to design for net _00036_
+[ERROR DRT-0218] Guide is not connected to design for net _01672_
+[ERROR DRT-0218] Guide is not connected to design for net _00037_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][16]
+[ERROR DRT-0218] Guide is not connected to design for net _00870_
+[ERROR DRT-0218] Guide is not connected to design for net _01673_
+[ERROR DRT-0218] Guide is not connected to design for net _02506_
+[ERROR DRT-0218] Guide is not connected to design for net _00871_
+[ERROR DRT-0218] Guide is not connected to design for net _00872_
+[ERROR DRT-0218] Guide is not connected to design for net _01674_
+[ERROR DRT-0218] Guide is not connected to design for net _02507_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][17]
+[ERROR DRT-0218] Guide is not connected to design for net _00873_
+[ERROR DRT-0218] Guide is not connected to design for net _02508_
+[ERROR DRT-0218] Guide is not connected to design for net _01675_
+[ERROR DRT-0218] Guide is not connected to design for net _00874_
+[ERROR DRT-0218] Guide is not connected to design for net _02509_
+[WARNING DRT-0216] Pin PIN/instr_addr[13] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][18]
+[ERROR DRT-0218] Guide is not connected to design for net _00875_
+[ERROR DRT-0218] Guide is not connected to design for net _02510_
+[ERROR DRT-0218] Guide is not connected to design for net _00876_
+[ERROR DRT-0218] Guide is not connected to design for net _00877_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][19]
+[ERROR DRT-0218] Guide is not connected to design for net _00878_
+[WARNING DRT-0216] Pin PIN/instr_addr[13] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03318_
+[ERROR DRT-0218] Guide is not connected to design for net _02511_
+[ERROR DRT-0218] Guide is not connected to design for net _00038_
+[ERROR DRT-0218] Guide is not connected to design for net _01676_
+[ERROR DRT-0218] Guide is not connected to design for net _00879_
+[ERROR DRT-0218] Guide is not connected to design for net _00039_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][1]
+[ERROR DRT-0218] Guide is not connected to design for net _00040_
+[WARNING DRT-0216] Pin PIN/instr_addr[13] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00041_
+[ERROR DRT-0218] Guide is not connected to design for net _01677_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][20]
+[ERROR DRT-0218] Guide is not connected to design for net pc[13]
+[ERROR DRT-0218] Guide is not connected to design for net _01678_
+[ERROR DRT-0218] Guide is not connected to design for net _00042_
+[ERROR DRT-0218] Guide is not connected to design for net _00043_
+[ERROR DRT-0218] Guide is not connected to design for net _02512_
+[ERROR DRT-0218] Guide is not connected to design for net _01679_
+[WARNING DRT-0216] Pin PIN/instr_addr[14] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00044_
+[ERROR DRT-0218] Guide is not connected to design for net _02513_
+[ERROR DRT-0218] Guide is not connected to design for net _00045_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][21]
+[ERROR DRT-0218] Guide is not connected to design for net _02514_
+[WARNING DRT-0216] Pin PIN/instr_addr[14] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01680_
+[ERROR DRT-0218] Guide is not connected to design for net _02515_
+[ERROR DRT-0218] Guide is not connected to design for net _02516_
+[ERROR DRT-0218] Guide is not connected to design for net _00046_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][22]
+[ERROR DRT-0218] Guide is not connected to design for net _01681_
+[ERROR DRT-0218] Guide is not connected to design for net _02517_
+[WARNING DRT-0216] Pin PIN/instr_addr[14] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00047_
+[ERROR DRT-0218] Guide is not connected to design for net _01682_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][23]
+[ERROR DRT-0218] Guide is not connected to design for net pc[14]
+[ERROR DRT-0218] Guide is not connected to design for net _00048_
+[ERROR DRT-0218] Guide is not connected to design for net _00880_
+[ERROR DRT-0218] Guide is not connected to design for net _01683_
+[ERROR DRT-0218] Guide is not connected to design for net _00881_
+[ERROR DRT-0218] Guide is not connected to design for net _00049_
+[ERROR DRT-0218] Guide is not connected to design for net _01684_
+[ERROR DRT-0218] Guide is not connected to design for net _00882_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][24]
+[ERROR DRT-0218] Guide is not connected to design for net _03319_
+[ERROR DRT-0218] Guide is not connected to design for net _00050_
+[ERROR DRT-0218] Guide is not connected to design for net _02518_
+[ERROR DRT-0218] Guide is not connected to design for net _01685_
+[ERROR DRT-0218] Guide is not connected to design for net _00051_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][25]
+[ERROR DRT-0218] Guide is not connected to design for net _02519_
+[ERROR DRT-0218] Guide is not connected to design for net _03320_
+[ERROR DRT-0218] Guide is not connected to design for net _00883_
+[ERROR DRT-0218] Guide is not connected to design for net _00052_
+[ERROR DRT-0218] Guide is not connected to design for net _01686_
+[ERROR DRT-0218] Guide is not connected to design for net _02520_
+[ERROR DRT-0218] Guide is not connected to design for net _00053_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][26]
+[ERROR DRT-0218] Guide is not connected to design for net _00884_
+[ERROR DRT-0218] Guide is not connected to design for net _01687_
+[ERROR DRT-0218] Guide is not connected to design for net _00054_
+[ERROR DRT-0218] Guide is not connected to design for net _01688_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][27]
+[ERROR DRT-0218] Guide is not connected to design for net _00885_
+[ERROR DRT-0218] Guide is not connected to design for net _02521_
+[ERROR DRT-0218] Guide is not connected to design for net _01689_
+[ERROR DRT-0218] Guide is not connected to design for net _00886_
+[ERROR DRT-0218] Guide is not connected to design for net _01690_
+[ERROR DRT-0218] Guide is not connected to design for net _00055_
+[ERROR DRT-0218] Guide is not connected to design for net _02522_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][28]
+[ERROR DRT-0218] Guide is not connected to design for net _01691_
+[ERROR DRT-0218] Guide is not connected to design for net _00887_
+[ERROR DRT-0218] Guide is not connected to design for net _00056_
+[ERROR DRT-0218] Guide is not connected to design for net _02523_
+[ERROR DRT-0218] Guide is not connected to design for net _01692_
+[ERROR DRT-0218] Guide is not connected to design for net _00057_
+[ERROR DRT-0218] Guide is not connected to design for net _00888_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][29]
+[ERROR DRT-0218] Guide is not connected to design for net _01693_
+[ERROR DRT-0218] Guide is not connected to design for net _00058_
+[ERROR DRT-0218] Guide is not connected to design for net _00889_
+[ERROR DRT-0218] Guide is not connected to design for net _02524_
+[ERROR DRT-0218] Guide is not connected to design for net _00059_
+[ERROR DRT-0218] Guide is not connected to design for net _00890_
+[ERROR DRT-0218] Guide is not connected to design for net _01694_
+[ERROR DRT-0218] Guide is not connected to design for net _00060_
+[ERROR DRT-0218] Guide is not connected to design for net _02525_
+[ERROR DRT-0218] Guide is not connected to design for net _00891_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][2]
+[ERROR DRT-0218] Guide is not connected to design for net _00061_
+[ERROR DRT-0218] Guide is not connected to design for net _01695_
+[ERROR DRT-0218] Guide is not connected to design for net _02526_
+[ERROR DRT-0218] Guide is not connected to design for net _00892_
+[ERROR DRT-0218] Guide is not connected to design for net _00062_
+[ERROR DRT-0218] Guide is not connected to design for net _02527_
+[ERROR DRT-0218] Guide is not connected to design for net _01696_
+[ERROR DRT-0218] Guide is not connected to design for net _00893_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][30]
+[ERROR DRT-0218] Guide is not connected to design for net _00063_
+[ERROR DRT-0218] Guide is not connected to design for net _02528_
+[ERROR DRT-0218] Guide is not connected to design for net _00064_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][31]
+[ERROR DRT-0218] Guide is not connected to design for net _02529_
+[ERROR DRT-0218] Guide is not connected to design for net _00065_
+[ERROR DRT-0218] Guide is not connected to design for net _02530_
+[ERROR DRT-0218] Guide is not connected to design for net _01697_
+[ERROR DRT-0218] Guide is not connected to design for net _00066_
+[ERROR DRT-0218] Guide is not connected to design for net _02531_
+[ERROR DRT-0218] Guide is not connected to design for net _00067_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][3]
+[ERROR DRT-0218] Guide is not connected to design for net _01698_
+[ERROR DRT-0218] Guide is not connected to design for net _02532_
+[ERROR DRT-0218] Guide is not connected to design for net _00068_
+[ERROR DRT-0218] Guide is not connected to design for net _01699_
+[ERROR DRT-0218] Guide is not connected to design for net _02533_
+[ERROR DRT-0218] Guide is not connected to design for net _00069_
+[ERROR DRT-0218] Guide is not connected to design for net _03321_
+[ERROR DRT-0218] Guide is not connected to design for net _01700_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][4]
+[ERROR DRT-0218] Guide is not connected to design for net _02534_
+[ERROR DRT-0218] Guide is not connected to design for net _00894_
+[ERROR DRT-0218] Guide is not connected to design for net _00070_
+[ERROR DRT-0218] Guide is not connected to design for net _02535_
+[ERROR DRT-0218] Guide is not connected to design for net _01701_
+[ERROR DRT-0218] Guide is not connected to design for net _03322_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][5]
+[ERROR DRT-0218] Guide is not connected to design for net _00071_
+[ERROR DRT-0218] Guide is not connected to design for net _02536_
+[ERROR DRT-0218] Guide is not connected to design for net _01702_
+[ERROR DRT-0218] Guide is not connected to design for net _00072_
+[ERROR DRT-0218] Guide is not connected to design for net _03323_
+[WARNING DRT-0216] Pin PIN/instr_addr[15] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02537_
+[ERROR DRT-0218] Guide is not connected to design for net _00073_
+[WARNING DRT-0216] Pin PIN/instr_addr[15] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][6]
+[ERROR DRT-0218] Guide is not connected to design for net _03324_
+[ERROR DRT-0218] Guide is not connected to design for net _02538_
+[ERROR DRT-0218] Guide is not connected to design for net _03325_
+[ERROR DRT-0218] Guide is not connected to design for net _04142_
+[ERROR DRT-0218] Guide is not connected to design for net _01703_
+[WARNING DRT-0216] Pin PIN/instr_addr[15] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04143_
+[ERROR DRT-0218] Guide is not connected to design for net pc[15]
+[ERROR DRT-0218] Guide is not connected to design for net _04144_
+[ERROR DRT-0218] Guide is not connected to design for net _01704_
+[ERROR DRT-0218] Guide is not connected to design for net _00074_
+[ERROR DRT-0218] Guide is not connected to design for net _04145_
+[ERROR DRT-0218] Guide is not connected to design for net _01705_
+[WARNING DRT-0216] Pin PIN/instr_addr[16] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][7]
+[ERROR DRT-0218] Guide is not connected to design for net _04146_
+[ERROR DRT-0218] Guide is not connected to design for net _01706_
+[ERROR DRT-0218] Guide is not connected to design for net _00075_
+[ERROR DRT-0218] Guide is not connected to design for net _04147_
+[WARNING DRT-0216] Pin PIN/instr_addr[16] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00076_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][8]
+[ERROR DRT-0218] Guide is not connected to design for net _04148_
+[ERROR DRT-0218] Guide is not connected to design for net _04149_
+[ERROR DRT-0218] Guide is not connected to design for net _00077_
+[ERROR DRT-0218] Guide is not connected to design for net _01707_
+[ERROR DRT-0218] Guide is not connected to design for net _04150_
+[WARNING DRT-0216] Pin PIN/instr_addr[16] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00078_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[4\][9]
+[ERROR DRT-0218] Guide is not connected to design for net _04151_
+[ERROR DRT-0218] Guide is not connected to design for net pc[16]
+[ERROR DRT-0218] Guide is not connected to design for net _00079_
+[ERROR DRT-0218] Guide is not connected to design for net _02539_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][0]
+[ERROR DRT-0218] Guide is not connected to design for net _04152_
+[ERROR DRT-0218] Guide is not connected to design for net _01708_
+[ERROR DRT-0218] Guide is not connected to design for net _00080_
+[ERROR DRT-0218] Guide is not connected to design for net _00895_
+[ERROR DRT-0218] Guide is not connected to design for net _04153_
+[ERROR DRT-0218] Guide is not connected to design for net _00081_
+[ERROR DRT-0218] Guide is not connected to design for net _02540_
+[WARNING DRT-0216] Pin PIN/instr_addr[17] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00082_
+[ERROR DRT-0218] Guide is not connected to design for net _00896_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][10]
+[ERROR DRT-0218] Guide is not connected to design for net _02541_
+[ERROR DRT-0218] Guide is not connected to design for net _00083_
+[ERROR DRT-0218] Guide is not connected to design for net _01709_
+[ERROR DRT-0218] Guide is not connected to design for net _02542_
+[WARNING DRT-0216] Pin PIN/instr_addr[17] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00084_
+[ERROR DRT-0218] Guide is not connected to design for net _01710_
+[ERROR DRT-0218] Guide is not connected to design for net _00897_
+[ERROR DRT-0218] Guide is not connected to design for net _02543_
+[ERROR DRT-0218] Guide is not connected to design for net _00085_
+[ERROR DRT-0218] Guide is not connected to design for net _01711_
+[ERROR DRT-0218] Guide is not connected to design for net _02544_
+[WARNING DRT-0216] Pin PIN/instr_addr[17] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01712_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][11]
+[ERROR DRT-0218] Guide is not connected to design for net _02545_
+[ERROR DRT-0218] Guide is not connected to design for net pc[17]
+[ERROR DRT-0218] Guide is not connected to design for net _01713_
+[ERROR DRT-0218] Guide is not connected to design for net _00898_
+[ERROR DRT-0218] Guide is not connected to design for net _02546_
+[ERROR DRT-0218] Guide is not connected to design for net _01714_
+[ERROR DRT-0218] Guide is not connected to design for net _00899_
+[ERROR DRT-0218] Guide is not connected to design for net _02547_
+[ERROR DRT-0218] Guide is not connected to design for net _03326_
+[WARNING DRT-0216] Pin PIN/instr_addr[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[18] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00086_
+[WARNING DRT-0216] Pin PIN/instr_addr[18] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net pc[18]
+[ERROR DRT-0218] Guide is not connected to design for net _00087_
+[WARNING DRT-0216] Pin PIN/instr_addr[19] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00088_
+[ERROR DRT-0218] Guide is not connected to design for net _03327_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][12]
+[ERROR DRT-0218] Guide is not connected to design for net _00089_
+[ERROR DRT-0218] Guide is not connected to design for net _03328_
+[ERROR DRT-0218] Guide is not connected to design for net _00090_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][13]
+[ERROR DRT-0218] Guide is not connected to design for net _00091_
+[ERROR DRT-0218] Guide is not connected to design for net _03329_
+[ERROR DRT-0218] Guide is not connected to design for net _02548_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][14]
+[ERROR DRT-0218] Guide is not connected to design for net _00092_
+[ERROR DRT-0218] Guide is not connected to design for net _00093_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][15]
+[ERROR DRT-0218] Guide is not connected to design for net _00094_
+[ERROR DRT-0218] Guide is not connected to design for net _00900_
+[ERROR DRT-0218] Guide is not connected to design for net _00095_
+[ERROR DRT-0218] Guide is not connected to design for net _00096_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][16]
+[ERROR DRT-0218] Guide is not connected to design for net _02549_
+[ERROR DRT-0218] Guide is not connected to design for net _00097_
+[ERROR DRT-0218] Guide is not connected to design for net _00901_
+[ERROR DRT-0218] Guide is not connected to design for net _00098_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][17]
+[ERROR DRT-0218] Guide is not connected to design for net _01715_
+[ERROR DRT-0218] Guide is not connected to design for net _02550_
+[ERROR DRT-0218] Guide is not connected to design for net _00099_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][18]
+[ERROR DRT-0218] Guide is not connected to design for net _00100_
+[ERROR DRT-0218] Guide is not connected to design for net _00902_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][19]
+[ERROR DRT-0218] Guide is not connected to design for net _00101_
+[ERROR DRT-0218] Guide is not connected to design for net _03330_
+[ERROR DRT-0218] Guide is not connected to design for net _01716_
+[ERROR DRT-0218] Guide is not connected to design for net _02551_
+[ERROR DRT-0218] Guide is not connected to design for net _00903_
+[ERROR DRT-0218] Guide is not connected to design for net _00102_
+[ERROR DRT-0218] Guide is not connected to design for net _01717_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][1]
+[ERROR DRT-0218] Guide is not connected to design for net _00103_
+[ERROR DRT-0218] Guide is not connected to design for net _00904_
+[ERROR DRT-0218] Guide is not connected to design for net _01718_
+[ERROR DRT-0218] Guide is not connected to design for net _00104_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][20]
+[ERROR DRT-0218] Guide is not connected to design for net _00905_
+[ERROR DRT-0218] Guide is not connected to design for net _00105_
+[ERROR DRT-0218] Guide is not connected to design for net _01719_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][21]
+[ERROR DRT-0218] Guide is not connected to design for net _00906_
+[ERROR DRT-0218] Guide is not connected to design for net _02552_
+[ERROR DRT-0218] Guide is not connected to design for net _00106_
+[ERROR DRT-0218] Guide is not connected to design for net _00907_
+[ERROR DRT-0218] Guide is not connected to design for net _01720_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][22]
+[ERROR DRT-0218] Guide is not connected to design for net _00107_
+[ERROR DRT-0218] Guide is not connected to design for net _00908_
+[ERROR DRT-0218] Guide is not connected to design for net _01721_
+[ERROR DRT-0218] Guide is not connected to design for net _00108_
+[ERROR DRT-0218] Guide is not connected to design for net _00909_
+[ERROR DRT-0218] Guide is not connected to design for net _01722_
+[ERROR DRT-0218] Guide is not connected to design for net _02553_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][23]
+[ERROR DRT-0218] Guide is not connected to design for net _03331_
+[ERROR DRT-0218] Guide is not connected to design for net _00109_
+[ERROR DRT-0218] Guide is not connected to design for net _01723_
+[ERROR DRT-0218] Guide is not connected to design for net _00910_
+[ERROR DRT-0218] Guide is not connected to design for net _01724_
+[ERROR DRT-0218] Guide is not connected to design for net _00110_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][24]
+[ERROR DRT-0218] Guide is not connected to design for net _00911_
+[ERROR DRT-0218] Guide is not connected to design for net _01725_
+[ERROR DRT-0218] Guide is not connected to design for net _00111_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][25]
+[ERROR DRT-0218] Guide is not connected to design for net _02554_
+[ERROR DRT-0218] Guide is not connected to design for net _00112_
+[ERROR DRT-0218] Guide is not connected to design for net _00912_
+[ERROR DRT-0218] Guide is not connected to design for net _01726_
+[ERROR DRT-0218] Guide is not connected to design for net _00113_
+[ERROR DRT-0218] Guide is not connected to design for net _00913_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][26]
+[ERROR DRT-0218] Guide is not connected to design for net _00114_
+[ERROR DRT-0218] Guide is not connected to design for net _02555_
+[ERROR DRT-0218] Guide is not connected to design for net _00914_
+[ERROR DRT-0218] Guide is not connected to design for net _00115_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][27]
+[ERROR DRT-0218] Guide is not connected to design for net _01727_
+[ERROR DRT-0218] Guide is not connected to design for net _03332_
+[ERROR DRT-0218] Guide is not connected to design for net _00116_
+[ERROR DRT-0218] Guide is not connected to design for net _02556_
+[ERROR DRT-0218] Guide is not connected to design for net _00915_
+[WARNING DRT-0216] Pin PIN/instr_addr[19] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][28]
+[ERROR DRT-0218] Guide is not connected to design for net _02557_
+[ERROR DRT-0218] Guide is not connected to design for net _00916_
+[ERROR DRT-0218] Guide is not connected to design for net _00117_
+[ERROR DRT-0218] Guide is not connected to design for net _02558_
+[WARNING DRT-0216] Pin PIN/instr_addr[19] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00917_
+[ERROR DRT-0218] Guide is not connected to design for net _02559_
+[ERROR DRT-0218] Guide is not connected to design for net pc[19]
+[ERROR DRT-0218] Guide is not connected to design for net _01728_
+[ERROR DRT-0218] Guide is not connected to design for net _00118_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][29]
+[ERROR DRT-0218] Guide is not connected to design for net _00918_
+[WARNING DRT-0216] Pin PIN/instr_addr[1] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00919_
+[ERROR DRT-0218] Guide is not connected to design for net _02560_
+[ERROR DRT-0218] Guide is not connected to design for net _00119_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][2]
+[ERROR DRT-0218] Guide is not connected to design for net _00920_
+[ERROR DRT-0218] Guide is not connected to design for net _00120_
+[ERROR DRT-0218] Guide is not connected to design for net _00921_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][30]
+[ERROR DRT-0218] Guide is not connected to design for net _00121_
+[WARNING DRT-0216] Pin PIN/instr_addr[1] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][31]
+[ERROR DRT-0218] Guide is not connected to design for net _00122_
+[ERROR DRT-0218] Guide is not connected to design for net _01729_
+[ERROR DRT-0218] Guide is not connected to design for net _00922_
+[WARNING DRT-0216] Pin PIN/instr_addr[1] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04154_
+[ERROR DRT-0218] Guide is not connected to design for net pc[1]
+[ERROR DRT-0218] Guide is not connected to design for net _00923_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][3]
+[WARNING DRT-0216] Pin PIN/instr_addr[20] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00123_
+[ERROR DRT-0218] Guide is not connected to design for net _00924_
+[ERROR DRT-0218] Guide is not connected to design for net _01730_
+[WARNING DRT-0216] Pin PIN/instr_addr[20] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][4]
+[WARNING DRT-0216] Pin PIN/instr_addr[20] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00925_
+[ERROR DRT-0218] Guide is not connected to design for net pc[20]
+[ERROR DRT-0218] Guide is not connected to design for net _04155_
+[ERROR DRT-0218] Guide is not connected to design for net _00124_
+[WARNING DRT-0216] Pin PIN/instr_addr[21] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00926_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][5]
+[ERROR DRT-0218] Guide is not connected to design for net _00125_
+[WARNING DRT-0216] Pin PIN/instr_addr[21] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02561_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][6]
+[ERROR DRT-0218] Guide is not connected to design for net _01731_
+[ERROR DRT-0218] Guide is not connected to design for net _04156_
+[ERROR DRT-0218] Guide is not connected to design for net _00927_
+[ERROR DRT-0218] Guide is not connected to design for net _00126_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][7]
+[ERROR DRT-0218] Guide is not connected to design for net _01732_
+[WARNING DRT-0216] Pin PIN/instr_addr[21] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net pc[21]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][8]
+[ERROR DRT-0218] Guide is not connected to design for net _02562_
+[ERROR DRT-0218] Guide is not connected to design for net _00928_
+[WARNING DRT-0216] Pin PIN/instr_addr[22] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03333_
+[ERROR DRT-0218] Guide is not connected to design for net _00929_
+[WARNING DRT-0216] Pin PIN/instr_addr[22] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[5\][9]
+[ERROR DRT-0218] Guide is not connected to design for net _00930_
+[ERROR DRT-0218] Guide is not connected to design for net _03334_
+[WARNING DRT-0216] Pin PIN/instr_addr[22] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00931_
+[ERROR DRT-0218] Guide is not connected to design for net pc[22]
+[ERROR DRT-0218] Guide is not connected to design for net _00932_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][0]
+[ERROR DRT-0218] Guide is not connected to design for net _03335_
+[ERROR DRT-0218] Guide is not connected to design for net _00933_
+[WARNING DRT-0216] Pin PIN/instr_addr[23] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03336_
+[ERROR DRT-0218] Guide is not connected to design for net _00934_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][10]
+[ERROR DRT-0218] Guide is not connected to design for net _02563_
+[ERROR DRT-0218] Guide is not connected to design for net _00935_
+[ERROR DRT-0218] Guide is not connected to design for net _00936_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][11]
+[ERROR DRT-0218] Guide is not connected to design for net _00937_
+[ERROR DRT-0218] Guide is not connected to design for net _00127_
+[ERROR DRT-0218] Guide is not connected to design for net _03337_
+[WARNING DRT-0216] Pin PIN/instr_addr[23] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][12]
+[ERROR DRT-0218] Guide is not connected to design for net _00938_
+[ERROR DRT-0218] Guide is not connected to design for net _00128_
+[ERROR DRT-0218] Guide is not connected to design for net _03338_
+[ERROR DRT-0218] Guide is not connected to design for net _00939_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][13]
+[ERROR DRT-0218] Guide is not connected to design for net _00129_
+[WARNING DRT-0216] Pin PIN/instr_addr[23] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03339_
+[ERROR DRT-0218] Guide is not connected to design for net _00130_
+[ERROR DRT-0218] Guide is not connected to design for net _04157_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][14]
+[ERROR DRT-0218] Guide is not connected to design for net _01733_
+[ERROR DRT-0218] Guide is not connected to design for net _03340_
+[ERROR DRT-0218] Guide is not connected to design for net _00131_
+[ERROR DRT-0218] Guide is not connected to design for net _00940_
+[ERROR DRT-0218] Guide is not connected to design for net _04158_
+[ERROR DRT-0218] Guide is not connected to design for net pc[23]
+[ERROR DRT-0218] Guide is not connected to design for net _00132_
+[ERROR DRT-0218] Guide is not connected to design for net _03341_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][15]
+[ERROR DRT-0218] Guide is not connected to design for net _01734_
+[ERROR DRT-0218] Guide is not connected to design for net _04159_
+[ERROR DRT-0218] Guide is not connected to design for net _00941_
+[WARNING DRT-0216] Pin PIN/instr_addr[24] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03342_
+[ERROR DRT-0218] Guide is not connected to design for net _00133_
+[ERROR DRT-0218] Guide is not connected to design for net _04160_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][16]
+[ERROR DRT-0218] Guide is not connected to design for net _00134_
+[ERROR DRT-0218] Guide is not connected to design for net _01735_
+[WARNING DRT-0216] Pin PIN/instr_addr[24] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03343_
+[ERROR DRT-0218] Guide is not connected to design for net _00942_
+[ERROR DRT-0218] Guide is not connected to design for net _00135_
+[ERROR DRT-0218] Guide is not connected to design for net _01736_
+[WARNING DRT-0216] Pin PIN/instr_addr[24] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00136_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][17]
+[ERROR DRT-0218] Guide is not connected to design for net pc[24]
+[ERROR DRT-0218] Guide is not connected to design for net _01737_
+[ERROR DRT-0218] Guide is not connected to design for net _03344_
+[ERROR DRT-0218] Guide is not connected to design for net _00137_
+[ERROR DRT-0218] Guide is not connected to design for net _00943_
+[ERROR DRT-0218] Guide is not connected to design for net _04161_
+[ERROR DRT-0218] Guide is not connected to design for net _00138_
+[WARNING DRT-0216] Pin PIN/instr_addr[25] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00944_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][18]
+[ERROR DRT-0218] Guide is not connected to design for net _01738_
+[ERROR DRT-0218] Guide is not connected to design for net _00139_
+[ERROR DRT-0218] Guide is not connected to design for net _03345_
+[WARNING DRT-0216] Pin PIN/instr_addr[25] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00140_
+[ERROR DRT-0218] Guide is not connected to design for net _01739_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][19]
+[ERROR DRT-0218] Guide is not connected to design for net _01740_
+[ERROR DRT-0218] Guide is not connected to design for net _03346_
+[WARNING DRT-0216] Pin PIN/instr_addr[25] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][1]
+[ERROR DRT-0218] Guide is not connected to design for net _00141_
+[ERROR DRT-0218] Guide is not connected to design for net _01741_
+[ERROR DRT-0218] Guide is not connected to design for net pc[25]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][20]
+[ERROR DRT-0218] Guide is not connected to design for net _03347_
+[ERROR DRT-0218] Guide is not connected to design for net _00142_
+[WARNING DRT-0216] Pin PIN/instr_addr[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[26] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04162_
+[WARNING DRT-0216] Pin PIN/instr_addr[26] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net pc[26]
+[ERROR DRT-0218] Guide is not connected to design for net _02564_
+[WARNING DRT-0216] Pin PIN/instr_addr[27] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02565_
+[WARNING DRT-0216] Pin PIN/instr_addr[27] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][21]
+[ERROR DRT-0218] Guide is not connected to design for net _04163_
+[WARNING DRT-0216] Pin PIN/instr_addr[27] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04164_
+[ERROR DRT-0218] Guide is not connected to design for net _00143_
+[ERROR DRT-0218] Guide is not connected to design for net _03348_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][22]
+[ERROR DRT-0218] Guide is not connected to design for net _01742_
+[ERROR DRT-0218] Guide is not connected to design for net _02566_
+[ERROR DRT-0218] Guide is not connected to design for net _04165_
+[ERROR DRT-0218] Guide is not connected to design for net _00945_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][23]
+[ERROR DRT-0218] Guide is not connected to design for net _04166_
+[ERROR DRT-0218] Guide is not connected to design for net _00946_
+[ERROR DRT-0218] Guide is not connected to design for net pc[27]
+[ERROR DRT-0218] Guide is not connected to design for net _02567_
+[ERROR DRT-0218] Guide is not connected to design for net _03349_
+[ERROR DRT-0218] Guide is not connected to design for net _00947_
+[ERROR DRT-0218] Guide is not connected to design for net _01743_
+[ERROR DRT-0218] Guide is not connected to design for net _04167_
+[ERROR DRT-0218] Guide is not connected to design for net _02568_
+[ERROR DRT-0218] Guide is not connected to design for net _01744_
+[WARNING DRT-0216] Pin PIN/instr_addr[28] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00144_
+[ERROR DRT-0218] Guide is not connected to design for net _02569_
+[ERROR DRT-0218] Guide is not connected to design for net _01745_
+[WARNING DRT-0216] Pin PIN/instr_addr[28] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04168_
+[ERROR DRT-0218] Guide is not connected to design for net _00145_
+[ERROR DRT-0218] Guide is not connected to design for net _01746_
+[ERROR DRT-0218] Guide is not connected to design for net _02570_
+[ERROR DRT-0218] Guide is not connected to design for net _00146_
+[WARNING DRT-0216] Pin PIN/instr_addr[28] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04169_
+[ERROR DRT-0218] Guide is not connected to design for net pc[28]
+[ERROR DRT-0218] Guide is not connected to design for net _01747_
+[ERROR DRT-0218] Guide is not connected to design for net _00147_
+[ERROR DRT-0218] Guide is not connected to design for net _02571_
+[WARNING DRT-0216] Pin PIN/instr_addr[29] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01748_
+[ERROR DRT-0218] Guide is not connected to design for net _02572_
+[ERROR DRT-0218] Guide is not connected to design for net _00948_
+[ERROR DRT-0218] Guide is not connected to design for net _00148_
+[WARNING DRT-0216] Pin PIN/instr_addr[29] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01749_
+[ERROR DRT-0218] Guide is not connected to design for net _00949_
+[ERROR DRT-0218] Guide is not connected to design for net _01750_
+[ERROR DRT-0218] Guide is not connected to design for net _02573_
+[WARNING DRT-0216] Pin PIN/instr_addr[29] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00950_
+[ERROR DRT-0218] Guide is not connected to design for net _02574_
+[ERROR DRT-0218] Guide is not connected to design for net _00951_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][24]
+[ERROR DRT-0218] Guide is not connected to design for net pc[29]
+[ERROR DRT-0218] Guide is not connected to design for net _00952_
+[ERROR DRT-0218] Guide is not connected to design for net _03350_
+[ERROR DRT-0218] Guide is not connected to design for net _00953_
+[WARNING DRT-0216] Pin PIN/instr_addr[2] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01751_
+[ERROR DRT-0218] Guide is not connected to design for net _00149_
+[WARNING DRT-0216] Pin PIN/instr_addr[2] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03351_
+[ERROR DRT-0218] Guide is not connected to design for net _02575_
+[ERROR DRT-0218] Guide is not connected to design for net _01752_
+[ERROR DRT-0218] Guide is not connected to design for net _00150_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][25]
+[WARNING DRT-0216] Pin PIN/instr_addr[2] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01753_
+[ERROR DRT-0218] Guide is not connected to design for net _03352_
+[ERROR DRT-0218] Guide is not connected to design for net pc[2]
+[ERROR DRT-0218] Guide is not connected to design for net _02576_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][26]
+[ERROR DRT-0218] Guide is not connected to design for net _01754_
+[ERROR DRT-0218] Guide is not connected to design for net _04170_
+[ERROR DRT-0218] Guide is not connected to design for net _00954_
+[ERROR DRT-0218] Guide is not connected to design for net _00151_
+[WARNING DRT-0216] Pin PIN/instr_addr[30] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04171_
+[ERROR DRT-0218] Guide is not connected to design for net _03353_
+[ERROR DRT-0218] Guide is not connected to design for net _02577_
+[ERROR DRT-0218] Guide is not connected to design for net _03354_
+[ERROR DRT-0218] Guide is not connected to design for net _00955_
+[ERROR DRT-0218] Guide is not connected to design for net _01755_
+[ERROR DRT-0218] Guide is not connected to design for net _03355_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][27]
+[WARNING DRT-0216] Pin PIN/instr_addr[30] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03356_
+[ERROR DRT-0218] Guide is not connected to design for net _00956_
+[ERROR DRT-0218] Guide is not connected to design for net _01756_
+[ERROR DRT-0218] Guide is not connected to design for net _00957_
+[ERROR DRT-0218] Guide is not connected to design for net _02578_
+[ERROR DRT-0218] Guide is not connected to design for net _04172_
+[ERROR DRT-0218] Guide is not connected to design for net _03357_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][28]
+[ERROR DRT-0218] Guide is not connected to design for net _00958_
+[WARNING DRT-0216] Pin PIN/instr_addr[30] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _02579_
+[ERROR DRT-0218] Guide is not connected to design for net _03358_
+[ERROR DRT-0218] Guide is not connected to design for net pc[30]
+[ERROR DRT-0218] Guide is not connected to design for net _00959_
+[ERROR DRT-0218] Guide is not connected to design for net _04173_
+[ERROR DRT-0218] Guide is not connected to design for net _02580_
+[ERROR DRT-0218] Guide is not connected to design for net _01757_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][29]
+[ERROR DRT-0218] Guide is not connected to design for net _03359_
+[ERROR DRT-0218] Guide is not connected to design for net _00960_
+[ERROR DRT-0218] Guide is not connected to design for net _04174_
+[ERROR DRT-0218] Guide is not connected to design for net _03360_
+[ERROR DRT-0218] Guide is not connected to design for net _00961_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][2]
+[ERROR DRT-0218] Guide is not connected to design for net _03361_
+[ERROR DRT-0218] Guide is not connected to design for net _04175_
+[ERROR DRT-0218] Guide is not connected to design for net _04176_
+[ERROR DRT-0218] Guide is not connected to design for net _00962_
+[ERROR DRT-0218] Guide is not connected to design for net _02581_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][30]
+[ERROR DRT-0218] Guide is not connected to design for net _01758_
+[ERROR DRT-0218] Guide is not connected to design for net _04177_
+[ERROR DRT-0218] Guide is not connected to design for net _00963_
+[ERROR DRT-0218] Guide is not connected to design for net _03362_
+[ERROR DRT-0218] Guide is not connected to design for net _02582_
+[ERROR DRT-0218] Guide is not connected to design for net _04178_
+[ERROR DRT-0218] Guide is not connected to design for net _01759_
+[ERROR DRT-0218] Guide is not connected to design for net _00964_
+[ERROR DRT-0218] Guide is not connected to design for net _03363_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][31]
+[ERROR DRT-0218] Guide is not connected to design for net _02583_
+[ERROR DRT-0218] Guide is not connected to design for net _00965_
+[ERROR DRT-0218] Guide is not connected to design for net _04179_
+[ERROR DRT-0218] Guide is not connected to design for net _01760_
+[ERROR DRT-0218] Guide is not connected to design for net _00966_
+[ERROR DRT-0218] Guide is not connected to design for net _02584_
+[ERROR DRT-0218] Guide is not connected to design for net _04180_
+[ERROR DRT-0218] Guide is not connected to design for net _01761_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][3]
+[ERROR DRT-0218] Guide is not connected to design for net _00967_
+[ERROR DRT-0218] Guide is not connected to design for net _04181_
+[ERROR DRT-0218] Guide is not connected to design for net _03364_
+[ERROR DRT-0218] Guide is not connected to design for net _02585_
+[ERROR DRT-0218] Guide is not connected to design for net _00968_
+[ERROR DRT-0218] Guide is not connected to design for net _04182_
+[ERROR DRT-0218] Guide is not connected to design for net _01762_
+[ERROR DRT-0218] Guide is not connected to design for net _03365_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][4]
+[ERROR DRT-0218] Guide is not connected to design for net _02586_
+[WARNING DRT-0216] Pin PIN/instr_addr[31] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03366_
+[ERROR DRT-0218] Guide is not connected to design for net _04183_
+[ERROR DRT-0218] Guide is not connected to design for net _00969_
+[ERROR DRT-0218] Guide is not connected to design for net _01763_
+[WARNING DRT-0216] Pin PIN/instr_addr[31] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03367_
+[ERROR DRT-0218] Guide is not connected to design for net _00970_
+[ERROR DRT-0218] Guide is not connected to design for net _02587_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][5]
+[ERROR DRT-0218] Guide is not connected to design for net _01764_
+[ERROR DRT-0218] Guide is not connected to design for net _00152_
+[ERROR DRT-0218] Guide is not connected to design for net _02588_
+[WARNING DRT-0216] Pin PIN/instr_addr[31] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00971_
+[ERROR DRT-0218] Guide is not connected to design for net _01765_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][6]
+[ERROR DRT-0218] Guide is not connected to design for net _02589_
+[ERROR DRT-0218] Guide is not connected to design for net _00153_
+[ERROR DRT-0218] Guide is not connected to design for net pc[31]
+[ERROR DRT-0218] Guide is not connected to design for net _00972_
+[ERROR DRT-0218] Guide is not connected to design for net _02590_
+[ERROR DRT-0218] Guide is not connected to design for net _01766_
+[ERROR DRT-0218] Guide is not connected to design for net _00154_
+[ERROR DRT-0218] Guide is not connected to design for net _00973_
+[ERROR DRT-0218] Guide is not connected to design for net _03368_
+[ERROR DRT-0218] Guide is not connected to design for net _00974_
+[ERROR DRT-0218] Guide is not connected to design for net _00155_
+[ERROR DRT-0218] Guide is not connected to design for net _03369_
+[ERROR DRT-0218] Guide is not connected to design for net _01767_
+[ERROR DRT-0218] Guide is not connected to design for net _00975_
+[WARNING DRT-0216] Pin PIN/instr_addr[3] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03370_
+[ERROR DRT-0218] Guide is not connected to design for net _04184_
+[ERROR DRT-0218] Guide is not connected to design for net _00976_
+[ERROR DRT-0218] Guide is not connected to design for net _03371_
+[ERROR DRT-0218] Guide is not connected to design for net _00156_
+[WARNING DRT-0216] Pin PIN/instr_addr[3] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00977_
+[ERROR DRT-0218] Guide is not connected to design for net _03372_
+[ERROR DRT-0218] Guide is not connected to design for net _00978_
+[ERROR DRT-0218] Guide is not connected to design for net _03373_
+[ERROR DRT-0218] Guide is not connected to design for net _00157_
+[WARNING DRT-0216] Pin PIN/instr_addr[3] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _03374_
+[ERROR DRT-0218] Guide is not connected to design for net _00158_
+[ERROR DRT-0218] Guide is not connected to design for net _01768_
+[ERROR DRT-0218] Guide is not connected to design for net _03375_
+[ERROR DRT-0218] Guide is not connected to design for net _04185_
+[ERROR DRT-0218] Guide is not connected to design for net _03376_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][7]
+[ERROR DRT-0218] Guide is not connected to design for net _03377_
+[ERROR DRT-0218] Guide is not connected to design for net _03378_
+[ERROR DRT-0218] Guide is not connected to design for net _00159_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][8]
+[ERROR DRT-0218] Guide is not connected to design for net _04186_
+[ERROR DRT-0218] Guide is not connected to design for net _03379_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[6\][9]
+[ERROR DRT-0218] Guide is not connected to design for net _01769_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][0]
+[ERROR DRT-0218] Guide is not connected to design for net _04187_
+[ERROR DRT-0218] Guide is not connected to design for net _03380_
+[ERROR DRT-0218] Guide is not connected to design for net _00979_
+[ERROR DRT-0218] Guide is not connected to design for net _04188_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][10]
+[ERROR DRT-0218] Guide is not connected to design for net _04189_
+[ERROR DRT-0218] Guide is not connected to design for net _01770_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][11]
+[ERROR DRT-0218] Guide is not connected to design for net _04190_
+[ERROR DRT-0218] Guide is not connected to design for net _00160_
+[ERROR DRT-0218] Guide is not connected to design for net pc[3]
+[ERROR DRT-0218] Guide is not connected to design for net _04191_
+[ERROR DRT-0218] Guide is not connected to design for net _04192_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][12]
+[WARNING DRT-0216] Pin PIN/instr_addr[4] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04193_
+[ERROR DRT-0218] Guide is not connected to design for net _00980_
+[ERROR DRT-0218] Guide is not connected to design for net _04194_
+[WARNING DRT-0216] Pin PIN/instr_addr[4] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00161_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][13]
+[WARNING DRT-0216] Pin PIN/instr_addr[4] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00981_
+[ERROR DRT-0218] Guide is not connected to design for net pc[4]
+[ERROR DRT-0218] Guide is not connected to design for net _00162_
+[WARNING DRT-0216] Pin PIN/instr_addr[5] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00163_
+[ERROR DRT-0218] Guide is not connected to design for net _00164_
+[WARNING DRT-0216] Pin PIN/instr_addr[5] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00165_
+[WARNING DRT-0216] Pin PIN/instr_addr[5] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00166_
+[ERROR DRT-0218] Guide is not connected to design for net pc[5]
+[ERROR DRT-0218] Guide is not connected to design for net _00167_
+[ERROR DRT-0218] Guide is not connected to design for net _02591_
+[ERROR DRT-0218] Guide is not connected to design for net _00168_
+[ERROR DRT-0218] Guide is not connected to design for net _04195_
+[ERROR DRT-0218] Guide is not connected to design for net _00169_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][14]
+[ERROR DRT-0218] Guide is not connected to design for net _04196_
+[ERROR DRT-0218] Guide is not connected to design for net _00170_
+[ERROR DRT-0218] Guide is not connected to design for net _04197_
+[ERROR DRT-0218] Guide is not connected to design for net _02592_
+[ERROR DRT-0218] Guide is not connected to design for net _03381_
+[ERROR DRT-0218] Guide is not connected to design for net _04198_
+[ERROR DRT-0218] Guide is not connected to design for net _00171_
+[WARNING DRT-0216] Pin PIN/instr_addr[6] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04199_
+[ERROR DRT-0218] Guide is not connected to design for net _00172_
+[ERROR DRT-0218] Guide is not connected to design for net _02593_
+[ERROR DRT-0218] Guide is not connected to design for net _00173_
+[WARNING DRT-0216] Pin PIN/instr_addr[6] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01771_
+[WARNING DRT-0216] Pin PIN/instr_addr[6] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04200_
+[ERROR DRT-0218] Guide is not connected to design for net _00174_
+[ERROR DRT-0218] Guide is not connected to design for net _02594_
+[ERROR DRT-0218] Guide is not connected to design for net pc[6]
+[ERROR DRT-0218] Guide is not connected to design for net _02595_
+[ERROR DRT-0218] Guide is not connected to design for net _04201_
+[ERROR DRT-0218] Guide is not connected to design for net _00175_
+[WARNING DRT-0216] Pin PIN/instr_addr[7] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04202_
+[ERROR DRT-0218] Guide is not connected to design for net _00176_
+[ERROR DRT-0218] Guide is not connected to design for net _00982_
+[WARNING DRT-0216] Pin PIN/instr_addr[7] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _00177_
+[ERROR DRT-0218] Guide is not connected to design for net _04203_
+[ERROR DRT-0218] Guide is not connected to design for net _02596_
+[ERROR DRT-0218] Guide is not connected to design for net _03382_
+[ERROR DRT-0218] Guide is not connected to design for net _02597_
+[ERROR DRT-0218] Guide is not connected to design for net _00983_
+[ERROR DRT-0218] Guide is not connected to design for net _04204_
+[ERROR DRT-0218] Guide is not connected to design for net _02598_
+[ERROR DRT-0218] Guide is not connected to design for net _04205_
+[ERROR DRT-0218] Guide is not connected to design for net _00984_
+[ERROR DRT-0218] Guide is not connected to design for net _02599_
+[ERROR DRT-0218] Guide is not connected to design for net _03383_
+[ERROR DRT-0218] Guide is not connected to design for net _01772_
+[ERROR DRT-0218] Guide is not connected to design for net _02600_
+[ERROR DRT-0218] Guide is not connected to design for net _04206_
+[ERROR DRT-0218] Guide is not connected to design for net _00985_
+[WARNING DRT-0216] Pin PIN/instr_addr[7] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _01773_
+[ERROR DRT-0218] Guide is not connected to design for net _00986_
+[ERROR DRT-0218] Guide is not connected to design for net _00178_
+[ERROR DRT-0218] Guide is not connected to design for net _01774_
+[ERROR DRT-0218] Guide is not connected to design for net _01775_
+[ERROR DRT-0218] Guide is not connected to design for net _03384_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][15]
+[ERROR DRT-0218] Guide is not connected to design for net _01776_
+[ERROR DRT-0218] Guide is not connected to design for net _00179_
+[ERROR DRT-0218] Guide is not connected to design for net _01777_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][16]
+[ERROR DRT-0218] Guide is not connected to design for net _04207_
+[ERROR DRT-0218] Guide is not connected to design for net pc[7]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][17]
+[ERROR DRT-0218] Guide is not connected to design for net _03385_
+[ERROR DRT-0218] Guide is not connected to design for net _04208_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][18]
+[WARNING DRT-0216] Pin PIN/instr_addr[8] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04209_
+[WARNING DRT-0216] Pin PIN/instr_addr[8] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][19]
+[ERROR DRT-0218] Guide is not connected to design for net _04210_
+[ERROR DRT-0218] Guide is not connected to design for net _03386_
+[WARNING DRT-0216] Pin PIN/instr_addr[8] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04211_
+[ERROR DRT-0218] Guide is not connected to design for net _00987_
+[ERROR DRT-0218] Guide is not connected to design for net _03387_
+[ERROR DRT-0218] Guide is not connected to design for net pc[8]
+[ERROR DRT-0218] Guide is not connected to design for net _04212_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][1]
+[ERROR DRT-0218] Guide is not connected to design for net _03388_
+[WARNING DRT-0216] Pin PIN/instr_addr[9] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04213_
+[ERROR DRT-0218] Guide is not connected to design for net _00988_
+[WARNING DRT-0216] Pin PIN/instr_addr[9] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net _04214_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][20]
+[ERROR DRT-0218] Guide is not connected to design for net _00989_
+[ERROR DRT-0218] Guide is not connected to design for net _04215_
+[WARNING DRT-0216] Pin PIN/instr_addr[9] not covered by guide.
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][21]
+[ERROR DRT-0218] Guide is not connected to design for net _00180_
+[ERROR DRT-0218] Guide is not connected to design for net _04216_
+[ERROR DRT-0218] Guide is not connected to design for net _03389_
+[ERROR DRT-0218] Guide is not connected to design for net pc[9]
+[ERROR DRT-0218] Guide is not connected to design for net _04217_
+[ERROR DRT-0218] Guide is not connected to design for net _03390_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][22]
+[ERROR DRT-0218] Guide is not connected to design for net _00181_
+[ERROR DRT-0218] Guide is not connected to design for net _03391_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[10\][0]
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][23]
+[ERROR DRT-0218] Guide is not connected to design for net _03392_
+[ERROR DRT-0218] Guide is not connected to design for net _00182_
+[ERROR DRT-0218] Guide is not connected to design for net _04218_
+[ERROR DRT-0218] Guide is not connected to design for net _02601_
+[ERROR DRT-0218] Guide is not connected to design for net _00990_
+[ERROR DRT-0218] Guide is not connected to design for net _04219_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[10\][10]
+[ERROR DRT-0218] Guide is not connected to design for net _02602_
+[ERROR DRT-0218] Guide is not connected to design for net _04220_
+[ERROR DRT-0218] Guide is not connected to design for net _02603_
+[ERROR DRT-0218] Guide is not connected to design for net _00183_
+[ERROR DRT-0218] Guide is not connected to design for net _00991_
+[ERROR DRT-0218] Guide is not connected to design for net _03393_
+[ERROR DRT-0218] Guide is not connected to design for net _04221_
+[ERROR DRT-0218] message limit (1000) reached. This message will no longer print.
+[ERROR DRT-0218] Guide is not connected to design for net _01778_
+[ERROR DRT-0218] Guide is not connected to design for net regs\[7\][24]
+[WARNING DRT-0216] Pin PIN/rst_n not covered by guide.
+[WARNING DRT-0216] Pin PIN/rst_n not covered by guide.
+[WARNING DRT-0216] Pin PIN/rst_n not covered by guide.
+[WARNING DRT-0216] Pin PIN/clk not covered by guide.
+[WARNING DRT-0216] Pin PIN/clk not covered by guide.
+[WARNING DRT-0216] Pin PIN/clk not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_addr[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_rdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_re not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_re not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_re not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_wdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_we not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_we not covered by guide.
+[WARNING DRT-0216] Pin PIN/data_we not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[10] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[11] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[12] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[13] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[14] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[15] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[16] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[17] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[18] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[19] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[1] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[20] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[21] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[22] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[23] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[24] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[25] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[26] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[27] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[28] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[29] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[2] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[30] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[31] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[3] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[4] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[5] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[6] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[7] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[8] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_rdata[9] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[0] not covered by guide.
+[WARNING DRT-0216] Pin PIN/instr_addr[0] not covered by guide.
+DRT-0218
+    while executing
+"drt::detailed_route_cmd $output_maze $output_drc  $output_guide_coverage $db_process_node $enable_via_gen $droute_end_iter  $via_in_pin_bottom_layer $..."
+    (procedure "detailed_route" line 121)
+    invoked from within
+"detailed_route \
+    -output_drc "$reports/reset_repaired_noPA_drc.rpt" \
+    -output_maze "$reports/reset_repaired_noPA_maze.log" \
+    -output_guide..."
+    (file "backend/scripts/08c_detailed_route_no_pin_access.tcl" line 42)

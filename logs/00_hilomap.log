@@ -1,0 +1,45 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+169 (git sha1 c09944d8e, GNU /usr/bin/c++ 15.2.0)
+
+-- Executing script file `/tmp/riscv_hilomap.ys' --
+
+1. Executing Liberty frontend: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: backend/inputs/netlist/riscv_core_sky130_pre_hilomap.v
+Parsing Verilog input from `backend/inputs/netlist/riscv_core_sky130_pre_hilomap.v' to AST representation.
+Generating RTLIL representation for module `\riscv_core'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \riscv_core
+
+3.2. Analyzing design hierarchy..
+Top module:  \riscv_core
+Removed 0 unused modules.
+
+4. Executing HILOMAP pass (mapping to constant drivers).
+
+5. Executing CHECK pass (checking for obvious problems).
+Checking module riscv_core...
+Found and reported 0 problems.
+
+6. Executing Verilog backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Dumping module `\riscv_core'.
+
+7. Executing JSON backend.
+
+End of script. Logfile hash: 9e5d2dbac9, time: 3.04s, user: 3.00s, system: 0.09s, MEM: 118.35 MB peak
+Yosys 0.69+169 (git sha1 c09944d8e, GNU /usr/bin/c++ 15.2.0)
+Time spent: 77% 2x read_verilog (2 sec), 9% 2x write_json (0 sec), ...

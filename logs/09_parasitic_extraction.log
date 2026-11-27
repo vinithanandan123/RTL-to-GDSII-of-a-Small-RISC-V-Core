@@ -1,0 +1,14 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+[ERROR ORD-0007] /home/vinith/vlsi_projects/riscv_frontend/backend/results/05_routing/riscv_detailed_route.odb does not exist.
+ORD-0007
+    while executing
+"utl::error "ORD" 7 "$filename does not exist.""
+    (procedure "read_db" line 9)
+    invoked from within
+"read_db $db"
+    (file "backend/scripts/09_parasitic_extraction.tcl" line 19)

@@ -1,0 +1,113 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+========== CHECK PLACEMENT LEGALITY ==========
+[WARNING DPL-0005] Overlap check failed (1).
+ _06928_ (sky130_fd_sc_hd__a221oi_2) overlaps _06225_ (sky130_fd_sc_hd__nor3_4)
+[WARNING DPL-0011] Padding check failed (1).
+ _06928_
+[WARNING DPL-0006] Site aligned check failed (93).
+ fanout383
+ fanout384
+ fanout385
+ fanout386
+ fanout387
+ fanout388
+ fanout389
+ fanout390
+ fanout391
+ fanout392
+ fanout393
+ fanout394
+ fanout395
+ fanout396
+ fanout397
+ fanout398
+ fanout399
+ fanout400
+ fanout401
+ fanout402
+ fanout403
+ fanout404
+ fanout405
+ fanout406
+ fanout407
+ fanout408
+ fanout409
+ fanout410
+ fanout413
+ fanout416
+ fanout417
+ fanout420
+ fanout421
+ fanout424
+ fanout425
+ fanout428
+ fanout431
+ fanout434
+ fanout435
+ fanout438
+ fanout439
+ fanout443
+ fanout444
+ fanout447
+ fanout448
+ fanout452
+ fanout453
+ fanout457
+ fanout458
+ fanout461
+ fanout462
+ fanout463
+ fanout464
+ fanout465
+ load_slew373
+ load_slew374
+ load_slew376
+ load_slew377
+ load_slew378
+ load_slew379
+ load_slew382
+ load_slew415
+ load_slew418
+ load_slew422
+ load_slew423
+ load_slew426
+ load_slew427
+ load_slew432
+ load_slew433
+ load_slew436
+ load_slew437
+ load_slew440
+ load_slew445
+ load_slew446
+ load_slew449
+ load_slew450
+ load_slew451
+ load_slew454
+ load_slew455
+ load_slew456
+ load_slew459
+ load_slew460
+ max_cap412
+ max_cap419
+ max_cap430
+ max_cap441
+ wire375
+ wire380
+ wire381
+ wire411
+ wire414
+ wire429
+ wire442
+[ERROR DPL-0033] detailed placement checks failed during check placement.
+DPL-0033
+    while executing
+"dpl::check_placement_cmd $verbose $file_name"
+    (procedure "check_placement" line 16)
+    invoked from within
+"check_placement -verbose"
+    (file "backend/scripts/check_repaired_placement.tcl" line 7)

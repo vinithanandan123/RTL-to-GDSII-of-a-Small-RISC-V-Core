@@ -1,0 +1,330 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+
+==============================================
+RISC-V SKY130 CLOCK TREE SYNTHESIS
+==============================================
+
+INFO Reading Sky130 Liberty...
+
+INFO Reading detailed placement database...
+
+INFO Reading SDC...
+
+INFO Loading Sky130 RC configuration...
+
+INFO Physical clock net: clk
+INFO CTS root buffer: sky130_fd_sc_hd__clkbuf_16
+INFO CTS buffer list: 
+    sky130_fd_sc_hd__clkbuf_1
+    sky130_fd_sc_hd__clkbuf_2
+    sky130_fd_sc_hd__clkbuf_4
+    sky130_fd_sc_hd__clkbuf_8
+    sky130_fd_sc_hd__clkbuf_16
+
+
+==============================================
+RUNNING CLOCK TREE SYNTHESIS
+==============================================
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_1
+                    sky130_fd_sc_hd__clkbuf_2
+                    sky130_fd_sc_hd__clkbuf_4
+                    sky130_fd_sc_hd__clkbuf_8
+                    sky130_fd_sc_hd__clkbuf_16
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0001] Running TritonCTS with user-specified clock roots: clk.
+[INFO CTS-0095] Net "clk" found.
+[INFO CTS-0010]  Clock net "clk" has 1023 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 5 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 1023.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(76625, 25900), (379765, 374060)].
+[INFO CTS-0024]  Normalized sink region: [(5.63419, 1.90441), (27.9239, 27.5044)].
+[INFO CTS-0025]     Width:  22.2897.
+[INFO CTS-0026]     Height: 25.6000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 512
+    Sub-region size: 22.2897 X 12.8000
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 256
+    Sub-region size: 11.1449 X 12.8000
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 128
+    Sub-region size: 11.1449 X 6.4000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 64
+    Sub-region size: 5.5724 X 6.4000
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 5
+    Direction: Vertical
+    Sinks per sub-region: 32
+    Sub-region size: 5.5724 X 3.2000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 6
+    Direction: Horizontal
+    Sinks per sub-region: 16
+    Sub-region size: 2.7862 X 3.2000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 7
+    Direction: Vertical
+    Sinks per sub-region: 8
+    Sub-region size: 2.7862 X 1.6000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (1911.535 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 1023.
+[INFO CTS-0018]     Created 145 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 145 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 5:11, 6:23, 7:27, 8:23, 9:16, 10:13, 11:5, 12:5, 13:3, 14:1, 15:1..
+[INFO CTS-0017]     Max level of the clock tree: 7.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 1132
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 376.19 um
+[INFO CTS-0102]  Path depth 3 - 3
+[INFO CTS-0207]  Dummy loads inserted 109
+[INFO CTS-0500] Runtime: 2.49s
+
+INFO Clock tree synthesis command completed.
+
+INFO Setting propagated clock...
+
+INFO Running detailed placement...
+[INFO DPL-0006] Core area: 150131.49 um^2
+[INFO DPL-0007] Movable instances area: 57963.09 um^2
+[INFO DPL-0008] Fixed instances area within core: 2522.42 um^2
+[INFO DPL-0009] Utilization: 40.3%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 8186 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |       1039 |       181 |       858
+        1 |         38 |         6 |        32
+        2 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 2.
+[INFO DPL-0500] Runtime: 0.09s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                4314
+total displacement       1783.9 u
+average displacement        0.2 u
+max displacement           13.8 u
+original HPWL          160979.1 u
+legalized HPWL         161903.8 u
+delta HPWL                    1 %
+
+
+INFO Checking placement legality...
+
+INFO Estimating post-CTS parasitics...
+
+==============================================
+POST-CTS CLOCK SKEW - SETUP
+==============================================
+Clock core_clk
+   0.79 source latency _09698_/CLK ^
+  -0.76 target latency _10189_/CLK ^
+   0.20 clock uncertainty
+   0.00 CRPR
+--------------
+   0.23 setup skew
+
+
+==============================================
+POST-CTS CLOCK SKEW - HOLD
+==============================================
+Clock core_clk
+   0.76 source latency _10189_/CLK ^
+  -0.79 target latency _09718_/CLK ^
+  -0.05 clock uncertainty
+   0.00 CRPR
+--------------
+  -0.08 hold skew
+
+
+==============================================
+POST-CTS SETUP TIMING
+==============================================
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _09787_ (recovery check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst_n (in)
+   0.81    2.81 ^ _09787_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           2.81   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.77   10.77   clock network delay (propagated)
+  -0.20   10.57   clock uncertainty
+   0.00   10.57   clock reconvergence pessimism
+          10.57 ^ _09787_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.21   10.36   library recovery time
+          10.36   data required time
+---------------------------------------------------------
+          10.36   data required time
+          -2.81   data arrival time
+---------------------------------------------------------
+           7.55   slack (MET)
+
+
+Startpoint: instr_rdata[22] (input port clocked by core_clk)
+Endpoint: _10452_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 v input external delay
+   0.00    2.00 v instr_rdata[22] (in)
+   8.90   10.90 ^ _04991_/Y (sky130_fd_sc_hd__nor4_1)
+   2.77   13.67 ^ _04992_/X (sky130_fd_sc_hd__lpflow_isobufsrc_1)
+   1.40   15.06 v _05450_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.54   15.60 v _05455_/X (sky130_fd_sc_hd__xor2_1)
+   0.35   15.94 v _06239_/X (sky130_fd_sc_hd__o21a_1)
+   0.24   16.18 ^ _06241_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.19   16.37 v _06245_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.31   16.68 ^ _06247_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.16   16.84 v _06248_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.23   17.07 ^ _06250_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.18   17.26 v _06252_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.29   17.54 ^ _06253_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.22   17.76 v _06255_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.27   18.03 v _06256_/X (sky130_fd_sc_hd__o21a_1)
+   0.24   18.27 ^ _06257_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.25   18.53 ^ _06260_/X (sky130_fd_sc_hd__a311o_1)
+   0.15   18.67 v _06261_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.35   19.03 ^ _06263_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.17   19.19 v _06264_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.44   19.64 ^ _06266_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.25   19.89 v _06270_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.25   20.14 ^ _06273_/Y (sky130_fd_sc_hd__o211ai_1)
+   0.18   20.32 v _06275_/Y (sky130_fd_sc_hd__nand3b_1)
+   0.74   21.06 ^ _06280_/Y (sky130_fd_sc_hd__a2111oi_0)
+   0.32   21.37 v _06283_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.17   21.55 ^ _06284_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.09   21.64 v _06418_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.14   21.78 ^ _06424_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.10   21.88 v _06425_/Y (sky130_fd_sc_hd__a21oi_1)
+   2.69   24.56 ^ _06432_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.40   24.96 v _07460_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00   24.96 v _10452_/D (sky130_fd_sc_hd__dfrtp_1)
+          24.96   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.78   10.78   clock network delay (propagated)
+  -0.20   10.58   clock uncertainty
+   0.00   10.58   clock reconvergence pessimism
+          10.58 ^ _10452_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.29   10.29   library setup time
+          10.29   data required time
+---------------------------------------------------------
+          10.29   data required time
+         -24.96   data arrival time
+---------------------------------------------------------
+         -14.67   slack (VIOLATED)
+
+
+
+==============================================
+POST-CTS HOLD TIMING
+==============================================
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _10356_ (removal check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.20    0.20 ^ input external delay
+   0.00    0.20 ^ rst_n (in)
+   0.30    0.50 ^ _10356_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           0.50   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.79    0.79   clock network delay (propagated)
+   0.05    0.84   clock uncertainty
+   0.00    0.84   clock reconvergence pessimism
+           0.84 ^ _10356_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.50    1.34   library removal time
+           1.34   data required time
+---------------------------------------------------------
+           1.34   data required time
+          -0.50   data arrival time
+---------------------------------------------------------
+          -0.84   slack (VIOLATED)
+
+
+Startpoint: instr_rdata[21] (input port clocked by core_clk)
+Endpoint: _09718_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.20    0.20 v input external delay
+   0.00    0.20 v instr_rdata[21] (in)
+   0.17    0.37 ^ _09118_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.12    0.48 ^ _09121_/X (sky130_fd_sc_hd__a221o_1)
+   0.00    0.48 ^ _09718_/D (sky130_fd_sc_hd__dfrtp_1)
+           0.48   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.79    0.79   clock network delay (propagated)
+   0.05    0.84   clock uncertainty
+   0.00    0.84   clock reconvergence pessimism
+           0.84 ^ _09718_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.03    0.81   library hold time
+           0.81   data required time
+---------------------------------------------------------
+           0.81   data required time
+          -0.48   data arrival time
+---------------------------------------------------------
+          -0.32   slack (VIOLATED)
+
+
+
+INFO Saving CTS database...
+
+==============================================
+CTS STAGE COMPLETED
+==============================================
+ODB: /home/vinith/vlsi_projects/riscv_frontend/backend/results/04_cts/riscv_cts.odb
+DEF: /home/vinith/vlsi_projects/riscv_frontend/backend/results/04_cts/riscv_cts.def
+==============================================

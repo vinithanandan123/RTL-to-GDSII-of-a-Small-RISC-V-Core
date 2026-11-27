@@ -1,0 +1,36 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+===== COMPLETE RESET BUFFER TREE =====
+Net rst_n : buffers=1 flops=0
+Net net464 : buffers=20 flops=18
+Net net463 : buffers=3 flops=24
+Net net458 : buffers=1 flops=28
+Net net454 : buffers=1 flops=2
+Net net453 : buffers=1 flops=38
+Net net449 : buffers=1 flops=5
+Net net448 : buffers=1 flops=34
+Net net445 : buffers=1 flops=14
+Net net444 : buffers=1 flops=37
+Net net440 : buffers=1 flops=0
+Net net439 : buffers=1 flops=32
+Net net436 : buffers=1 flops=15
+Net net435 : buffers=3 flops=23
+Net net425 : buffers=1 flops=39
+Net net422 : buffers=1 flops=12
+Net net421 : buffers=1 flops=42
+Net net418 : buffers=1 flops=12
+Net net417 : buffers=1 flops=27
+Net net414 : buffers=1 flops=19
+Net net411 : buffers=1 flops=11
+Net net462 : buffers=1 flops=36
+Net net459 : buffers=1 flops=17
+Net net432 : buffers=1 flops=12
+Net net429 : buffers=1 flops=11
+===== RESET TREE SUMMARY =====
+Buffer levels: 5
+Total reset buffers: 48
+Total resettable flops: 508

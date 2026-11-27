@@ -1,0 +1,13 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+===== RESET BUFFER OUTPUT =====
+Output net: net464
+Connected instance pins: 38
+Connected block pins: 0
+===== CONNECTED CELL TYPES =====
+sky130_fd_sc_hd__clkdlybuf4s50_1 : 20
+sky130_fd_sc_hd__dfrtp_1 : 18

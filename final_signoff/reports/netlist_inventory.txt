@@ -1,0 +1,2 @@
+backend/inputs/netlist/riscv_core_sky130_pre_hilomap.v | 766485 bytes
+backend/results/08_final_gds/riscv_final.v | 1647990 bytes

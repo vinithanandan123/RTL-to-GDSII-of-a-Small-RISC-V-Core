@@ -1,0 +1,36 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+===== DRT-0073 CELL PLACEMENT =====
+wire375 | sky130_fd_sc_hd__buf_6 | location=354404 140451 | orient=R0 | status=PLACED
+fanout383 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=204502 156570 | orient=R0 | status=PLACED
+fanout388 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=286867 202636 | orient=R0 | status=PLACED
+fanout393 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=294147 129370 | orient=R0 | status=PLACED
+fanout390 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=310787 112883 | orient=R0 | status=PLACED
+wire380 | sky130_fd_sc_hd__buf_6 | location=339224 147869 | orient=R0 | status=PLACED
+fanout410 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=139096 55331 | orient=R0 | status=PLACED
+wire411 | sky130_fd_sc_hd__buf_8 | location=117936 49891 | orient=R0 | status=PLACED
+wire414 | sky130_fd_sc_hd__buf_6 | location=191076 48028 | orient=R0 | status=PLACED
+load_slew418 | sky130_fd_sc_hd__buf_8 | location=132196 129628 | orient=R0 | status=PLACED
+load_slew415 | sky130_fd_sc_hd__buf_6 | location=209016 55331 | orient=R0 | status=PLACED
+max_cap419 | sky130_fd_sc_hd__buf_8 | location=139294 115171 | orient=R0 | status=PLACED
+fanout420 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=139096 156828 | orient=R0 | status=PLACED
+fanout434 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=388726 54650 | orient=R0 | status=PLACED
+max_cap430 | sky130_fd_sc_hd__probe_p_8 | location=386400 54698 | orient=R0 | status=PLACED
+load_slew436 | sky130_fd_sc_hd__probe_p_8 | location=97696 211228 | orient=R0 | status=PLACED
+load_slew432 | sky130_fd_sc_hd__probe_p_8 | location=276176 142371 | orient=R0 | status=PLACED
+load_slew422 | sky130_fd_sc_hd__probe_p_8 | location=219596 115171 | orient=R0 | status=PLACED
+load_slew440 | sky130_fd_sc_hd__probe_p_8 | location=177276 216668 | orient=R0 | status=PLACED
+max_cap412 | sky130_fd_sc_hd__buf_16 | location=142514 56561 | orient=R0 | status=PLACED
+wire442 | sky130_fd_sc_hd__buf_6 | location=224394 203441 | orient=R0 | status=PLACED
+fanout463 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=389036 55832 | orient=R0 | status=PLACED
+fanout464 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=355901 129033 | orient=R0 | status=PLACED
+fanout465 | sky130_fd_sc_hd__clkdlybuf4s50_1 | location=303472 113080 | orient=R0 | status=PLACED
+max_cap441 | sky130_fd_sc_hd__probe_p_8 | location=220056 213091 | orient=R0 | status=PLACED
+load_slew449 | sky130_fd_sc_hd__probe_p_8 | location=194756 303708 | orient=R0 | status=PLACED
+load_slew456 | sky130_fd_sc_hd__probe_p_8 | location=295234 201578 | orient=R0 | status=PLACED
+load_slew460 | sky130_fd_sc_hd__probe_p_8 | location=290896 298268 | orient=R0 | status=PLACED
+load_slew451 | sky130_fd_sc_hd__probe_p_8 | location=218676 300131 | orient=R0 | status=PLACED

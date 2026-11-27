@@ -1,0 +1,231 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+
+============================================================
+RESET DISTRIBUTION TREE VERIFICATION
+============================================================
+RESET PORT: rst_n
+RESET NET: rst_n
+
+===== NET:rst_n =====
+LOAD:fanout463/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+  BRANCH OUTPUT:fanout463/X ->net464
+
+  ===== NET:net464 =====
+  LOAD:fanout462/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout462/X ->net463
+
+    ===== NET:net463 =====
+    LOAD:fanout461/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+      BRANCH OUTPUT:fanout461/X ->net462
+
+      ===== NET:net462 =====
+    LOAD:fanout458/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+      BRANCH OUTPUT:fanout458/X ->net459
+
+      ===== NET:net459 =====
+      LOAD:load_slew460/A (sky130_fd_sc_hd__probe_p_8)
+        BRANCH OUTPUT:load_slew460/X ->net461
+
+        ===== NET:net461 =====
+        LOAD:load_slew459/A (sky130_fd_sc_hd__buf_8)
+          BRANCH OUTPUT:load_slew459/X ->net460
+
+          ===== NET:net460 =====
+  LOAD:fanout457/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout457/X ->net458
+
+    ===== NET:net458 =====
+  LOAD:fanout453/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout453/X ->net454
+
+    ===== NET:net454 =====
+    LOAD:load_slew456/A (sky130_fd_sc_hd__probe_p_8)
+      BRANCH OUTPUT:load_slew456/X ->net457
+
+      ===== NET:net457 =====
+    LOAD:load_slew455/A (sky130_fd_sc_hd__buf_6)
+      BRANCH OUTPUT:load_slew455/X ->net456
+
+      ===== NET:net456 =====
+      LOAD:load_slew454/A (sky130_fd_sc_hd__buf_6)
+        BRANCH OUTPUT:load_slew454/X ->net455
+
+        ===== NET:net455 =====
+  LOAD:fanout452/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout452/X ->net453
+
+    ===== NET:net453 =====
+  LOAD:fanout448/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout448/X ->net449
+
+    ===== NET:net449 =====
+    LOAD:load_slew451/A (sky130_fd_sc_hd__probe_p_8)
+      BRANCH OUTPUT:load_slew451/X ->net452
+
+      ===== NET:net452 =====
+      LOAD:load_slew450/A (sky130_fd_sc_hd__probe_p_8)
+        BRANCH OUTPUT:load_slew450/X ->net451
+
+        ===== NET:net451 =====
+        LOAD:load_slew449/A (sky130_fd_sc_hd__probe_p_8)
+          BRANCH OUTPUT:load_slew449/X ->net450
+
+          ===== NET:net450 =====
+  LOAD:fanout447/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout447/X ->net448
+
+    ===== NET:net448 =====
+  LOAD:fanout444/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout444/X ->net445
+
+    ===== NET:net445 =====
+    LOAD:load_slew446/A (sky130_fd_sc_hd__probe_p_8)
+      BRANCH OUTPUT:load_slew446/X ->net447
+
+      ===== NET:net447 =====
+      LOAD:load_slew445/A (sky130_fd_sc_hd__buf_8)
+        BRANCH OUTPUT:load_slew445/X ->net446
+
+        ===== NET:net446 =====
+  LOAD:fanout443/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout443/X ->net444
+
+    ===== NET:net444 =====
+  LOAD:fanout439/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout439/X ->net440
+
+    ===== NET:net440 =====
+    LOAD:wire442/A (sky130_fd_sc_hd__buf_6)
+      BRANCH OUTPUT:wire442/X ->net443
+
+      ===== NET:net443 =====
+      LOAD:max_cap441/A (sky130_fd_sc_hd__probe_p_8)
+        BRANCH OUTPUT:max_cap441/X ->net442
+
+        ===== NET:net442 =====
+        LOAD:load_slew440/A (sky130_fd_sc_hd__probe_p_8)
+          BRANCH OUTPUT:load_slew440/X ->net441
+
+          ===== NET:net441 =====
+  LOAD:fanout438/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout438/X ->net439
+
+    ===== NET:net439 =====
+  LOAD:fanout435/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout435/X ->net436
+
+    ===== NET:net436 =====
+    LOAD:load_slew437/A (sky130_fd_sc_hd__buf_8)
+      BRANCH OUTPUT:load_slew437/X ->net438
+
+      ===== NET:net438 =====
+      LOAD:load_slew436/A (sky130_fd_sc_hd__probe_p_8)
+        BRANCH OUTPUT:load_slew436/X ->net437
+
+        ===== NET:net437 =====
+  LOAD:fanout434/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout434/X ->net435
+
+    ===== NET:net435 =====
+    LOAD:fanout431/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+      BRANCH OUTPUT:fanout431/X ->net432
+
+      ===== NET:net432 =====
+      LOAD:load_slew433/A (sky130_fd_sc_hd__buf_8)
+        BRANCH OUTPUT:load_slew433/X ->net434
+
+        ===== NET:net434 =====
+      LOAD:load_slew432/A (sky130_fd_sc_hd__probe_p_8)
+        BRANCH OUTPUT:load_slew432/X ->net433
+
+        ===== NET:net433 =====
+    LOAD:fanout428/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+      BRANCH OUTPUT:fanout428/X ->net429
+
+      ===== NET:net429 =====
+      LOAD:max_cap430/A (sky130_fd_sc_hd__probe_p_8)
+        BRANCH OUTPUT:max_cap430/X ->net431
+
+        ===== NET:net431 =====
+        LOAD:wire429/A (sky130_fd_sc_hd__buf_6)
+          BRANCH OUTPUT:wire429/X ->net430
+
+          ===== NET:net430 =====
+        LOAD:fanout425/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+          BRANCH OUTPUT:fanout425/X ->net426
+
+          ===== NET:net426 =====
+          LOAD:load_slew427/A (sky130_fd_sc_hd__buf_8)
+            BRANCH OUTPUT:load_slew427/X ->net428
+
+            ===== NET:net428 =====
+            LOAD:load_slew426/A (sky130_fd_sc_hd__buf_8)
+              BRANCH OUTPUT:load_slew426/X ->net427
+
+              ===== NET:net427 =====
+  LOAD:fanout424/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout424/X ->net425
+
+    ===== NET:net425 =====
+  LOAD:fanout421/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout421/X ->net422
+
+    ===== NET:net422 =====
+    LOAD:load_slew423/A (sky130_fd_sc_hd__buf_8)
+      BRANCH OUTPUT:load_slew423/X ->net424
+
+      ===== NET:net424 =====
+    LOAD:load_slew422/A (sky130_fd_sc_hd__probe_p_8)
+      BRANCH OUTPUT:load_slew422/X ->net423
+
+      ===== NET:net423 =====
+  LOAD:fanout420/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout420/X ->net421
+
+    ===== NET:net421 =====
+  LOAD:fanout417/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout417/X ->net418
+
+    ===== NET:net418 =====
+    LOAD:max_cap419/A (sky130_fd_sc_hd__buf_8)
+      BRANCH OUTPUT:max_cap419/X ->net420
+
+      ===== NET:net420 =====
+    LOAD:load_slew418/A (sky130_fd_sc_hd__buf_8)
+      BRANCH OUTPUT:load_slew418/X ->net419
+
+      ===== NET:net419 =====
+  LOAD:fanout416/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout416/X ->net417
+
+    ===== NET:net417 =====
+  LOAD:fanout413/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout413/X ->net414
+
+    ===== NET:net414 =====
+    LOAD:load_slew415/A (sky130_fd_sc_hd__buf_6)
+      BRANCH OUTPUT:load_slew415/X ->net416
+
+      ===== NET:net416 =====
+    LOAD:wire414/A (sky130_fd_sc_hd__buf_6)
+      BRANCH OUTPUT:wire414/X ->net415
+
+      ===== NET:net415 =====
+  LOAD:fanout410/A (sky130_fd_sc_hd__clkdlybuf4s50_1)
+    BRANCH OUTPUT:fanout410/X ->net411
+
+    ===== NET:net411 =====
+    LOAD:max_cap412/A (sky130_fd_sc_hd__buf_16)
+      BRANCH OUTPUT:max_cap412/X ->net413
+
+      ===== NET:net413 =====
+      LOAD:wire411/A (sky130_fd_sc_hd__buf_8)
+        BRANCH OUTPUT:wire411/X ->net412
+
+        ===== NET:net412 =====
+TOP-LEVEL PORT:rst_n

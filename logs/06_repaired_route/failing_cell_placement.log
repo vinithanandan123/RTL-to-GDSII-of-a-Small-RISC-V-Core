@@ -1,0 +1,181 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+========== FAILING CELL PLACEMENT ==========
+CELL: wire375
+MASTER: sky130_fd_sc_hd__buf_6
+LOCATION: 354404 140451
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: wire380
+MASTER: sky130_fd_sc_hd__buf_6
+LOCATION: 339224 147869
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: wire411
+MASTER: sky130_fd_sc_hd__buf_8
+LOCATION: 117936 49891
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: wire414
+MASTER: sky130_fd_sc_hd__buf_6
+LOCATION: 191076 48028
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: wire442
+MASTER: sky130_fd_sc_hd__buf_6
+LOCATION: 224394 203441
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout383
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 204502 156570
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout388
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 286867 202636
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout390
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 310787 112883
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout393
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 294147 129370
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout410
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 139096 55331
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout420
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 139096 156828
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout434
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 388726 54650
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout463
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 389036 55832
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout464
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 355901 129033
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: fanout465
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+LOCATION: 303472 113080
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew415
+MASTER: sky130_fd_sc_hd__buf_6
+LOCATION: 209016 55331
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew418
+MASTER: sky130_fd_sc_hd__buf_8
+LOCATION: 132196 129628
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew422
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 219596 115171
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew432
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 276176 142371
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew436
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 97696 211228
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew440
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 177276 216668
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew449
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 194756 303708
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew451
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 218676 300131
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew456
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 295234 201578
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: load_slew460
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 290896 298268
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: max_cap412
+MASTER: sky130_fd_sc_hd__buf_16
+LOCATION: 142514 56561
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: max_cap419
+MASTER: sky130_fd_sc_hd__buf_8
+LOCATION: 139294 115171
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: max_cap430
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 386400 54698
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------
+CELL: max_cap441
+MASTER: sky130_fd_sc_hd__probe_p_8
+LOCATION: 220056 213091
+ORIENTATION: R0
+STATUS: PLACED
+------------------------------------------

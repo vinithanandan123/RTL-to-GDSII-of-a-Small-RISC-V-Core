@@ -1,0 +1,23 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+===== STEP 1: READ TECHNOLOGY LEF =====
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+===== STEP 2: READ SKY130 LIBERTY =====
+===== STEP 3: READ SYNTHESIZED NETLIST =====
+===== STEP 4: LINK DESIGN =====
+===== STEP 5: READ TIMING CONSTRAINTS =====
+===== STEP 6: INITIALIZE FLOORPLAN =====
+[INFO IFP-0107] Defining die area using utilization: 35.00% and aspect ratio: 1.
+[WARNING IFP-0028] Core area lower left (5.000, 5.000) snapped to (5.060, 5.440).
+[INFO IFP-0001] Added 142 rows of 845 site unithd.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 399.120 399.120 ) um
+[INFO IFP-0101] Core BBox: (  5.060  5.440 ) ( 393.760 391.680 ) um
+[INFO IFP-0102] Core area:                       150131.488 um^2
+[INFO IFP-0103] Total instances area:             52994.576 um^2
+[INFO IFP-0104] Effective utilization:                0.353
+[INFO IFP-0105] Number of instances:                   5916
+===== STEP 7: SAVE FLOORPLAN DATABASE =====
+===== FLOORPLAN INITIALIZATION COMPLETED =====

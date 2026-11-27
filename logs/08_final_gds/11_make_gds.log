@@ -1,0 +1,4 @@
+[INFO] Reading DEF: /home/vinith/vlsi_projects/riscv_frontend/backend/results/08_final_gds/riscv_final.def
+[INFO] Merging standard-cell GDS: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/gds/sky130_fd_sc_hd.gds
+[INFO] Writing final GDS: /home/vinith/vlsi_projects/riscv_frontend/backend/results/08_final_gds/riscv_final.gds
+[INFO] GDS STREAM-OUT COMPLETE

@@ -1,0 +1,66 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+========== LOADING REPAIRED DESIGN ==========
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+========== SETTING ROUTING LAYERS ==========
+========== STARTING GLOBAL ROUTING ==========
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6790  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9180  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.3710  line-2-Via Pitch: 3.1100
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 14377
+[INFO GRT-0019] Found 146 clock nets.
+[WARNING GRT-0281] Net rst_n has a large fanout of 1024 terminals.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 1024
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      49508         49508          0.00%
+met2       Vertical        42110         42110          0.00%
+met3       Horizontal      31288         31288          0.00%
+met4       Vertical        20859         20859          0.00%
+met5       Horizontal       4701          4701          0.00%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove congestion.
+[INFO GRT-0102] Start extra iteration 1/30
+[INFO GRT-0102] Start extra iteration 2/30
+[INFO GRT-0102] Start extra iteration 3/30
+[INFO GRT-0197] Via related to pin nodes: 40310
+[INFO GRT-0198] Via related Steiner nodes: 1528
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 53190
+[INFO GRT-0112] Final usage 3D: 211764
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             49508         20028           40.45%             0 /  0 /  0
+met2             42110         19890           47.23%             0 /  0 /  0
+met3             31288          6038           19.30%             0 /  0 /  0
+met4             20859          6212           29.78%             0 /  0 /  0
+met5              4701            26            0.55%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           148466         52194           35.16%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 496268 um
+[INFO GRT-0014] Routed nets: 6495
+[INFO GRT-0303] Global routing runtime = 00:00:06
+========== GLOBAL ROUTING PARASITICS ==========
+========== SAVING GLOBAL ROUTING DATABASE ==========
+========== GLOBAL ROUTING COMPLETED ==========

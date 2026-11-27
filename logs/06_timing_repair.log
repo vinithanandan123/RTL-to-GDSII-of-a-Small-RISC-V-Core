@@ -1,0 +1,502 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+==============================================
+POST-CTS TIMING REPAIR
+==============================================
+========== INITIAL SETUP TIMING ==========
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _10409_ (recovery check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst_n (in)
+   1.02    3.02 ^ _10409_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           3.02   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock source latency
+   0.00   10.00 ^ clk (in)
+   0.33   10.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28   10.61 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.16   10.77 ^ clkbuf_7_87__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00   10.77 ^ _10409_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.20   10.57   clock uncertainty
+   0.00   10.57   clock reconvergence pessimism
+  -0.32   10.25   library recovery time
+          10.25   data required time
+---------------------------------------------------------
+          10.25   data required time
+          -3.02   data arrival time
+---------------------------------------------------------
+           7.23   slack (MET)
+
+
+Startpoint: instr_rdata[22] (input port clocked by core_clk)
+Endpoint: _10640_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 v input external delay
+   0.00    2.00 v instr_rdata[22] (in)
+   9.24   11.24 ^ _04991_/Y (sky130_fd_sc_hd__nor4_1)
+   2.79   14.04 ^ _04992_/X (sky130_fd_sc_hd__lpflow_isobufsrc_1)
+   1.49   15.52 v _05450_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.78   16.30 ^ _05455_/X (sky130_fd_sc_hd__xor2_1)
+   0.26   16.56 ^ _06239_/X (sky130_fd_sc_hd__o21a_1)
+   0.10   16.67 v _06241_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.38   17.05 ^ _06245_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.22   17.27 v _06247_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.28   17.55 ^ _06248_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.15   17.71 v _06250_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.44   18.14 ^ _06252_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.21   18.36 v _06253_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.38   18.73 ^ _06255_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.22   18.95 ^ _06256_/X (sky130_fd_sc_hd__o21a_1)
+   0.12   19.07 v _06257_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.41   19.48 v _06260_/X (sky130_fd_sc_hd__a311o_1)
+   0.30   19.78 ^ _06261_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.19   19.97 v _06263_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.25   20.23 ^ _06264_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.21   20.44 v _06266_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.40   20.83 ^ _06270_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.16   21.00 v _06273_/Y (sky130_fd_sc_hd__o211ai_1)
+   0.23   21.23 ^ _06275_/Y (sky130_fd_sc_hd__nand3b_1)
+   0.15   21.38 v _06488_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.16   21.55 ^ _06496_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.06   21.60 v _06497_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.34   21.94 ^ _06499_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.15   22.10 ^ _06501_/X (sky130_fd_sc_hd__o21a_1)
+   2.79   24.88 ^ _06502_/Y (sky130_fd_sc_hd__a21boi_0)
+   0.48   25.36 v _07033_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00   25.36 v _10640_/D (sky130_fd_sc_hd__dfrtp_1)
+          25.36   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock source latency
+   0.00   10.00 ^ clk (in)
+   0.33   10.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28   10.61 ^ clkbuf_4_14_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.16   10.78 ^ clkbuf_7_113__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00   10.78 ^ _10640_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.20   10.58   clock uncertainty
+   0.00   10.58   clock reconvergence pessimism
+  -0.31   10.27   library setup time
+          10.27   data required time
+---------------------------------------------------------
+          10.27   data required time
+         -25.36   data arrival time
+---------------------------------------------------------
+         -15.10   slack (VIOLATED)
+
+
+========== INITIAL HOLD TIMING ==========
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _09709_ (removal check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.20    0.20 ^ input external delay
+   0.00    0.20 ^ rst_n (in)
+   0.07    0.27 ^ _09709_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           0.27   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk (in)
+   0.33    0.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28    0.61 ^ clkbuf_4_5_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.17    0.78 ^ clkbuf_7_46__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00    0.78 ^ _09709_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.05    0.83   clock uncertainty
+   0.00    0.83   clock reconvergence pessimism
+   0.38    1.22   library removal time
+           1.22   data required time
+---------------------------------------------------------
+           1.22   data required time
+          -0.27   data arrival time
+---------------------------------------------------------
+          -0.94   slack (VIOLATED)
+
+
+Startpoint: instr_rdata[21] (input port clocked by core_clk)
+Endpoint: _09718_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.20    0.20 v input external delay
+   0.00    0.20 v instr_rdata[21] (in)
+   0.17    0.37 ^ _09118_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.12    0.49 ^ _09121_/X (sky130_fd_sc_hd__a221o_1)
+   0.00    0.49 ^ _09718_/D (sky130_fd_sc_hd__dfrtp_1)
+           0.49   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk (in)
+   0.33    0.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28    0.61 ^ clkbuf_4_5_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.17    0.78 ^ clkbuf_7_47__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00    0.78 ^ _09718_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.05    0.83   clock uncertainty
+   0.00    0.83   clock reconvergence pessimism
+  -0.03    0.80   library hold time
+           0.80   data required time
+---------------------------------------------------------
+           0.80   data required time
+          -0.49   data arrival time
+---------------------------------------------------------
+          -0.31   slack (VIOLATED)
+
+
+========== STARTING SETUP REPAIR ==========
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0094] Found 1087 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 1087 out of 1087 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |    TNS     |  Viol  |  Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpoint
+------------------------------------------------------------------------------------------------------------------------------
+       0* |       0 |       0 |        0 |      0 |     0 |    +0.0% |  -15.096 |   -12462.2 |   1087 | _10640_/D
+    1300* |       0 |     364 |      236 |     85 |    98 |    +5.8% |   -0.127 |       -1.7 |   1087 | _09894_/D
+    1300+ |       0 |     364 |      236 |     85 |    98 |    +5.8% |   -0.127 |       -1.7 |     49 | _09894_/D
+    final |       0 |     368 |      236 |     85 |    98 |    +5.9% |    0.007 |        0.0 |      0 | _10070_/D
+------------------------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0045] Inserted 236 buffers, 1 to split loads.
+[INFO RSZ-0051] Resized 368 instances: 368 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 98 instances.
+[INFO RSZ-0049] Cloned 85 instances.
+[INFO RSZ-0505] Runtime: 178.05s
+========== SETUP AFTER REPAIR ==========
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _10409_ (recovery check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst_n (in)
+   1.02    3.02 ^ _10409_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           3.02   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock source latency
+   0.00   10.00 ^ clk (in)
+   0.33   10.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28   10.61 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.16   10.77 ^ clkbuf_7_87__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00   10.77 ^ _10409_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.20   10.57   clock uncertainty
+   0.00   10.57   clock reconvergence pessimism
+  -0.32   10.25   library recovery time
+          10.25   data required time
+---------------------------------------------------------
+          10.25   data required time
+          -3.02   data arrival time
+---------------------------------------------------------
+           7.23   slack (MET)
+
+
+Startpoint: instr_rdata[22] (input port clocked by core_clk)
+Endpoint: _10070_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 v input external delay
+   0.00    2.00 v instr_rdata[22] (in)
+   0.41    2.41 v _05012_/X (sky130_fd_sc_hd__and4b_2)
+   0.24    2.65 v _05013_/X (sky130_fd_sc_hd__and2_4)
+   0.25    2.89 v rebuffer101/X (sky130_fd_sc_hd__buf_4)
+   0.27    3.16 v rebuffer100/X (sky130_fd_sc_hd__buf_4)
+   0.22    3.38 v rebuffer99/X (sky130_fd_sc_hd__buf_4)
+   0.35    3.73 ^ _05638_/Y (sky130_fd_sc_hd__a222oi_1)
+   0.14    3.87 v _05639_/Y (sky130_fd_sc_hd__nand3_1)
+   0.61    4.48 ^ _05649_/Y (sky130_fd_sc_hd__nor3_2)
+   0.31    4.79 v _05650_/Y (sky130_fd_sc_hd__nor2_2)
+   0.34    5.13 v _06322_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+   0.40    5.54 v _06323_/X (sky130_fd_sc_hd__maj3_1)
+   0.27    5.81 v _06326_/X (sky130_fd_sc_hd__o31a_1)
+   0.14    5.95 v _06327_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.29    6.24 ^ _06328_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.12    6.36 v _06333_/Y (sky130_fd_sc_hd__a2111oi_2)
+   0.08    6.43 ^ _06334_/Y (sky130_fd_sc_hd__clkinv_1)
+   0.08    6.52 v _06339_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.37    6.89 v _06345_/X (sky130_fd_sc_hd__or3_1)
+   0.26    7.15 ^ _06346_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.17    7.31 ^ _06347_/X (sky130_fd_sc_hd__o21a_1)
+   0.06    7.38 v _06348_/Y (sky130_fd_sc_hd__nor2_1)
+   0.12    7.50 ^ _06349_/X (sky130_fd_sc_hd__lpflow_isobufsrc_1)
+   0.08    7.57 v _06350_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.20    7.77 ^ _06351_/Y (sky130_fd_sc_hd__nor2_1)
+   0.15    7.93 v _06355_/Y (sky130_fd_sc_hd__o22ai_1)
+   0.26    8.18 v _06360_/X (sky130_fd_sc_hd__o21a_1)
+   0.20    8.38 ^ _06361_/Y (sky130_fd_sc_hd__nor2_1)
+   0.12    8.50 v _06362_/Y (sky130_fd_sc_hd__nand2_1)
+   0.18    8.68 ^ _06368_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.07    8.75 v _06369_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.31    9.06 v _06370_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+   0.21    9.27 ^ _06371_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.13    9.40 ^ _06375_/X (sky130_fd_sc_hd__or3_1)
+   0.07    9.48 v _06377_/Y (sky130_fd_sc_hd__nand3_1)
+   0.17    9.64 ^ _06385_/Y (sky130_fd_sc_hd__o211ai_1)
+   0.21    9.85 ^ rebuffer196/X (sky130_fd_sc_hd__buf_4)
+   0.08    9.94 v clone16/Y (sky130_fd_sc_hd__a21oi_1)
+   0.30   10.24 v rebuffer17/X (sky130_fd_sc_hd__buf_4)
+   0.16   10.40 ^ _08321_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00   10.40 ^ _10070_/D (sky130_fd_sc_hd__dfrtp_1)
+          10.40   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock source latency
+   0.00   10.00 ^ clk (in)
+   0.33   10.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28   10.61 ^ clkbuf_4_13_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.16   10.77 ^ clkbuf_7_109__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00   10.77 ^ _10070_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.20   10.57   clock uncertainty
+   0.00   10.57   clock reconvergence pessimism
+  -0.16   10.41   library setup time
+          10.41   data required time
+---------------------------------------------------------
+          10.41   data required time
+         -10.40   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+========== STARTING HOLD REPAIR ==========
+[INFO RSZ-0046] Found 1118 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -0.941 | -647.350 | _09709_/RESET_B
+    final |       1 |      47 |            0 |    +0.8% |  -0.941 | -631.173 | _09709_/RESET_B
+--------------------------------------------------------------------------------------
+[WARNING RSZ-0066] Unable to repair all hold violations.
+[INFO RSZ-0132] Resized 1 instances.
+[INFO RSZ-0032] Inserted 47 hold buffers.
+[INFO RSZ-0506] Runtime: 43.19s
+==============================================
+STARTING POST-REPAIR DETAILED PLACEMENT
+==============================================
+[INFO DPL-0006] Core area: 150131.49 um^2
+[INFO DPL-0007] Movable instances area: 62009.47 um^2
+[INFO DPL-0008] Fixed instances area within core: 2522.42 um^2
+[INFO DPL-0009] Utilization: 43.0%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 8555 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |       2098 |       348 |      1540
+        1 |        748 |       112 |       546
+        2 |        397 |        61 |       330
+        3 |        234 |        32 |       193
+        4 |        120 |        14 |       106
+        5 |        114 |        12 |        99
+        6 |         88 |         8 |        62
+        7 |         63 |         7 |        56
+        8 |         47 |         7 |        40
+        9 |         26 |         6 |        20
+       10 |          4 |         2 |         2
+       12 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 12.
+[INFO DPL-0500] Runtime: 0.20s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                4952
+total displacement       2870.0 u
+average displacement        0.3 u
+max displacement           23.1 u
+original HPWL          248082.6 u
+legalized HPWL         250112.8 u
+delta HPWL                    1 %
+
+==============================================
+CHECKING PLACEMENT LEGALITY
+==============================================
+========== FINAL SETUP TIMING ==========
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _10409_ (recovery check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst_n (in)
+   1.05    3.05 ^ _10409_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           3.05   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock source latency
+   0.00   10.00 ^ clk (in)
+   0.33   10.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28   10.61 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.16   10.77 ^ clkbuf_7_87__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00   10.77 ^ _10409_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.20   10.57   clock uncertainty
+   0.00   10.57   clock reconvergence pessimism
+  -0.34   10.23   library recovery time
+          10.23   data required time
+---------------------------------------------------------
+          10.23   data required time
+          -3.05   data arrival time
+---------------------------------------------------------
+           7.19   slack (MET)
+
+
+Startpoint: instr_rdata[21] (input port clocked by core_clk)
+Endpoint: _09718_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 v input external delay
+   0.00    2.00 v instr_rdata[21] (in)
+   2.07    4.07 ^ clone1/Y (sky130_fd_sc_hd__nor4_4)
+   0.44    4.52 v _05823_/Y (sky130_fd_sc_hd__a222oi_1)
+   0.18    4.70 ^ _05824_/Y (sky130_fd_sc_hd__nand2_1)
+   0.07    4.77 v _05833_/Y (sky130_fd_sc_hd__nor3_1)
+   0.09    4.86 ^ _05834_/Y (sky130_fd_sc_hd__nand4_1)
+   0.08    4.94 v _05835_/Y (sky130_fd_sc_hd__clkinv_1)
+   1.21    6.15 ^ _05836_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.29    6.44 v _05839_/Y (sky130_fd_sc_hd__nand2_1)
+   0.31    6.75 ^ _05840_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.10    6.85 v _05873_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.45    7.30 ^ _05876_/Y (sky130_fd_sc_hd__nor4_1)
+   0.22    7.53 v _05877_/Y (sky130_fd_sc_hd__nand2_1)
+   0.56    8.09 ^ _05883_/Y (sky130_fd_sc_hd__nor4_1)
+   0.23    8.32 ^ _05884_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.88    9.20 v _05887_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.79    9.99 v _09121_/X (sky130_fd_sc_hd__a221o_1)
+   0.56   10.55 v hold327/X (sky130_fd_sc_hd__dlygate4sd3_1)
+   0.00   10.55 v _09718_/D (sky130_fd_sc_hd__dfrtp_1)
+          10.55   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock source latency
+   0.00   10.00 ^ clk (in)
+   0.33   10.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28   10.61 ^ clkbuf_4_5_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.17   10.78 ^ clkbuf_7_47__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00   10.79 ^ _09718_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.20   10.59   clock uncertainty
+   0.00   10.59   clock reconvergence pessimism
+  -0.11   10.47   library setup time
+          10.47   data required time
+---------------------------------------------------------
+          10.47   data required time
+         -10.55   data arrival time
+---------------------------------------------------------
+          -0.08   slack (VIOLATED)
+
+
+========== FINAL HOLD TIMING ==========
+Startpoint: rst_n (input port clocked by core_clk)
+Endpoint: _09709_ (removal check against rising-edge clock core_clk)
+Path Group: asynchronous
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.20    0.20 ^ input external delay
+   0.00    0.20 ^ rst_n (in)
+   0.07    0.27 ^ _09709_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           0.27   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk (in)
+   0.33    0.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28    0.61 ^ clkbuf_4_5_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.17    0.78 ^ clkbuf_7_46__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00    0.79 ^ _09709_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.05    0.84   clock uncertainty
+   0.00    0.84   clock reconvergence pessimism
+   0.38    1.22   library removal time
+           1.22   data required time
+---------------------------------------------------------
+           1.22   data required time
+          -0.27   data arrival time
+---------------------------------------------------------
+          -0.94   slack (VIOLATED)
+
+
+Startpoint: instr_rdata[8] (input port clocked by core_clk)
+Endpoint: _09689_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.20    0.20 v input external delay
+   0.00    0.20 v instr_rdata[8] (in)
+   0.13    0.33 ^ _05919_/Y (sky130_fd_sc_hd__nand2_1)
+   0.15    0.48 v _05922_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.19    0.67 ^ _06196_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.05    0.71 v _06197_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.09    0.80 ^ _06199_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00    0.80 ^ _09689_/D (sky130_fd_sc_hd__dfrtp_1)
+           0.80   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk (in)
+   0.33    0.33 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.28    0.61 ^ clkbuf_4_5_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.17    0.78 ^ clkbuf_7_47__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+   0.00    0.79 ^ _09689_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.05    0.84   clock uncertainty
+   0.00    0.84   clock reconvergence pessimism
+  -0.04    0.79   library hold time
+           0.79   data required time
+---------------------------------------------------------
+           0.79   data required time
+          -0.80   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+==============================================
+TIMING REPAIR AND PLACEMENT CHECK COMPLETED
+==============================================

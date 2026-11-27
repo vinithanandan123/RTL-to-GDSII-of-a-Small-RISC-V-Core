@@ -1,0 +1,2001 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+
+================================================
+INSTANCE: wire375
+================================================
+MASTER: sky130_fd_sc_hd__buf_6
+
+PIN: wire375/A
+CONNECTED NET: _03703_
+CONNECTED INSTANCE PINS:
+  wire375/A
+  _06833_/Y
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire375/X
+CONNECTED NET: net376
+CONNECTED INSTANCE PINS:
+  load_slew374/A
+  _08739_/A1
+  _08593_/A1
+  _08521_/A1
+  _08449_/A1
+  _08304_/A1
+  _08159_/A1
+  _07726_/A1
+  _07582_/A1
+  _07367_/A1
+  wire375/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire375/VGND
+CONNECTED NET: NONE
+
+PIN: wire375/VNB
+CONNECTED NET: NONE
+
+PIN: wire375/VPB
+CONNECTED NET: NONE
+
+PIN: wire375/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout383
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout383/A
+CONNECTED NET: _04760_
+CONNECTED INSTANCE PINS:
+  fanout383/A
+  _09112_/A2
+  _09111_/B
+  _09110_/A2
+  _09109_/B
+  _09107_/A2
+  _09106_/B
+  _09101_/A2
+  _09100_/B
+  _09099_/A2
+  _09098_/B
+  _09094_/A2
+  _09093_/B
+  _09046_/Y
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout383/X
+CONNECTED NET: net384
+CONNECTED INSTANCE PINS:
+  _09116_/A2
+  _09115_/B
+  _09114_/A2
+  _09113_/B
+  _09105_/A2
+  _09104_/B
+  _09103_/A2
+  _09102_/B
+  _09096_/A2
+  _09095_/B
+  _09092_/A2
+  _09091_/B
+  _09090_/A2
+  _09089_/B
+  _09085_/A2
+  _09084_/B
+  _09083_/A2
+  _09082_/B
+  _09081_/A2
+  _09080_/B
+  _09079_/A2
+  _09078_/B
+  _09077_/A2
+  _09076_/B
+  _09074_/A2
+  _09073_/B
+  _09072_/A2
+  _09071_/B
+  _09070_/A2
+  _09069_/B
+  _09068_/A2
+  _09067_/B
+  _09066_/A2
+  _09065_/B
+  _09063_/A2
+  _09062_/B
+  _09061_/A2
+  _09060_/B
+  _09059_/A2
+  _09058_/B
+  _09057_/A2
+  _09056_/B
+  _09055_/A2
+  _09054_/B
+  _09052_/A2
+  _09051_/B
+  _09050_/A2
+  _09049_/B
+  _09048_/A2
+  _09047_/B
+  fanout383/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout383/VGND
+CONNECTED NET: NONE
+
+PIN: fanout383/VNB
+CONNECTED NET: NONE
+
+PIN: fanout383/VPB
+CONNECTED NET: NONE
+
+PIN: fanout383/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout388
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout388/A
+CONNECTED NET: _04726_
+CONNECTED INSTANCE PINS:
+  fanout388/A
+  _09039_/A2
+  _09038_/B
+  _09037_/A2
+  _09036_/B
+  _09035_/A2
+  _09034_/B
+  _09028_/A2
+  _09027_/B
+  _09026_/A2
+  _09025_/B
+  _09022_/A2
+  _09021_/B
+  _08972_/Y
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout388/X
+CONNECTED NET: net389
+CONNECTED INSTANCE PINS:
+  _09044_/A2
+  _09043_/B
+  _09041_/A2
+  _09040_/B
+  _09033_/A2
+  _09032_/B
+  _09030_/A2
+  _09029_/B
+  _09024_/A2
+  _09023_/B
+  _09018_/A2
+  _09017_/B
+  _09016_/A2
+  _09015_/B
+  _09012_/A2
+  _09011_/B
+  _09010_/A2
+  _09009_/B
+  _09007_/A2
+  _09006_/B
+  _09005_/A2
+  _09004_/B
+  _09003_/A2
+  _09002_/B
+  _09001_/A2
+  _09000_/B
+  _08999_/A2
+  _08998_/B
+  _08996_/A2
+  _08995_/B
+  _08994_/A2
+  _08993_/B
+  _08992_/A2
+  _08991_/B
+  _08990_/A2
+  _08989_/B
+  _08988_/A2
+  _08987_/B
+  _08985_/A2
+  _08984_/B
+  _08983_/A2
+  _08982_/B
+  _08981_/A2
+  _08980_/B
+  _08979_/A2
+  _08978_/B
+  _08977_/A2
+  _08976_/B
+  _08974_/A2
+  _08973_/B
+  fanout388/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout388/VGND
+CONNECTED NET: NONE
+
+PIN: fanout388/VNB
+CONNECTED NET: NONE
+
+PIN: fanout388/VPB
+CONNECTED NET: NONE
+
+PIN: fanout388/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout393
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout393/A
+CONNECTED NET: _04492_
+CONNECTED INSTANCE PINS:
+  fanout393/A
+  _08529_/A2
+  _08528_/B
+  _08527_/A2
+  _08526_/B
+  _08525_/A2
+  _08524_/B
+  _08518_/A2
+  _08517_/B
+  _08516_/A2
+  _08515_/B
+  _08512_/A2
+  _08511_/B
+  _08504_/A2
+  _08463_/Y
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout393/X
+CONNECTED NET: net394
+CONNECTED INSTANCE PINS:
+  _08534_/A2
+  _08533_/B
+  _08532_/A2
+  _08530_/B
+  _08523_/A2
+  _08522_/B
+  _08521_/A2
+  _08519_/B
+  _08514_/A2
+  _08513_/B
+  _08510_/A2
+  _08508_/B
+  _08507_/A2
+  _08506_/B
+  _08505_/S
+  _08503_/B
+  _08502_/A2
+  _08501_/B
+  _08500_/A2
+  _08499_/B
+  _08497_/A2
+  _08496_/B
+  _08495_/A2
+  _08494_/B
+  _08493_/A2
+  _08492_/B
+  _08491_/A2
+  _08490_/B
+  _08489_/A2
+  _08488_/B
+  _08486_/A2
+  _08485_/B
+  _08484_/A2
+  _08483_/B
+  _08482_/A2
+  _08481_/B
+  _08480_/A2
+  _08479_/B
+  _08478_/A2
+  _08477_/B
+  _08475_/A2
+  _08474_/B
+  _08473_/A2
+  _08472_/B
+  _08471_/A2
+  _08470_/B
+  _08469_/A2
+  _08468_/B
+  _08467_/A2
+  _08466_/B
+  fanout393/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout393/VGND
+CONNECTED NET: NONE
+
+PIN: fanout393/VNB
+CONNECTED NET: NONE
+
+PIN: fanout393/VPB
+CONNECTED NET: NONE
+
+PIN: fanout393/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout390
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout390/A
+CONNECTED NET: _04626_
+CONNECTED INSTANCE PINS:
+  fanout390/A
+  _08822_/A2
+  _08821_/B
+  _08819_/A2
+  _08818_/B
+  _08817_/A2
+  _08816_/B
+  _08811_/A2
+  _08810_/B
+  _08808_/A2
+  _08807_/B
+  _08804_/A2
+  _08803_/B
+  _08755_/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout390/X
+CONNECTED NET: net391
+CONNECTED INSTANCE PINS:
+  _08826_/A2
+  _08825_/B
+  _08824_/A2
+  _08823_/B
+  _08815_/A2
+  _08814_/B
+  _08813_/A2
+  _08812_/B
+  _08806_/A2
+  _08805_/B
+  _08802_/A2
+  _08801_/B
+  _08800_/A2
+  _08799_/B
+  _08794_/A2
+  _08793_/B
+  _08792_/A2
+  _08791_/B
+  _08790_/A2
+  _08789_/B
+  _08788_/A2
+  _08787_/B
+  _08785_/A2
+  _08784_/B
+  _08783_/A2
+  _08782_/B
+  _08781_/A2
+  _08780_/B
+  _08779_/A2
+  _08778_/B
+  _08777_/A2
+  _08776_/B
+  _08774_/A2
+  _08773_/B
+  _08772_/A2
+  _08771_/B
+  _08770_/A2
+  _08769_/B
+  _08768_/A2
+  _08767_/B
+  _08766_/A2
+  _08765_/B
+  _08763_/A2
+  _08762_/B
+  _08761_/A2
+  _08760_/B
+  _08759_/A2
+  _08758_/B
+  _08757_/A2
+  _08756_/B
+  fanout390/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout390/VGND
+CONNECTED NET: NONE
+
+PIN: fanout390/VNB
+CONNECTED NET: NONE
+
+PIN: fanout390/VPB
+CONNECTED NET: NONE
+
+PIN: fanout390/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: wire380
+================================================
+MASTER: sky130_fd_sc_hd__buf_6
+
+PIN: wire380/A
+CONNECTED NET: _03747_
+CONNECTED INSTANCE PINS:
+  wire380/A
+  _06884_/Y
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire380/X
+CONNECTED NET: net381
+CONNECTED INSTANCE PINS:
+  load_slew379/A
+  load_slew378/A
+  _08965_/A1
+  _08891_/A1
+  _08746_/A1
+  _08672_/A1
+  _08166_/A1
+  _07806_/A1
+  _07659_/A1
+  _07589_/A1
+  _07224_/A1
+  _07005_/A1
+  wire380/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire380/VGND
+CONNECTED NET: NONE
+
+PIN: wire380/VNB
+CONNECTED NET: NONE
+
+PIN: wire380/VPB
+CONNECTED NET: NONE
+
+PIN: wire380/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout410
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout410/A
+CONNECTED NET: net464
+CONNECTED INSTANCE PINS:
+  fanout462/A
+  fanout457/A
+  fanout453/A
+  fanout452/A
+  fanout448/A
+  fanout447/A
+  fanout444/A
+  fanout443/A
+  fanout439/A
+  fanout438/A
+  fanout435/A
+  fanout434/A
+  fanout424/A
+  fanout421/A
+  fanout420/A
+  fanout417/A
+  fanout416/A
+  fanout413/A
+  fanout410/A
+  _10688_/RESET_B
+  _10673_/RESET_B
+  _10656_/RESET_B
+  _10624_/RESET_B
+  _10545_/RESET_B
+  _10528_/RESET_B
+  _10513_/RESET_B
+  _10496_/RESET_B
+  _10481_/RESET_B
+  _10464_/RESET_B
+  _10265_/RESET_B
+  _10169_/RESET_B
+  _10137_/RESET_B
+  _10105_/RESET_B
+  _09945_/RESET_B
+  _09913_/RESET_B
+  _09849_/RESET_B
+  _09817_/RESET_B
+  fanout463/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout410/X
+CONNECTED NET: net411
+CONNECTED INSTANCE PINS:
+  max_cap412/A
+  _10451_/RESET_B
+  _10323_/RESET_B
+  _10259_/RESET_B
+  _10257_/RESET_B
+  _10112_/RESET_B
+  _10080_/RESET_B
+  _10003_/RESET_B
+  _09969_/RESET_B
+  _09875_/RESET_B
+  _09821_/RESET_B
+  _09777_/RESET_B
+  fanout410/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout410/VGND
+CONNECTED NET: NONE
+
+PIN: fanout410/VNB
+CONNECTED NET: NONE
+
+PIN: fanout410/VPB
+CONNECTED NET: NONE
+
+PIN: fanout410/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: wire411
+================================================
+MASTER: sky130_fd_sc_hd__buf_8
+
+PIN: wire411/A
+CONNECTED NET: net413
+CONNECTED INSTANCE PINS:
+  wire411/A
+  _10705_/RESET_B
+  _10643_/RESET_B
+  _10609_/RESET_B
+  _10579_/RESET_B
+  _10417_/RESET_B
+  _10387_/RESET_B
+  _10355_/RESET_B
+  _10291_/RESET_B
+  _10227_/RESET_B
+  _10193_/RESET_B
+  _10163_/RESET_B
+  _10131_/RESET_B
+  _10097_/RESET_B
+  _10065_/RESET_B
+  _10033_/RESET_B
+  _09907_/RESET_B
+  _09811_/RESET_B
+  _09779_/RESET_B
+  _09747_/RESET_B
+  max_cap412/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire411/X
+CONNECTED NET: net412
+CONNECTED INSTANCE PINS:
+  _10641_/RESET_B
+  _10577_/RESET_B
+  _10449_/RESET_B
+  _10385_/RESET_B
+  _10368_/RESET_B
+  _10353_/RESET_B
+  _10321_/RESET_B
+  _10289_/RESET_B
+  _10225_/RESET_B
+  _10176_/RESET_B
+  _10161_/RESET_B
+  _10129_/RESET_B
+  _10001_/RESET_B
+  _09937_/RESET_B
+  _09905_/RESET_B
+  _09873_/RESET_B
+  _09841_/RESET_B
+  _09809_/RESET_B
+  _09792_/RESET_B
+  _09745_/RESET_B
+  wire411/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire411/VGND
+CONNECTED NET: NONE
+
+PIN: wire411/VNB
+CONNECTED NET: NONE
+
+PIN: wire411/VPB
+CONNECTED NET: NONE
+
+PIN: wire411/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: wire414
+================================================
+MASTER: sky130_fd_sc_hd__buf_6
+
+PIN: wire414/A
+CONNECTED NET: net414
+CONNECTED INSTANCE PINS:
+  load_slew415/A
+  wire414/A
+  _10709_/RESET_B
+  _10684_/RESET_B
+  _10645_/RESET_B
+  _10620_/RESET_B
+  _10613_/RESET_B
+  _10485_/RESET_B
+  _10421_/RESET_B
+  _10357_/RESET_B
+  _10332_/RESET_B
+  _10197_/RESET_B
+  _10140_/RESET_B
+  _10101_/RESET_B
+  _10076_/RESET_B
+  _10069_/RESET_B
+  _10037_/RESET_B
+  _09884_/RESET_B
+  _09813_/RESET_B
+  _09788_/RESET_B
+  _09724_/RESET_B
+  fanout413/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire414/X
+CONNECTED NET: net415
+CONNECTED INSTANCE PINS:
+  _10707_/RESET_B
+  _10611_/RESET_B
+  _10517_/RESET_B
+  _10515_/RESET_B
+  _10483_/RESET_B
+  _10419_/RESET_B
+  _10389_/RESET_B
+  _10165_/RESET_B
+  _10099_/RESET_B
+  _10067_/RESET_B
+  _10035_/RESET_B
+  _10005_/RESET_B
+  _09971_/RESET_B
+  _09941_/RESET_B
+  _09939_/RESET_B
+  _09909_/RESET_B
+  _09885_/RESET_B
+  _09843_/RESET_B
+  _09749_/RESET_B
+  _09725_/RESET_B
+  wire414/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire414/VGND
+CONNECTED NET: NONE
+
+PIN: wire414/VNB
+CONNECTED NET: NONE
+
+PIN: wire414/VPB
+CONNECTED NET: NONE
+
+PIN: wire414/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew415
+================================================
+MASTER: sky130_fd_sc_hd__buf_6
+
+PIN: load_slew415/A
+CONNECTED NET: net414
+CONNECTED INSTANCE PINS:
+  load_slew415/A
+  wire414/A
+  _10709_/RESET_B
+  _10684_/RESET_B
+  _10645_/RESET_B
+  _10620_/RESET_B
+  _10613_/RESET_B
+  _10485_/RESET_B
+  _10421_/RESET_B
+  _10357_/RESET_B
+  _10332_/RESET_B
+  _10197_/RESET_B
+  _10140_/RESET_B
+  _10101_/RESET_B
+  _10076_/RESET_B
+  _10069_/RESET_B
+  _10037_/RESET_B
+  _09884_/RESET_B
+  _09813_/RESET_B
+  _09788_/RESET_B
+  _09724_/RESET_B
+  fanout413/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew415/X
+CONNECTED NET: net416
+CONNECTED INSTANCE PINS:
+  _10556_/RESET_B
+  _09973_/RESET_B
+  _09948_/RESET_B
+  _09916_/RESET_B
+  _09877_/RESET_B
+  _09852_/RESET_B
+  _09845_/RESET_B
+  _09842_/RESET_B
+  _09820_/RESET_B
+  _09810_/RESET_B
+  _09781_/RESET_B
+  load_slew415/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew415/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew415/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew415/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew415/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew418
+================================================
+MASTER: sky130_fd_sc_hd__buf_8
+
+PIN: load_slew418/A
+CONNECTED NET: net418
+CONNECTED INSTANCE PINS:
+  max_cap419/A
+  load_slew418/A
+  _10499_/RESET_B
+  _10478_/RESET_B
+  _10365_/RESET_B
+  _10269_/RESET_B
+  _10237_/RESET_B
+  _10205_/RESET_B
+  _10173_/RESET_B
+  _10045_/RESET_B
+  _09934_/RESET_B
+  _09917_/RESET_B
+  _09762_/RESET_B
+  _09731_/RESET_B
+  fanout417/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew418/X
+CONNECTED NET: net419
+CONNECTED INSTANCE PINS:
+  _10685_/RESET_B
+  _10638_/RESET_B
+  _10606_/RESET_B
+  _10574_/RESET_B
+  _10510_/RESET_B
+  _10446_/RESET_B
+  _10382_/RESET_B
+  _10350_/RESET_B
+  _10286_/RESET_B
+  _10254_/RESET_B
+  _10222_/RESET_B
+  _10094_/RESET_B
+  _10062_/RESET_B
+  _10030_/RESET_B
+  _10016_/RESET_B
+  _09966_/RESET_B
+  _09952_/RESET_B
+  _09742_/RESET_B
+  _09735_/RESET_B
+  load_slew418/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew418/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew418/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew418/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew418/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: max_cap419
+================================================
+MASTER: sky130_fd_sc_hd__buf_8
+
+PIN: max_cap419/A
+CONNECTED NET: net418
+CONNECTED INSTANCE PINS:
+  max_cap419/A
+  load_slew418/A
+  _10499_/RESET_B
+  _10478_/RESET_B
+  _10365_/RESET_B
+  _10269_/RESET_B
+  _10237_/RESET_B
+  _10205_/RESET_B
+  _10173_/RESET_B
+  _10045_/RESET_B
+  _09934_/RESET_B
+  _09917_/RESET_B
+  _09762_/RESET_B
+  _09731_/RESET_B
+  fanout417/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap419/X
+CONNECTED NET: net420
+CONNECTED INSTANCE PINS:
+  _10592_/RESET_B
+  _10560_/RESET_B
+  _10432_/RESET_B
+  _10429_/RESET_B
+  _10400_/RESET_B
+  _10336_/RESET_B
+  _10304_/RESET_B
+  _10272_/RESET_B
+  _10240_/RESET_B
+  _10208_/RESET_B
+  _10144_/RESET_B
+  _10048_/RESET_B
+  _09984_/RESET_B
+  _09920_/RESET_B
+  _09888_/RESET_B
+  _09856_/RESET_B
+  _09824_/RESET_B
+  _09760_/RESET_B
+  _09728_/RESET_B
+  max_cap419/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap419/VGND
+CONNECTED NET: NONE
+
+PIN: max_cap419/VNB
+CONNECTED NET: NONE
+
+PIN: max_cap419/VPB
+CONNECTED NET: NONE
+
+PIN: max_cap419/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout420
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout420/A
+CONNECTED NET: net464
+CONNECTED INSTANCE PINS:
+  fanout462/A
+  fanout457/A
+  fanout453/A
+  fanout452/A
+  fanout448/A
+  fanout447/A
+  fanout444/A
+  fanout443/A
+  fanout439/A
+  fanout438/A
+  fanout435/A
+  fanout434/A
+  fanout424/A
+  fanout421/A
+  fanout420/A
+  fanout417/A
+  fanout416/A
+  fanout413/A
+  fanout410/A
+  _10688_/RESET_B
+  _10673_/RESET_B
+  _10656_/RESET_B
+  _10624_/RESET_B
+  _10545_/RESET_B
+  _10528_/RESET_B
+  _10513_/RESET_B
+  _10496_/RESET_B
+  _10481_/RESET_B
+  _10464_/RESET_B
+  _10265_/RESET_B
+  _10169_/RESET_B
+  _10137_/RESET_B
+  _10105_/RESET_B
+  _09945_/RESET_B
+  _09913_/RESET_B
+  _09849_/RESET_B
+  _09817_/RESET_B
+  fanout463/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout420/X
+CONNECTED NET: net421
+CONNECTED INSTANCE PINS:
+  _10702_/RESET_B
+  _10695_/RESET_B
+  _10670_/RESET_B
+  _10599_/RESET_B
+  _10563_/RESET_B
+  _10542_/RESET_B
+  _10503_/RESET_B
+  _10498_/RESET_B
+  _10471_/RESET_B
+  _10439_/RESET_B
+  _10414_/RESET_B
+  _10407_/RESET_B
+  _10402_/RESET_B
+  _10371_/RESET_B
+  _10343_/RESET_B
+  _10318_/RESET_B
+  _10275_/RESET_B
+  _10243_/RESET_B
+  _10215_/RESET_B
+  _10190_/RESET_B
+  _10183_/RESET_B
+  _10158_/RESET_B
+  _10151_/RESET_B
+  _10126_/RESET_B
+  _10119_/RESET_B
+  _10087_/RESET_B
+  _10082_/RESET_B
+  _10055_/RESET_B
+  _10023_/RESET_B
+  _09998_/RESET_B
+  _09991_/RESET_B
+  _09927_/RESET_B
+  _09902_/RESET_B
+  _09895_/RESET_B
+  _09870_/RESET_B
+  _09863_/RESET_B
+  _09838_/RESET_B
+  _09831_/RESET_B
+  _09806_/RESET_B
+  _09799_/RESET_B
+  _09774_/RESET_B
+  _09763_/RESET_B
+  fanout420/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout420/VGND
+CONNECTED NET: NONE
+
+PIN: fanout420/VNB
+CONNECTED NET: NONE
+
+PIN: fanout420/VPB
+CONNECTED NET: NONE
+
+PIN: fanout420/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout434
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout434/A
+CONNECTED NET: net464
+CONNECTED INSTANCE PINS:
+  fanout462/A
+  fanout457/A
+  fanout453/A
+  fanout452/A
+  fanout448/A
+  fanout447/A
+  fanout444/A
+  fanout443/A
+  fanout439/A
+  fanout438/A
+  fanout435/A
+  fanout434/A
+  fanout424/A
+  fanout421/A
+  fanout420/A
+  fanout417/A
+  fanout416/A
+  fanout413/A
+  fanout410/A
+  _10688_/RESET_B
+  _10673_/RESET_B
+  _10656_/RESET_B
+  _10624_/RESET_B
+  _10545_/RESET_B
+  _10528_/RESET_B
+  _10513_/RESET_B
+  _10496_/RESET_B
+  _10481_/RESET_B
+  _10464_/RESET_B
+  _10265_/RESET_B
+  _10169_/RESET_B
+  _10137_/RESET_B
+  _10105_/RESET_B
+  _09945_/RESET_B
+  _09913_/RESET_B
+  _09849_/RESET_B
+  _09817_/RESET_B
+  fanout463/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout434/X
+CONNECTED NET: net435
+CONNECTED INSTANCE PINS:
+  fanout431/A
+  fanout428/A
+  _10708_/RESET_B
+  _10676_/RESET_B
+  _10662_/RESET_B
+  _10612_/RESET_B
+  _10598_/RESET_B
+  _10548_/RESET_B
+  _10534_/RESET_B
+  _10516_/RESET_B
+  _10502_/RESET_B
+  _10452_/RESET_B
+  _10420_/RESET_B
+  _10406_/RESET_B
+  _10388_/RESET_B
+  _10342_/RESET_B
+  _10324_/RESET_B
+  _10310_/RESET_B
+  _10244_/RESET_B
+  _09848_/RESET_B
+  _09695_/RESET_B
+  _09694_/RESET_B
+  _09693_/RESET_B
+  _09690_/RESET_B
+  _09689_/RESET_B
+  fanout434/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout434/VGND
+CONNECTED NET: NONE
+
+PIN: fanout434/VNB
+CONNECTED NET: NONE
+
+PIN: fanout434/VPB
+CONNECTED NET: NONE
+
+PIN: fanout434/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: max_cap430
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: max_cap430/A
+CONNECTED NET: net429
+CONNECTED INSTANCE PINS:
+  max_cap430/A
+  _09718_/RESET_B
+  _09710_/RESET_B
+  _09709_/RESET_B
+  _09708_/RESET_B
+  _09707_/RESET_B
+  _09700_/RESET_B
+  _09698_/RESET_B
+  _09697_/RESET_B
+  _09696_/RESET_B
+  _09692_/RESET_B
+  _09691_/RESET_B
+  fanout428/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap430/X
+CONNECTED NET: net431
+CONNECTED INSTANCE PINS:
+  wire429/A
+  fanout425/A
+  _10423_/RESET_B
+  _10167_/RESET_B
+  _10136_/RESET_B
+  _10104_/RESET_B
+  _09717_/RESET_B
+  _09716_/RESET_B
+  _09715_/RESET_B
+  _09714_/RESET_B
+  _09713_/RESET_B
+  _09712_/RESET_B
+  _09711_/RESET_B
+  _09706_/RESET_B
+  _09705_/RESET_B
+  _09704_/RESET_B
+  _09703_/RESET_B
+  _09702_/RESET_B
+  max_cap430/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap430/VGND
+CONNECTED NET: NONE
+
+PIN: max_cap430/VNB
+CONNECTED NET: NONE
+
+PIN: max_cap430/VPB
+CONNECTED NET: NONE
+
+PIN: max_cap430/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew422
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew422/A
+CONNECTED NET: net422
+CONNECTED INSTANCE PINS:
+  load_slew423/A
+  load_slew422/A
+  _10706_/RESET_B
+  _10630_/RESET_B
+  _10290_/RESET_B
+  _10258_/RESET_B
+  _10226_/RESET_B
+  _10034_/RESET_B
+  _10002_/RESET_B
+  _09798_/RESET_B
+  _09778_/RESET_B
+  _09773_/RESET_B
+  _09766_/RESET_B
+  _09734_/RESET_B
+  fanout421/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew422/X
+CONNECTED NET: net423
+CONNECTED INSTANCE PINS:
+  _10674_/RESET_B
+  _10642_/RESET_B
+  _10621_/RESET_B
+  _10589_/RESET_B
+  _10546_/RESET_B
+  _10525_/RESET_B
+  _10493_/RESET_B
+  _10461_/RESET_B
+  _10397_/RESET_B
+  _10322_/RESET_B
+  _10301_/RESET_B
+  _10130_/RESET_B
+  _10013_/RESET_B
+  _09981_/RESET_B
+  _09970_/RESET_B
+  _09949_/RESET_B
+  _09938_/RESET_B
+  _09853_/RESET_B
+  _09746_/RESET_B
+  load_slew422/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew422/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew422/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew422/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew422/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew432
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew432/A
+CONNECTED NET: net432
+CONNECTED INSTANCE PINS:
+  load_slew433/A
+  load_slew432/A
+  _10648_/RESET_B
+  _10552_/RESET_B
+  _10532_/RESET_B
+  _10520_/RESET_B
+  _10468_/RESET_B
+  _10436_/RESET_B
+  _10404_/RESET_B
+  _10276_/RESET_B
+  _10116_/RESET_B
+  _09988_/RESET_B
+  _09924_/RESET_B
+  _09860_/RESET_B
+  fanout431/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew432/X
+CONNECTED NET: net433
+CONNECTED INSTANCE PINS:
+  _10692_/RESET_B
+  _10374_/RESET_B
+  _10214_/RESET_B
+  _10182_/RESET_B
+  _10164_/RESET_B
+  _10118_/RESET_B
+  _10100_/RESET_B
+  _10068_/RESET_B
+  _10052_/RESET_B
+  _10036_/RESET_B
+  _09956_/RESET_B
+  _09940_/RESET_B
+  _09926_/RESET_B
+  _09892_/RESET_B
+  _09844_/RESET_B
+  _09830_/RESET_B
+  _09764_/RESET_B
+  _09732_/RESET_B
+  load_slew432/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew432/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew432/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew432/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew432/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: max_cap412
+================================================
+MASTER: sky130_fd_sc_hd__buf_16
+
+PIN: max_cap412/A
+CONNECTED NET: net411
+CONNECTED INSTANCE PINS:
+  max_cap412/A
+  _10451_/RESET_B
+  _10323_/RESET_B
+  _10259_/RESET_B
+  _10257_/RESET_B
+  _10112_/RESET_B
+  _10080_/RESET_B
+  _10003_/RESET_B
+  _09969_/RESET_B
+  _09875_/RESET_B
+  _09821_/RESET_B
+  _09777_/RESET_B
+  fanout410/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap412/X
+CONNECTED NET: net413
+CONNECTED INSTANCE PINS:
+  wire411/A
+  _10705_/RESET_B
+  _10643_/RESET_B
+  _10609_/RESET_B
+  _10579_/RESET_B
+  _10417_/RESET_B
+  _10387_/RESET_B
+  _10355_/RESET_B
+  _10291_/RESET_B
+  _10227_/RESET_B
+  _10193_/RESET_B
+  _10163_/RESET_B
+  _10131_/RESET_B
+  _10097_/RESET_B
+  _10065_/RESET_B
+  _10033_/RESET_B
+  _09907_/RESET_B
+  _09811_/RESET_B
+  _09779_/RESET_B
+  _09747_/RESET_B
+  max_cap412/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap412/VGND
+CONNECTED NET: NONE
+
+PIN: max_cap412/VNB
+CONNECTED NET: NONE
+
+PIN: max_cap412/VPB
+CONNECTED NET: NONE
+
+PIN: max_cap412/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew436
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew436/A
+CONNECTED NET: net438
+CONNECTED INSTANCE PINS:
+  load_slew436/A
+  _10664_/RESET_B
+  _10632_/RESET_B
+  _10568_/RESET_B
+  _10472_/RESET_B
+  _10338_/RESET_B
+  _10279_/RESET_B
+  _10248_/RESET_B
+  _10247_/RESET_B
+  _10216_/RESET_B
+  _10114_/RESET_B
+  _10056_/RESET_B
+  _10024_/RESET_B
+  _09992_/RESET_B
+  _09959_/RESET_B
+  _09928_/RESET_B
+  _09896_/RESET_B
+  _09890_/RESET_B
+  _09858_/RESET_B
+  _09767_/RESET_B
+  load_slew437/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew436/X
+CONNECTED NET: net437
+CONNECTED INSTANCE PINS:
+  _10663_/RESET_B
+  _10631_/RESET_B
+  _10567_/RESET_B
+  _10535_/RESET_B
+  _10376_/RESET_B
+  _10375_/RESET_B
+  _10344_/RESET_B
+  _10311_/RESET_B
+  _10152_/RESET_B
+  _09855_/RESET_B
+  _09832_/RESET_B
+  _09823_/RESET_B
+  _09800_/RESET_B
+  _09791_/RESET_B
+  _09736_/RESET_B
+  _09727_/RESET_B
+  load_slew436/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew436/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew436/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew436/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew436/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew440
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew440/A
+CONNECTED NET: net442
+CONNECTED INSTANCE PINS:
+  load_slew440/A
+  _10637_/RESET_B
+  _10509_/RESET_B
+  _10413_/RESET_B
+  _10349_/RESET_B
+  _10317_/RESET_B
+  _10306_/RESET_B
+  _10285_/RESET_B
+  _10221_/RESET_B
+  _10189_/RESET_B
+  _10178_/RESET_B
+  _10050_/RESET_B
+  _10029_/RESET_B
+  _09965_/RESET_B
+  _09933_/RESET_B
+  _09837_/RESET_B
+  _09805_/RESET_B
+  max_cap441/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew440/X
+CONNECTED NET: net441
+CONNECTED INSTANCE PINS:
+  _10701_/RESET_B
+  _10690_/RESET_B
+  _10669_/RESET_B
+  _10626_/RESET_B
+  _10605_/RESET_B
+  _10530_/RESET_B
+  _10466_/RESET_B
+  _10434_/RESET_B
+  _10274_/RESET_B
+  _10242_/RESET_B
+  _09997_/RESET_B
+  _09931_/RESET_B
+  _09922_/RESET_B
+  _09835_/RESET_B
+  _09794_/RESET_B
+  _09741_/RESET_B
+  load_slew440/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew440/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew440/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew440/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew440/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: wire442
+================================================
+MASTER: sky130_fd_sc_hd__buf_6
+
+PIN: wire442/A
+CONNECTED NET: net440
+CONNECTED INSTANCE PINS:
+  wire442/A
+  fanout439/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire442/X
+CONNECTED NET: net443
+CONNECTED INSTANCE PINS:
+  max_cap441/A
+  _10698_/RESET_B
+  _10602_/RESET_B
+  _10506_/RESET_B
+  _10474_/RESET_B
+  _10410_/RESET_B
+  _10381_/RESET_B
+  _10218_/RESET_B
+  _10157_/RESET_B
+  _10058_/RESET_B
+  _10026_/RESET_B
+  _09963_/RESET_B
+  _09899_/RESET_B
+  _09867_/RESET_B
+  _09866_/RESET_B
+  _09840_/RESET_B
+  _09803_/RESET_B
+  _09771_/RESET_B
+  _09770_/RESET_B
+  wire442/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: wire442/VGND
+CONNECTED NET: NONE
+
+PIN: wire442/VNB
+CONNECTED NET: NONE
+
+PIN: wire442/VPB
+CONNECTED NET: NONE
+
+PIN: wire442/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout463
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout463/A
+CONNECTED NET: rst_n
+CONNECTED INSTANCE PINS:
+  fanout463/A
+CONNECTED TOP-LEVEL PORTS:
+  rst_n
+
+PIN: fanout463/X
+CONNECTED NET: net464
+CONNECTED INSTANCE PINS:
+  fanout462/A
+  fanout457/A
+  fanout453/A
+  fanout452/A
+  fanout448/A
+  fanout447/A
+  fanout444/A
+  fanout443/A
+  fanout439/A
+  fanout438/A
+  fanout435/A
+  fanout434/A
+  fanout424/A
+  fanout421/A
+  fanout420/A
+  fanout417/A
+  fanout416/A
+  fanout413/A
+  fanout410/A
+  _10688_/RESET_B
+  _10673_/RESET_B
+  _10656_/RESET_B
+  _10624_/RESET_B
+  _10545_/RESET_B
+  _10528_/RESET_B
+  _10513_/RESET_B
+  _10496_/RESET_B
+  _10481_/RESET_B
+  _10464_/RESET_B
+  _10265_/RESET_B
+  _10169_/RESET_B
+  _10137_/RESET_B
+  _10105_/RESET_B
+  _09945_/RESET_B
+  _09913_/RESET_B
+  _09849_/RESET_B
+  _09817_/RESET_B
+  fanout463/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout463/VGND
+CONNECTED NET: NONE
+
+PIN: fanout463/VNB
+CONNECTED NET: NONE
+
+PIN: fanout463/VPB
+CONNECTED NET: NONE
+
+PIN: fanout463/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout464
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout464/A
+CONNECTED NET: instr_rdata[24]
+CONNECTED INSTANCE PINS:
+  fanout464/A
+  hold348/A
+  clone198/A
+  _05029_/B
+CONNECTED TOP-LEVEL PORTS:
+  instr_rdata[24]
+
+PIN: fanout464/X
+CONNECTED NET: net465
+CONNECTED INSTANCE PINS:
+  clone95/A
+  clone83/B
+  clone76/B
+  clone74/B
+  clone61/B
+  clone57/B
+  clone54/B
+  clone52/B
+  clone44/B
+  clone39/B
+  clone32/B
+  clone25/B
+  clone23/B
+  clone1/D
+  _09514_/A
+  _06863_/A1
+  _05730_/B
+  _05729_/B
+  _05728_/B
+  _05724_/B
+  _05715_/B
+  _05714_/B
+  _05711_/B
+  _05710_/B
+  _05353_/A
+  _05149_/B
+  _05147_/B
+  _05144_/B
+  _05142_/B
+  _05138_/B
+  _05136_/B
+  _05126_/B
+  _05122_/B
+  _05121_/B
+  _05117_/B
+  _05116_/B
+  _05045_/B
+  _05044_/B
+  _05036_/B
+  _05034_/B
+  _05033_/B
+  _05030_/B
+  _05023_/B
+  _05019_/B
+  _05010_/C_N
+  _05006_/B
+  _05000_/B
+  _04996_/B
+  _04991_/D
+  _04989_/C
+  fanout464/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout464/VGND
+CONNECTED NET: NONE
+
+PIN: fanout464/VNB
+CONNECTED NET: NONE
+
+PIN: fanout464/VPB
+CONNECTED NET: NONE
+
+PIN: fanout464/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: fanout465
+================================================
+MASTER: sky130_fd_sc_hd__clkdlybuf4s50_1
+
+PIN: fanout465/A
+CONNECTED NET: instr_rdata[19]
+CONNECTED INSTANCE PINS:
+  fanout465/A
+  hold355/A
+  _06908_/C
+  _09200_/B
+CONNECTED TOP-LEVEL PORTS:
+  instr_rdata[19]
+
+PIN: fanout465/X
+CONNECTED NET: net466
+CONNECTED INSTANCE PINS:
+  clone251/A
+  clone223/B
+  clone209/B
+  clone193/B
+  clone180/B
+  clone179/B
+  clone163/A
+  clone153/B
+  clone143/B
+  clone137/B
+  clone133/B
+  clone132/B
+  clone15/B
+  clone2/A
+  _09495_/B
+  _09491_/B
+  _09486_/B
+  _09485_/B
+  _09481_/B
+  _09477_/B
+  _09473_/B
+  _09472_/B
+  _09470_/B
+  _09468_/B
+  _09467_/B
+  _09459_/A2
+  _09455_/B
+  _09447_/B
+  _09443_/B
+  _09438_/B
+  _09436_/B
+  _09434_/B
+  _09431_/B
+  _09430_/B
+  _09429_/B
+  _09428_/B
+  _09427_/B
+  _09426_/B
+  _09367_/B
+  _09333_/B
+  _09300_/B
+  _09222_/B
+  _09178_/B
+  _09145_/C_N
+  _09134_/B
+  _08908_/B
+  _08353_/B
+  _08019_/B
+  _07131_/D
+  _05797_/A
+  fanout465/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: fanout465/VGND
+CONNECTED NET: NONE
+
+PIN: fanout465/VNB
+CONNECTED NET: NONE
+
+PIN: fanout465/VPB
+CONNECTED NET: NONE
+
+PIN: fanout465/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: max_cap441
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: max_cap441/A
+CONNECTED NET: net443
+CONNECTED INSTANCE PINS:
+  max_cap441/A
+  _10698_/RESET_B
+  _10602_/RESET_B
+  _10506_/RESET_B
+  _10474_/RESET_B
+  _10410_/RESET_B
+  _10381_/RESET_B
+  _10218_/RESET_B
+  _10157_/RESET_B
+  _10058_/RESET_B
+  _10026_/RESET_B
+  _09963_/RESET_B
+  _09899_/RESET_B
+  _09867_/RESET_B
+  _09866_/RESET_B
+  _09840_/RESET_B
+  _09803_/RESET_B
+  _09771_/RESET_B
+  _09770_/RESET_B
+  wire442/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap441/X
+CONNECTED NET: net442
+CONNECTED INSTANCE PINS:
+  load_slew440/A
+  _10637_/RESET_B
+  _10509_/RESET_B
+  _10413_/RESET_B
+  _10349_/RESET_B
+  _10317_/RESET_B
+  _10306_/RESET_B
+  _10285_/RESET_B
+  _10221_/RESET_B
+  _10189_/RESET_B
+  _10178_/RESET_B
+  _10050_/RESET_B
+  _10029_/RESET_B
+  _09965_/RESET_B
+  _09933_/RESET_B
+  _09837_/RESET_B
+  _09805_/RESET_B
+  max_cap441/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: max_cap441/VGND
+CONNECTED NET: NONE
+
+PIN: max_cap441/VNB
+CONNECTED NET: NONE
+
+PIN: max_cap441/VPB
+CONNECTED NET: NONE
+
+PIN: max_cap441/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew449
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew449/A
+CONNECTED NET: net451
+CONNECTED INSTANCE PINS:
+  load_slew449/A
+  _10651_/RESET_B
+  _10544_/RESET_B
+  _10480_/RESET_B
+  _10427_/RESET_B
+  _10379_/RESET_B
+  _10299_/RESET_B
+  _10267_/RESET_B
+  _10235_/RESET_B
+  _10203_/RESET_B
+  _10171_/RESET_B
+  _10096_/RESET_B
+  _09915_/RESET_B
+  _09851_/RESET_B
+  _09755_/RESET_B
+  load_slew450/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew449/X
+CONNECTED NET: net450
+CONNECTED INSTANCE PINS:
+  _10661_/RESET_B
+  _10587_/RESET_B
+  _10533_/RESET_B
+  _10459_/RESET_B
+  _10309_/RESET_B
+  _10113_/RESET_B
+  _10107_/RESET_B
+  _10064_/RESET_B
+  _10043_/RESET_B
+  _10032_/RESET_B
+  _09979_/RESET_B
+  _09947_/RESET_B
+  _09861_/RESET_B
+  _09829_/RESET_B
+  _09765_/RESET_B
+  _09733_/RESET_B
+  _09729_/RESET_B
+  load_slew449/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew449/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew449/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew449/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew449/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew456
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew456/A
+CONNECTED NET: net454
+CONNECTED INSTANCE PINS:
+  load_slew456/A
+  load_slew455/A
+  _10004_/RESET_B
+  _09972_/RESET_B
+  fanout453/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew456/X
+CONNECTED NET: net457
+CONNECTED INSTANCE PINS:
+  _10666_/RESET_B
+  _10644_/RESET_B
+  _10484_/RESET_B
+  _10378_/RESET_B
+  _10356_/RESET_B
+  _10346_/RESET_B
+  _10228_/RESET_B
+  _10186_/RESET_B
+  _10122_/RESET_B
+  _09994_/RESET_B
+  _09962_/RESET_B
+  _09930_/RESET_B
+  _09908_/RESET_B
+  _09898_/RESET_B
+  _09834_/RESET_B
+  _09812_/RESET_B
+  _09802_/RESET_B
+  _09780_/RESET_B
+  _09738_/RESET_B
+  load_slew456/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew456/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew456/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew456/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew456/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew460
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew460/A
+CONNECTED NET: net459
+CONNECTED INSTANCE PINS:
+  load_slew460/A
+  _10686_/RESET_B
+  _10590_/RESET_B
+  _10558_/RESET_B
+  _10494_/RESET_B
+  _10462_/RESET_B
+  _10398_/RESET_B
+  _10302_/RESET_B
+  _10297_/RESET_B
+  _10174_/RESET_B
+  _10142_/RESET_B
+  _10110_/RESET_B
+  _10078_/RESET_B
+  _10014_/RESET_B
+  _09900_/RESET_B
+  _09850_/RESET_B
+  _09804_/RESET_B
+  _09740_/RESET_B
+  fanout458/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew460/X
+CONNECTED NET: net461
+CONNECTED INSTANCE PINS:
+  load_slew459/A
+  _10622_/RESET_B
+  _10617_/RESET_B
+  _10518_/RESET_B
+  _10361_/RESET_B
+  _10233_/RESET_B
+  _10230_/RESET_B
+  _10192_/RESET_B
+  _10128_/RESET_B
+  _09974_/RESET_B
+  _09942_/RESET_B
+  _09872_/RESET_B
+  _09790_/RESET_B
+  _09785_/RESET_B
+  load_slew460/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew460/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew460/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew460/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew460/VPWR
+CONNECTED NET: NONE
+
+================================================
+INSTANCE: load_slew451
+================================================
+MASTER: sky130_fd_sc_hd__probe_p_8
+
+PIN: load_slew451/A
+CONNECTED NET: net449
+CONNECTED INSTANCE PINS:
+  load_slew451/A
+  _10704_/RESET_B
+  _10256_/RESET_B
+  _10000_/RESET_B
+  _09936_/RESET_B
+  _09739_/RESET_B
+  fanout448/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew451/X
+CONNECTED NET: net452
+CONNECTED INSTANCE PINS:
+  load_slew450/A
+  _10672_/RESET_B
+  _10657_/RESET_B
+  _10640_/RESET_B
+  _10512_/RESET_B
+  _10416_/RESET_B
+  _10224_/RESET_B
+  _10177_/RESET_B
+  _09985_/RESET_B
+  _09921_/RESET_B
+  _09882_/RESET_B
+  _09857_/RESET_B
+  _09825_/RESET_B
+  _09793_/RESET_B
+  _09761_/RESET_B
+  load_slew451/X
+CONNECTED TOP-LEVEL PORTS:
+
+PIN: load_slew451/VGND
+CONNECTED NET: NONE
+
+PIN: load_slew451/VNB
+CONNECTED NET: NONE
+
+PIN: load_slew451/VPB
+CONNECTED NET: NONE
+
+PIN: load_slew451/VPWR
+CONNECTED NET: NONE
+
+========== CONNECTIVITY INSPECTION COMPLETE ==========

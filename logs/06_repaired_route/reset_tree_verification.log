@@ -1,0 +1,29 @@
+OpenROAD 26Q4-3-geb752b2f90 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+
+============================================================
+RESET DISTRIBUTION TREE VERIFICATION
+============================================================
+RESET PORT: rst_n
+RESET NET: rst_n
+missing close-bracket
+    while executing
+"set indent ["
+    (procedure "trace_reset_net" line 19)
+    invoked from within
+"trace_reset_net $reset_net 0"
+    invoked from within
+"if {$reset_port == "NULL"} {
+
+    puts "ERROR: rst_n top-level port not found"
+
+} else {
+
+    set reset_net [$reset_port getNet]
+
+    if {$reset_net =..."
+    (file "backend/scripts/08g_verify_reset_tree.tcl" line 147)

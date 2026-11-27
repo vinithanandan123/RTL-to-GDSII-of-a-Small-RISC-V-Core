@@ -1,0 +1,292 @@
+========== GDS INVENTORY ==========
+File: /home/vinith/vlsi_projects/riscv_frontend/backend/results/08_final_gds/riscv_final.gds
+DBU: 0.0009999999999999998 um
+Cell count: 133
+
+========== TOP CELLS ==========
+Top cell: riscv_core
+Width: 399.1049999999999 um
+Height: 399.1049999999999 um
+
+========== LAYER INVENTORY ==========
+Layer index: 0
+Layer number: 72
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>9, "polygon"=>1, "path"=>182, "text"=>0, "other"=>0}
+Total: 192
+-----------------------------------
+Layer index: 1
+Layer number: 71
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>12, "polygon"=>0, "path"=>3159, "text"=>0, "other"=>0}
+Total: 3171
+-----------------------------------
+Layer index: 2
+Layer number: 71
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>8, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 8
+-----------------------------------
+Layer index: 3
+Layer number: 70
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>16, "polygon"=>0, "path"=>11864, "text"=>0, "other"=>0}
+Total: 11880
+-----------------------------------
+Layer index: 4
+Layer number: 70
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>15, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 15
+-----------------------------------
+Layer index: 5
+Layer number: 69
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>10, "polygon"=>0, "path"=>38315, "text"=>0, "other"=>0}
+Total: 38325
+-----------------------------------
+Layer index: 6
+Layer number: 69
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>13, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 13
+-----------------------------------
+Layer index: 7
+Layer number: 68
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>22, "polygon"=>9, "path"=>45699, "text"=>0, "other"=>0}
+Total: 45730
+-----------------------------------
+Layer index: 8
+Layer number: 68
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>14, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 14
+-----------------------------------
+Layer index: 9
+Layer number: 67
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>320, "polygon"=>639, "path"=>11, "text"=>0, "other"=>0}
+Total: 970
+-----------------------------------
+Layer index: 10
+Layer number: 67
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>2103, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 2103
+-----------------------------------
+Layer index: 11
+Layer number: 236
+Datatype: 0
+Layer name: 
+Shape counts: {"box"=>121, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 121
+-----------------------------------
+Layer index: 12
+Layer number: 122
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>128, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 128
+-----------------------------------
+Layer index: 13
+Layer number: 64
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>127, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 127
+-----------------------------------
+Layer index: 14
+Layer number: 68
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>256, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 256
+-----------------------------------
+Layer index: 15
+Layer number: 66
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>53, "polygon"=>450, "path"=>0, "text"=>0, "other"=>0}
+Total: 503
+-----------------------------------
+Layer index: 16
+Layer number: 67
+Datatype: 5
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>887, "other"=>0}
+Total: 887
+-----------------------------------
+Layer index: 17
+Layer number: 64
+Datatype: 59
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>128, "other"=>0}
+Total: 128
+-----------------------------------
+Layer index: 18
+Layer number: 64
+Datatype: 5
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>127, "other"=>0}
+Total: 127
+-----------------------------------
+Layer index: 19
+Layer number: 68
+Datatype: 5
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>256, "other"=>0}
+Total: 256
+-----------------------------------
+Layer index: 20
+Layer number: 66
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>3789, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 3789
+-----------------------------------
+Layer index: 21
+Layer number: 65
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>266, "polygon"=>62, "path"=>0, "text"=>1, "other"=>0}
+Total: 329
+-----------------------------------
+Layer index: 22
+Layer number: 95
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>117, "polygon"=>13, "path"=>0, "text"=>0, "other"=>0}
+Total: 130
+-----------------------------------
+Layer index: 23
+Layer number: 78
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>128, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 128
+-----------------------------------
+Layer index: 24
+Layer number: 93
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>128, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 128
+-----------------------------------
+Layer index: 25
+Layer number: 64
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>127, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 127
+-----------------------------------
+Layer index: 26
+Layer number: 94
+Datatype: 20
+Layer name: 
+Shape counts: {"box"=>115, "polygon"=>13, "path"=>0, "text"=>0, "other"=>0}
+Total: 128
+-----------------------------------
+Layer index: 27
+Layer number: 81
+Datatype: 4
+Layer name: 
+Shape counts: {"box"=>127, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 127
+-----------------------------------
+Layer index: 28
+Layer number: 67
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>955, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 955
+-----------------------------------
+Layer index: 29
+Layer number: 83
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>135, "other"=>0}
+Total: 135
+-----------------------------------
+Layer index: 30
+Layer number: 66
+Datatype: 15
+Layer name: 
+Shape counts: {"box"=>4, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 4
+-----------------------------------
+Layer index: 31
+Layer number: 70
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>164, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 164
+-----------------------------------
+Layer index: 32
+Layer number: 70
+Datatype: 5
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>164, "other"=>0}
+Total: 164
+-----------------------------------
+Layer index: 33
+Layer number: 72
+Datatype: 15
+Layer name: 
+Shape counts: {"box"=>2, "polygon"=>2, "path"=>0, "text"=>0, "other"=>0}
+Total: 4
+-----------------------------------
+Layer index: 34
+Layer number: 72
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>29, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 29
+-----------------------------------
+Layer index: 35
+Layer number: 72
+Datatype: 5
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>3, "other"=>0}
+Total: 3
+-----------------------------------
+Layer index: 36
+Layer number: 65
+Datatype: 44
+Layer name: 
+Shape counts: {"box"=>2, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 2
+-----------------------------------
+Layer index: 37
+Layer number: 235
+Datatype: 4
+Layer name: 
+Shape counts: {"box"=>1, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 1
+-----------------------------------
+Layer index: 38
+Layer number: 69
+Datatype: 16
+Layer name: 
+Shape counts: {"box"=>1, "polygon"=>0, "path"=>0, "text"=>0, "other"=>0}
+Total: 1
+-----------------------------------
+Layer index: 39
+Layer number: 69
+Datatype: 5
+Layer name: 
+Shape counts: {"box"=>0, "polygon"=>0, "path"=>0, "text"=>1, "other"=>0}
+Total: 1
+-----------------------------------
+========== INVENTORY COMPLETE ==========
