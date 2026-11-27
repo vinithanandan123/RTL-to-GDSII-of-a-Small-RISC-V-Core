@@ -1,0 +1,26 @@
+set root [file normalize [file join [file dirname [info script]] ../..]]
+set platform "$::env(HOME)/OpenROAD-flow-scripts/flow/platforms/sky130hd"
+
+read_lef "$platform/lef/sky130_fd_sc_hd.tlef"
+read_lef "$platform/lef/sky130_fd_sc_hd_merged.lef"
+read_liberty "$platform/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+read_db "$root/backend/results/06_repaired_route/riscv_reset_repaired.odb"
+read_sdc "$root/backend/inputs/sdc/riscv_core.sdc"
+source "$platform/setRC.tcl"
+
+# 1. Remove any fillers if present before legalizing
+remove_fillers
+
+# 2. Legalize all repair-added buffers onto valid Sky130 sites
+detailed_placement
+check_placement -verbose
+
+# 3. Ensure routing layers and tracks are properly set for Sky130 HD
+set_routing_layers -signal met1-met5 -clock met3-met5
+global_route -congestion_iterations 50 -verbose
+
+# 4. Test pin access directly before full detailed_route
+pin_access -bottom_routing_layer met1 -top_routing_layer met5 -verbose 1
+
+write_db "$root/backend/results/06_repaired_route/riscv_legalized_test.odb"
+puts "=== PIN ACCESS TEST COMPLETED ==="

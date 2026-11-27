@@ -1,0 +1,36 @@
+set root [file normalize [file join [file dirname [info script]] ../..]]
+set platform "$::env(HOME)/OpenROAD-flow-scripts/flow/platforms/sky130hd"
+
+set in_db   "$root/backend/results/06_repaired_route/riscv_reset_repaired.odb"
+set out_dir "$root/backend/results/07_detailed_route_fast"
+file mkdir $out_dir
+
+read_lef "$platform/lef/sky130_fd_sc_hd.tlef"
+read_lef "$platform/lef/sky130_fd_sc_hd_merged.lef"
+read_liberty "$platform/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+read_db $in_db
+read_sdc "$root/backend/inputs/sdc/riscv_core.sdc"
+source "$platform/setRC.tcl"
+
+# 1. Add 1-site horizontal spacing to open up pin-access corridors
+remove_fillers
+set_placement_padding -global -right 1
+detailed_placement
+check_placement -verbose
+
+# 2. Push routing off crowded met1/met2 onto underused met3-met5
+set_routing_layers -signal met1-met5 -clock met3-met5
+set_global_routing_layer_adjustment met1 0.25
+set_global_routing_layer_adjustment met2 0.25
+global_route -congestion_iterations 50 -verbose
+
+# 3. Run detailed routing (stops early as soon as violations reach 0)
+detailed_route \
+  -output_drc "$out_dir/riscv_detailed_route.drc" \
+  -droute_end_iter 15 \
+  -verbose 1
+
+write_db  "$out_dir/riscv_detailed_route.odb"
+write_def "$out_dir/riscv_detailed_route.def"
+
+puts "=== FAST DETAILED ROUTING COMPLETED ==="
